@@ -24,7 +24,7 @@
 	position: relative;
 	width: 202px;
 	margin: auto;
-	padding: 1rem 4rem;
+	padding: 1rem 2rem;
 	color: $white;
 	transition: 0.3s ease-in-out;
   background-color: $green;
@@ -46,12 +46,37 @@
 	content: '';
 	position: absolute;
 	top: 50%;
-	right: 1em;
+	right: 3em;
 	transform: translateY(-50%);
 	width: 40px;
 	height: 1px;
 	background-color: $white;
 }
+
+.button-arrow {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  width: 7px;
+  // height: 7px;
+  margin-top: -4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: 1px solid $white;
+  border-right: 1px solid $white;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 33px;
+
+  @include mq("md") {
+    margin-right: 32px;
+    width: 9px;
+    // height: 9px;
+    // top: 52%;
+  }
+}
+
 
 // .button {
 // 	display: flex;
