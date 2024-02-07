@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  height: rem(80);
+  padding-left: rem(6);
+  font-family: Cormorant;
+  border-bottom: rem(1) solid $black;
+  justify-content: space-between;
+  padding-right: rem(20);
+
+  @include mq("md") {
+    height: rem(90);
+    padding-left: 0;
+    margin-right: 0;
+    border-bottom: none;
+    padding-right: rem(15);
+  }
+}
