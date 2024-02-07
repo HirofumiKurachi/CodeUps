@@ -22,14 +22,32 @@
 	text-align: center;
 	text-decoration: none;
 	position: relative;
-	width: 202px;
+	width: 206px;
 	margin: auto;
 	padding: 1rem 2rem;
 	color: $white;
-	transition: 0.3s ease-in-out;
+	// transition: 0.3s ease-in-out;
   background-color: $green;
   font-size: 14px;
   line-height: calc(22/14);
+	z-index: 1;
+	// transform: scale(0, 1);
+  transform-origin: left top;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+
+	@include mq("md") {
+		width: 202px;
+	}
+}
+
+.button:hover {
+	color: $green;
+	background-color: $white;
+	border: 0.0625rem solid $green;
+}
+
+.button:hover::after {
+  transform: scale(1, 1);
 }
 
 .button::before {
@@ -53,9 +71,13 @@
 	background-color: $white;
 }
 
+.button:hover::after {
+	background-color: $green;
+}
+
 .button-arrow {
   position: absolute;
-  top: 50%;
+  top: 51%;
   right: 9px;
   width: 7px;
   // height: 7px;
@@ -75,6 +97,12 @@
     // height: 9px;
     // top: 52%;
   }
+}
+
+.button:hover .button-arrow {
+  border-right: 1px solid $green;
+  border-top: 1px solid $green;
+
 }
 
 
