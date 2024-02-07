@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.header__name-layout {
+  padding-left: rem(15);
+  padding-right: rem(15);
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
