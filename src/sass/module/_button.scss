@@ -21,28 +21,28 @@
   text-align: center;
   text-decoration: none;
   position: relative;
-  width: 206px;
+  width: rem(206);
   margin: auto;
   padding: 1rem 2rem;
   color: $white;
   background-color: $green;
-  font-size: 14px;
+  font-size: rem(14);
   line-height: calc(22/14);
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
 	// transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 	transform-origin: left top;
-	height: 54px;
+	height: rem(54);
 	// transform: scale(0, 1);
 }
 
 .button::before {
   content: '';
   position: absolute;
-  top: 4px;
-  left: 4px;
-  border: 0.0625rem solid $green;
-  width: 206px;
-  height: 54px;
+  top: rem(4);
+  left: rem(4);
+  border: rem(1) solid $green;
+  width: rem(206);
+  height: rem(54);
   z-index: -1;
   // transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 	// transition: width 0.2s ease-out, background-color 0.2s ease-out; /* より速いアニメーション */
@@ -60,10 +60,10 @@
 	content: '';
 	position: absolute;
 	top: 50%;
-	right: 3em;
+	right: 2.72rem;
 	transform: translateY(-50%);
-	width: 40px;
-	height: 1px;
+	width: rem(40);
+	height: rem(1);
 	background-color: $white;
 }
 
@@ -73,31 +73,31 @@
 
 .button-arrow {
   position: absolute;
-  top: 51%;
-  right: 9px;
-  width: 7px;
+  top: 50.5%;
+  right: rem(10);
+  width: rem(7);
   // height: 7px;
   margin-top: -4px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  border-top: 1px solid $white;
-  border-right: 1px solid $white;
+  border-top: rem(1) solid $white;
+  border-right: rem(1) solid $white;
   content: "";
   display: inline-block;
   vertical-align: middle;
-  margin-right: 33px;
+  margin-right: rem(33);
 
   @include mq("md") {
-    margin-right: 32px;
-    width: 9px;
+    margin-right: rem(32);
+    width: rem(9);
     // height: 9px;
     // top: 52%;
   }
 }
 
 .button:hover .button-arrow {
-  border-right: 1px solid $green;
-  border-top: 1px solid $green;
+  border-right: rem(1) solid $green;
+  border-top: rem(1) solid $green;
 
 }
 
