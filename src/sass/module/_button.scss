@@ -16,48 +16,13 @@
 }
 
 
-.button {
-	display: flex;
-  justify-content: space-between;
-	text-align: center;
-	text-decoration: none;
-	position: relative;
-	width: 206px;
-	margin: auto;
-	padding: 1rem 2rem;
-	color: $white;
-	// transition: 0.3s ease-in-out;
-  background-color: $green;
-  font-size: 14px;
-  line-height: calc(22/14);
-	z-index: 1;
-	// transform: scale(0, 1);
-  transform-origin: left top;
-  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-
-	@include mq("md") {
-		width: 202px;
-	}
-}
-
-.button:hover {
-	color: $green;
-	background-color: $white;
-	border: 0.0625rem solid $green;
-}
 
 .button:hover::after {
   transform: scale(1, 1);
 }
 
-.button::before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border: 0.0625rem solid $green;
-  width: inherit;
-  height: 100%;
+.button:hover span {
+	color: $white; /* span要素内のテキストカラーを白に変更 */
 }
 
 .button::after {
@@ -105,41 +70,46 @@
 
 }
 
+.button {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 206px;
+  margin: auto;
+  padding: 1rem 2rem;
+  color: $white;
+  background-color: $green;
+  font-size: 14px;
+  line-height: calc(22/14);
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+	height: 54px;
+}
 
-// .button {
-// 	display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// 	text-align: center;
-// 	text-decoration: none;
-// 	width: 202px;
-// 	margin: auto;
-// 	padding: 1rem 2rem;
-// 	// font-weight: bold;
-// 	background: $green;
-// 	color: $white;
-// 	// border-radius: 100vh;
-// 	position: relative;
-// 	transition: 0.5s;
-//   box-shadow: 5px 5px #27acd9;
-// }
-// .button::before {
-// 	content: '';
-// 	position: absolute;
-// 	top: calc(50% - 2px);
-// 	right: 1em;
-// 	transform: translateY(calc(-50% - 2px)) rotate(45deg);
-// 	width: 10px;
-// 	height: 1px;
-// 	background: $white;
-// }
-// .button::after {
-// 	content: '';
-// 	position: absolute;
-// 	top: 50%;
-// 	right: 1em;
-// 	transform: translateY(-50%);
-// 	width: 50px;
-// 	height: 1px;
-// 	background-color: $white;
-// }
+.button::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 0.0625rem solid $green;
+  width: 206px;
+  height: 54px;
+  z-index: -1;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.button:hover::before {
+  // width: 100%;
+  background-color: $white;
+	top: 3px;
+	left: 3px;
+}
+
+.button:hover {
+  color: $green;
+  background-color: $white;
+  border: 0.0625rem solid $green;
+}
+
+
