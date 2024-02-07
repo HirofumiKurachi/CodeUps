@@ -1,21 +1,52 @@
 @use "global" as *;
 
-.button-layout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // margin-top: 19px;
-  text-decoration: none;
-  outline: none;
-  /*アニメーションの指定*/
-  transition: all .3s;
+// .button-layout {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // margin-top: 19px;
+//   text-decoration: none;
+//   outline: none;
+//   /*アニメーションの指定*/
+//   transition: all .3s;
 
-  @include mq("md") {
-    padding-bottom: 120px;
-  }
+//   @include mq("md") {
+//     padding-bottom: 120px;
+//   }
+// }
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 206px;
+  margin: auto;
+  padding: 1rem 2rem;
+  color: $white;
+  background-color: $green;
+  font-size: 14px;
+  line-height: calc(22/14);
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+	// transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	transform-origin: left top;
+	height: 54px;
+	// transform: scale(0, 1);
 }
 
-
+.button::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 0.0625rem solid $green;
+  width: 206px;
+  height: 54px;
+  z-index: -1;
+  // transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	// transition: width 0.2s ease-out, background-color 0.2s ease-out; /* より速いアニメーション */
+}
 
 .button:hover::after {
   transform: scale(1, 1);
@@ -70,34 +101,9 @@
 
 }
 
-.button {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  text-decoration: none;
-  position: relative;
-  width: 206px;
-  margin: auto;
-  padding: 1rem 2rem;
-  color: $white;
-  background-color: $green;
-  font-size: 14px;
-  line-height: calc(22/14);
-  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-	height: 54px;
-}
 
-.button::before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border: 0.0625rem solid $green;
-  width: 206px;
-  height: 54px;
-  z-index: -1;
-  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
+
+
 
 .button:hover::before {
   // width: 100%;
