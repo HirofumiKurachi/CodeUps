@@ -11,10 +11,13 @@
   padding-left: 20px;
   padding-right: 20px;
   height: inherit;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .header__link span {
   color: $white;
   font-size: rem(18);
+  white-space: nowrap;
 }
 
