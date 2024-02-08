@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.header__link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: $white;
+  font-size: rem(10);
+  font-weight: $regular;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: inherit;
+}
+
+.header__link span {
+  color: $white;
+  font-size: rem(18);
+}
+
