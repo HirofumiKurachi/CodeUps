@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.drawer__logo-text {
+  font-size: rem(16);
+  color: $white;
+  font-weight: $bold;
+  // vertical-align: middle;
+}

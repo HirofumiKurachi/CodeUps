@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.drawer-menu__item {
+  text-align: center;
+  position: relative;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
