@@ -6,5 +6,9 @@
   height: inherit;
   display: flex;
   align-items: center;
+
+  @include mq("md") {
+    padding-left: ren(40);
+  }
 }
 
