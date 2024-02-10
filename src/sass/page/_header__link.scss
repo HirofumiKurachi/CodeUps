@@ -13,6 +13,9 @@
   height: inherit;
   align-items: center;
   white-space: nowrap;
+  position: relative;
+  // text-decoration: none;
+  //  color: $white;
 }
 
 .header__link span {
@@ -21,3 +24,9 @@
   white-space: nowrap;
 }
 
+
+
+/*現在地とhoverの設定*/
+.header__link:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
