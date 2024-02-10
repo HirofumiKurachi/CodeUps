@@ -3,7 +3,18 @@
 .drawer-menu__item {
   text-align: center;
   position: relative;
-  display: flex;
-  // justify-content: center;
   align-items: center;
+  display: inline-block;
+}
+
+
+.drawer-menu__item::before {
+  content: '';
+  width: 18px;/*画像の幅*/
+  height: 18px;/*画像の高さ*/
+  background-image: url(../images/drawer-logo.svg);
+  background-size: contain;
+  top: 24px;
+  left: -21px;
+  position: absolute;
 }
