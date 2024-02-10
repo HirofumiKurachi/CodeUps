@@ -11,8 +11,9 @@
 }
 
 .hamburger.is-active {
-  top: 28px;
-  right: 13px;
+  top: rem(28);
+  right: rem(10);
+  width: rem(40);
 }
 
 
@@ -65,8 +66,8 @@
 }
 
 .hamburger.is-active span:nth-child(1) {
-  top: 8px;
-  transform: rotate(-45deg);
+  top: rem(11);
+  transform: rotate(37deg);
 }
 
 .hamburger.is-active span:nth-child(2) {
@@ -74,7 +75,7 @@
 }
 
 .hamburger.is-active span:nth-child(3) {
-  top: 8px;
-  transform: rotate(45deg);
+  top: rem(12);
+  transform: rotate(-37deg);
 }
 
