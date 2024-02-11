@@ -21,7 +21,17 @@
   margin-top: rem(17.3);
 }
 
-.drawer-menu__link::before {
+.drawer-menu__link-a::before {
+  content: '';
+  width: rem(18);/*画像の幅*/
+  height: rem(18);/*画像の高さ*/
+  background-image: url(../images/drawer-logo.svg);
+  background-size: contain;
+  top: rem(9);
+  left: rem(-23);
+  position: absolute;
+}
+.drawer-menu__link-b::before {
   content: '';
   width: rem(18);/*画像の幅*/
   height: rem(18);/*画像の高さ*/
