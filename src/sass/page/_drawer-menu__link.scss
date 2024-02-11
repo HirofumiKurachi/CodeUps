@@ -2,57 +2,32 @@
 
 .drawer-menu__link-a {
   width: 100%;
-  // justify-content: center;
-  font-size: 16px;
+  font-size: rem(16);
   text-align: center;
   color: $white;
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: rem(12);
+  padding-bottom: rem(10);
 }
 
 .drawer-menu__link-b {
   width: 100%;
-  // justify-content: center;
-  font-size: 16px;
+  font-size: rem(16);
   text-align: center;
   color: $white;
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 18px;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  margin-top: rem(17.3);
 }
 
-.drawer-menu__link-a::before {
+.drawer-menu__link::before {
   content: '';
-  width: 18px;/*画像の幅*/
-  height: 18px;/*画像の高さ*/
+  width: rem(18);/*画像の幅*/
+  height: rem(18);/*画像の高さ*/
   background-image: url(../images/drawer-logo.svg);
   background-size: contain;
-  top: 11px;
-  left: -22px;
+  top: rem(9);
+  left: rem(-23);
   position: absolute;
 }
-
-.drawer-menu__link-b::before {
-  content: '';
-  width: 18px;/*画像の幅*/
-  height: 18px;/*画像の高さ*/
-  background-image: url(../images/drawer-logo.svg);
-  background-size: contain;
-  top: 27px;
-  left: -21px;
-  position: absolute;
-}
-
-// .drawer-menu__link-c {
-//   width: 100%;
-//   // justify-content: center;
-//   font-size: 16px;
-//   text-align: center;
-//   color: $white;
-//   display: flex;
-//   padding-top: 12px;
-//   padding-bottom: 12px;
-//   margin-top: 18px;
-// }

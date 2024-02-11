@@ -4,18 +4,5 @@
   text-align: center;
   position: relative;
   align-items: center;
-  display: inline-block;
+  display: block;
 }
-
-
-
-// .drawer-menu__item::before {
-//   content: '';
-//   width: 18px;/*画像の幅*/
-//   height: 18px;/*画像の高さ*/
-//   background-image: url(../images/drawer-logo.svg);
-//   background-size: contain;
-//   top: 13px;
-//   left: -21px;
-//   position: absolute;
-// }
