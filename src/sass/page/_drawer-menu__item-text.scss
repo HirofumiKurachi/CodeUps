@@ -1,16 +1,16 @@
 @use "global" as *;
 
 .drawer-menu__item-text {
-  padding-top: 11px;
-  padding-bottom: 7px;
+  padding-top: rem(11);
+  padding-bottom: rem(7);
   color: $white;
   vertical-align: middle;
   list-style-type: none;
 }
 
 .drawer-menu__item-text-b {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: rem(9);
+  padding-bottom: rem(9);
   color: $white;
   vertical-align: middle;
   list-style-type: none;
