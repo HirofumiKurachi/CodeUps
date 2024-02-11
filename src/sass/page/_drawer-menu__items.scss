@@ -1,6 +1,17 @@
 @use "global" as *;
 
-.drawer-menu__items {
-  max-width: 166px;
+.drawer-menu__items-a {
+  max-width: 167px;
   width: 100%;
+  padding-left: 23px;
+  // padding-top: 13px;
+  margin-top: 15px;
+}
+
+.drawer-menu__items-b {
+  max-width: 167px;
+  width: 100%;
+  padding-left: 23px;
+  // padding-top: 13px;
+  margin-top: 16px;
 }
