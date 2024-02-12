@@ -11,8 +11,8 @@
 
   @include mq("md") {
     height: rem(90);
-    padding-left: 25px;
-    margin-right: 0;
+    padding-left: rem(25);
+    margin-right: rem(1);
     border-bottom: none;
     // padding-right: rem(15);
   }

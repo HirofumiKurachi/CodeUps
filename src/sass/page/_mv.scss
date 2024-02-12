@@ -28,11 +28,12 @@
   transform: translate(-50%, -50%); /* 画面中央に配置 */
 
 
-  // @include mq("md") {
-  //   width: 100%;
-  //   left: 50%;
-  //   top: 50%;
-  //   transform: translate(-50%, -41%);
+  @include mq("md") {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
 }
 
 .mv__sub-title {
@@ -42,12 +43,13 @@
   letter-spacing: 0.51em;
   color: $white;
   text-align: center;
+  text-indent: 1.4rem;
 
   @include mq("md") {
     font-size: 80px;
     text-align: center;
+    text-indent: 2.6rem;
   }
-
 }
 
 .mv__text {
@@ -57,6 +59,10 @@
   letter-spacing: 0.05em;
   // line-height: 2;
   text-align: center;
+
+  @include mq("md") {
+    margin-top: -18px;
+  }
 
   // @include mq("md") {
   //   display: none;
