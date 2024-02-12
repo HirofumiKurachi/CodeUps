@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.mv__slider,
+.mv__slider .swiper-img,
+.mv__slider .swiper-img img {
+    height: inherit;
+    min-height: inherit;
+}
+
+.mv__slider .swiper-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: 100vh;
+  width: 100%;
+}

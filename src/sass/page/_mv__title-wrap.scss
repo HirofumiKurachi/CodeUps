@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.mv__title-wrap {
+  position: absolute;
+  z-index: 10;
+  top: 49.8%;
+  left: 49.7%;
+  transform: translate(-50%, -50%); /* 画面中央に配置 */
+
+
+  @include mq("md") {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
+}
