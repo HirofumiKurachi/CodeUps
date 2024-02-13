@@ -3,8 +3,8 @@ jQuery(function ($) {
     // ハンバーガーメニュー
     $(function () {
         $(".js-hamburger").click(function () {
-        $(this).toggleClass("is-open");
-        if ($(this).hasClass("is-open")) {
+        $(this).toggleClass("is-active");
+        if ($(this).hasClass("is-active")) {
             openDrawer();
         } else {
             closeDrawer();
@@ -18,7 +18,7 @@ jQuery(function ($) {
 
         //resizeイベント
         $(window).resize(function () {
-            if (window.matchMedia("(min-width: 768px)").matches) {
+            if (window.matchMedia("(min-width: 767px)").matches) {
                 closeDrawer();
             }
         });
@@ -26,12 +26,12 @@ jQuery(function ($) {
 
     function openDrawer() {
         $(".js-drawer").fadeIn();
-        $(".js-hamburger").addClass("is-open");
+        $(".js-hamburger").addClass("is-active");
     }
 
     function closeDrawer() {
         $(".js-drawer").fadeOut();
-        $(".js-hamburger").removeClass("is-open");
+        $(".js-hamburger").removeClass("is-active");
     }
 
 
