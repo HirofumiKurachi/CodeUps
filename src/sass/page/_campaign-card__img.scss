@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.campaign-card__img {
+  aspect-ratio: 280/188;
+  object-fit: cover;
+  width: 100%;
+}
+

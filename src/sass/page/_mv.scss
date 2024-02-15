@@ -6,6 +6,7 @@
   z-index: 1;
   height: 100vh;
   min-height: rem(320);
+  width: 100%;
 
   @include mq("md") {
     min-height: rem(400);

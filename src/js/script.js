@@ -58,4 +58,17 @@ jQuery(function ($) {
         disableOnInteraction: false,
         },
     });
+
+    // const mv_swiper = new Swiper(".mv__slider.swiper", {
+    //     loop: true,
+    //     speed: 2000,
+    //     effect: "fade",
+    //     fadeEffect: {
+    //         crossFade: true,
+    //     },
+    //     autoplay: {
+    //         delay: 4000,
+    //         disableOnInteraction: false,
+    //         },
+    //     });
 });
