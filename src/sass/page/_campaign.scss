@@ -64,6 +64,47 @@
   // padding-top: 16px;
 }
 
+.card-text__title-sub {
+  margin-top: 4px;
+}
+
+.text-line {
+  background-color: $green; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  flex-grow: 1;
+}
+
 .card__body {
-  padding-top: 16px;
+  padding: 16px 16px 24px 16px;
+}
+
+.card-price__text {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-price__old {
+  font-size: 20px;
+  font-weight: $bold;
+}
+
+.card-price__new {
+  font-size: 32px;
+  font-weight: $bold;
+  color: $green;
+  margin-left: 16px;
+}
+
+.card-price__old-strike-through {
+  text-decoration: line-through; /* 打ち消し線を設定します */
+  text-decoration-color: $red; /* 打ち消し線の色を赤色に設定します */
 }
