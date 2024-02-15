@@ -1,7 +1,7 @@
 @use "global" as *;
 
 /* 画像サイズ調整 */
-.swiper-slide img {
+.mv__slider.swiper-slide img {
   height: 100vh;
   width: 100%;
 }
