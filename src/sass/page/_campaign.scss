@@ -79,6 +79,7 @@
 
 .card-text__title-sub {
   margin-top: 7px;
+  font-weight: $medium;
 }
 
 .text-line {
@@ -108,7 +109,8 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-top: 2px;
+  // margin-top: 2px;
+  font-family: Lato;
 }
 
 
@@ -116,7 +118,7 @@
   font-size: 32px;
   font-weight: $bold;
   color: $green;
-  margin-left: 16px;
+  margin-left: 18px;
 }
 
 .card-price__old-strike-through {
@@ -124,4 +126,5 @@
   font-weight: $bold;
   text-decoration: line-through; /* 打ち消し線を設定します */
   text-decoration-color: $red; /* 打ち消し線の色を赤色に設定します */
+  text-decoration-thickness: 3px; /* 打ち消し線の太さを2pxに設定します */
 }

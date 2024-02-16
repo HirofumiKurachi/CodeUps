@@ -6,9 +6,9 @@
   text-align: center;
   text-decoration: none;
   position: relative;
-  width: rem(202);
+  width: rem(203);
   // margin: auto;
-  padding: 1rem 2rem;
+  padding: rem(16) rem(40);
   color: $white;
   background-color: $green;
   font-size: rem(14);
@@ -25,10 +25,10 @@
 .button::before {
   content: '';
   position: absolute;
-  top: rem(4);
+  top: rem(3);
   left: rem(4);
   border: rem(1) solid $green;
-  width: rem(202);
+  width: rem(203);
   height: rem(54);
   z-index: -1;
   overflow: visible;
@@ -68,9 +68,9 @@
 
 .button-arrow {
   position: absolute;
-  top: 51.5%;
-  right: rem(10);
-  width: rem(7);
+  top: 53%;
+  right: rem(4);
+  width: rem(9);
   margin-top: -4px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -90,8 +90,8 @@
 .button-arrow2 {
   content: '';
 	position: absolute;
-	top: 50%;
-	right: 2.72rem;
+	top: 52%;
+	right: rem(38);
 	transform: translateY(-50%);
 	width: rem(40);
 	height: rem(1);
