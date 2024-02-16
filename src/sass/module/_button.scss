@@ -6,8 +6,8 @@
   text-align: center;
   text-decoration: none;
   position: relative;
-  width: rem(206);
-  margin: auto;
+  width: rem(202);
+  // margin: auto;
   padding: 1rem 2rem;
   color: $white;
   background-color: $green;
@@ -28,7 +28,7 @@
   top: rem(4);
   left: rem(4);
   border: rem(1) solid $green;
-  width: rem(206);
+  width: rem(202);
   height: rem(54);
   z-index: -1;
   overflow: visible;

@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.about-us__img3 {
+  aspect-ratio: 281/186;
+  object-fit: cover;
+  width: 82%;
+  // max-width: 281px;
+  display: block;
+  margin-left: auto; /* 左側の余白を自動計算 */
+  margin-right: 0; /* 右側の余白を0に設定 */
+
+  @include mq("md") {
+    aspect-ratio: 880/581;
+    max-width: 880px;
+  }
+}
+
+.about-us__img1 {
+  position: absolute;
+  aspect-ratio: 128/194;
+  width: 37%;
+  top: -15%;
+  // left: 10%;
+  // max-width: 128px;
+  display: block;
+}
+
+.about-us__img {
+  position: relative;
+  // display: inline-block;
+  margin-top: 50px;
+}
