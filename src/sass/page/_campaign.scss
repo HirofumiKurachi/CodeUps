@@ -47,9 +47,19 @@
   width: 100vh;
 }
 
+  .campaign-slider-slide {
+    display: block; /* inline-block から block に変更 */
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    margin-bottom: 10px; /* 下側のマージンを追加 */
+    // margin-right: 10px; /* 右側のマージンを追加 */
+    margin-left: 10px;
+    min-width: 280px;
+  }
+
 .campaign-card__item {
   display: inline-block;
-  min-width: 280px;
+  // min-width: 280px;
+  max-width: 100%;
   // box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }

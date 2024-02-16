@@ -107,8 +107,59 @@ jQuery(function ($) {
         }
     });
 
+    // function initializeSwiper() {
+    //     const mv_swiper = new Swiper(".mv__slider.swiper", {
+    //         loop: true,
+    //         speed: 2000,
+    //         effect: "fade",
+    //         fadeEffect: {
+    //             crossFade: true,
+    //         },
+    //         autoplay: {
+    //             delay: 4000,
+    //             disableOnInteraction: false,
+    //         },
+    //     });
+    // }
+    // initializeSwiper();
+
+    // function initializeCampaignSwiper() {
+    //     const campaign_swiper = new Swiper(".campaign__slider.swiper", {
+    //         loop: true,
+    //         autoplay: {
+    //             delay: 5000, // 自動再生の間隔（ミリ秒）
+    //         },
+    //         // 他のオプションを追加
+    //     });
+    // }
+    // initializeCampaignSwiper();
+
     // スライダーの初期化
-    const mv_swiper = new Swiper(".mv__slider.swiper", {
+    // const mv_swiper = new Swiper(".mv__slider.swiper", {
+    //     loop: true,
+    //     speed: 2000,
+    //     effect: "fade",
+    //     fadeEffect: {
+    //         crossFade: true,
+    //     },
+    //     autoplay: {
+    //         delay: 4000,
+    //         disableOnInteraction: false,
+    //     },
+    //   });
+
+    // // キャンペーンスライダーの初期化
+    // const campaign_swiper = new Swiper(".campaign__slider.swiper", {
+    //     loop: true,
+    //     autoplay: {
+    //         delay: 5000, // 自動再生の間隔（ミリ秒）
+    //     },
+    //     // 他のオプションを追加
+    // });
+    let campaign_swiper; // グローバルスコープで campaign_swiper を定義
+
+function initializeSwiper() {
+    const mv_swiper = new Swiper(".mv__slider", {
         loop: true,
         speed: 2000,
         effect: "fade",
@@ -120,13 +171,21 @@ jQuery(function ($) {
             disableOnInteraction: false,
         },
     });
+}
 
-    // キャンペーンスライダーの初期化
-    const campaign_swiper = new Swiper(".campaign__slider.swiper", {
+initializeSwiper();
+
+
+function initializeCampaignSwiper() {
+    campaign_swiper = new Swiper(".campaign__slider", {
         loop: true,
         autoplay: {
             delay: 5000, // 自動再生の間隔（ミリ秒）
         },
         // 他のオプションを追加
     });
+}
+
+initializeCampaignSwiper();
+
 });
