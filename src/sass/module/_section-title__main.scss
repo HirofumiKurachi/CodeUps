@@ -4,6 +4,10 @@
   font-size: rem(32);
   letter-spacing: 0.01em;
   line-height: 1.4;
+
+  @include mq("md") {
+    font-size: rem(40);
+  }
 }
 
 .section-title__main::first-letter {

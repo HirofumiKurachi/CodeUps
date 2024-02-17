@@ -6,4 +6,10 @@ padding-right: rem(15);
 margin-left: auto;
 margin-right: auto;
 padding-top: rem(81);
+
+@include mq("md") {
+  padding-top: rem(130);
+  padding-left: 25px;
+  padding-right: 25px;
+}
 }
