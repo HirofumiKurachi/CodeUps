@@ -1,5 +1,10 @@
 @use "global" as *;
 
+.about-us {
+  width: 100%;
+  overflow: visible;
+}
+
 .about-us__img3 {
   aspect-ratio: 281/186;
   object-fit: cover;
@@ -19,7 +24,7 @@
   position: absolute;
   aspect-ratio: 128/194;
   width: 37%;
-  top: -15%;
+  top: -13%;
   // left: 10%;
   // max-width: 128px;
   display: block;
@@ -28,5 +33,5 @@
 .about-us__img {
   position: relative;
   // display: inline-block;
-  margin-top: 50px;
+  margin-top: 52px;
 }

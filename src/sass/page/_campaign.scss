@@ -32,17 +32,21 @@
   overflow: visible;
 }
 
+.campaign.section-title {
+  text-indent: -0.9rem;
+}
+
 // .campaign-card__img img {
 //   max-width: 100%; /* 画像の幅を親要素に合わせて変更します */
 // }
 
 .campaign-slider-wrapper {
   display: grid;
-  margin-top: 10px;
+  margin-top: rem(10);
     grid-template-columns: repeat(4, 1fr);
   // grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  row-gap: 50px;
-  gap: 24px;
+  row-gap: rem(50);
+  gap: rem(24);
   margin-right: calc(50% - 50vw);
   width: 100vh;
 }
@@ -50,56 +54,59 @@
   .campaign-slider-slide {
     display: block; /* inline-block から block に変更 */
     // box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-    margin-bottom: 10px; /* 下側のマージンを追加 */
+    margin-bottom: rem(10); /* 下側のマージンを追加 */
     // margin-right: 10px; /* 右側のマージンを追加 */
-    margin-left: 1px;
-    min-width: 280px;
-    margin-top: 17px;
+    margin-left: rem(1);
+    min-width: rem(280);
+    margin-top: rem(17);
   }
 
 .campaign-card__item {
   display: inline-block;
-  max-width: 280px;
+  max-width: rem(280);
   width: 100%;
   // box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.06);
   // box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: 3px 3px 4px 0px rgba(29, 29, 29, 0.75);
+  box-shadow: rem(3) rem(3) rem(4) rem(0) rgba(29, 29, 29, 0.75);
 
 }
 
 .card-text__title {
-  font-size: 12px;
+  font-size: rem(12);
   color: $green;
-  border: 1px solid $green;
-  padding: 7px 12px 3.5px 12px;
-  max-width: 108px;
+  border: rem(1) solid $green;
+  padding: rem(7) rem(12) rem(3.5) rem(12);
+  max-width: rem(108);
   white-space: nowrap;
   // padding-top: 16px;
 }
 
 .card-text__title-sub {
-  margin-top: 7px;
+  margin-top: rem(7);
   font-weight: $medium;
 }
 
 .text-line {
   background-color: $green; /* 横線の色 */
   content: "";
-  height: 1.5px; /* 横線の高さ */
-  margin-top: 4px;
+  height: rem(1.5); /* 横線の高さ */
+  margin-top: rem(4);
   flex-grow: 1;
 }
 
 .card__body {
-  padding: 15px 17px 13px 15px;
+  padding-top: rem(15);
+  padding-right: rem(17);
+  padding-bottom: rem(13);
+  padding-left: rem(15);
 }
 
 .card-price {
-  margin-top: 11px;
+  margin-top: rem(11);
 }
 
 .card-price__text {
-  font-size: 14px;
+  font-size: rem(14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,16 +122,16 @@
 
 
 .card-price__new {
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: $bold;
   color: $green;
-  margin-left: 18px;
+  margin-left: rem(18);
 }
 
 .card-price__old-strike-through {
-  font-size: 20px;
+  font-size: rem(20);
   font-weight: $bold;
   text-decoration: line-through; /* 打ち消し線を設定します */
   text-decoration-color: $red; /* 打ち消し線の色を赤色に設定します */
-  text-decoration-thickness: 3px; /* 打ち消し線の太さを2pxに設定します */
+  text-decoration-thickness: rem(3); /* 打ち消し線の太さを2pxに設定します */
 }
