@@ -43,3 +43,44 @@
     margin-top: 120px;
   }
 }
+
+.about-us-title {
+  font-size: 40px;
+  color: $green;
+  line-height: 1;
+  font-weight: $regular;
+  margin-top: 40px;
+}
+
+.about-us-text {
+  // font-size: 40px;
+  // color: $green;
+  line-height: 1.5;
+  font-weight: $regular;
+  margin-top: 19px;
+}
+
+.about-us-button-layout {
+  margin-top: 47px;
+  // display: flex;
+  // justify-content: center;
+  padding-left: 62px;
+
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.about-us-container {
+
+  @include mq("md") {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+}
