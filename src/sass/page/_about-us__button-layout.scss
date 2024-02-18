@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.about-us__button-layout {
+  margin-top: rem(47);
+  // display: flex;
+  // justify-content: center;
+  padding-left: rem(62);
+
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    padding-left: rem(35);
+    margin-top: rem(37);
+  }
+}

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.about-us__img {
+  position: relative;
+  margin-top: rem(52);
+
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.about-us__container {
+  @include mq("md") {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40.5%, -195.5%);
+    width: 100%;
+    display: flex;
+    max-width: rem(840);
+  }
+}

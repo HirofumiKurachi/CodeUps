@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.about-us-title {
+  font-size: rem(40);
+  color: $green;
+  line-height: 1;
+  font-weight: $regular;
+  margin-top: rem(40);
+
+  @include mq("md") {
+    font-size: rem(80);
+    color: $white;
+    line-height: 1.25;
+    margin-top: 0;
+  }
+}
