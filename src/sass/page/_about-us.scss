@@ -93,7 +93,7 @@
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-31.5%, -195.5%);
+    transform: translate(-40.5%, -195.5%);
     width: 100%;
     display: flex;
     max-width: 840px;
@@ -103,4 +103,23 @@
 
 .about-us-container__box {
   max-width: 440px;
+}
+
+.about-us__logo {
+  display: none;
+
+  @include mq("md") {
+    width: 18%;
+    max-width: 194px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(228%, 110%);
+    aspect-ratio: 194/181;
+    object-fit: cover;
+    // width: 100%;
+    // margin-left: auto; /* 左側の余白を自動計算 */
+    // margin-right: 0; /* 右側の余白を0に設定 */
+  }
 }
