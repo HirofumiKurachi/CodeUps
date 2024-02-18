@@ -50,6 +50,13 @@
   line-height: 1;
   font-weight: $regular;
   margin-top: 40px;
+
+  @include mq("md") {
+    font-size: 80px;
+    color: $white;
+    line-height: 1.25;
+    margin-top: 0;
+  }
 }
 
 .about-us-text {
@@ -58,6 +65,12 @@
   line-height: 1.5;
   font-weight: $regular;
   margin-top: 19px;
+
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: 40px;
+    color: $white;
+  }
 }
 
 .about-us-button-layout {
@@ -69,7 +82,8 @@
   @include mq("md") {
     display: flex;
     justify-content: center;
-    padding-left: 0;
+    padding-left: 35px;
+    margin-top: 37px;
   }
 }
 
@@ -79,8 +93,13 @@
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-31.5%, -195.5%);
     width: 100%;
+    display: flex;
   }
 
+}
+
+.about-us-container__box {
+  max-width: 440px;
 }

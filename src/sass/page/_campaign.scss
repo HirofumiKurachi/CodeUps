@@ -44,6 +44,10 @@
 //   max-width: 100%; /* 画像の幅を親要素に合わせて変更します */
 // }
 
+.campaign-slider {
+  overflow: visible;
+}
+
 .campaign-slider-wrapper {
   display: grid;
   margin-top: rem(10);
@@ -56,7 +60,7 @@
 
   @include mq("md") {
     margin-top: rem(20);
-    gap: rem(40);
+    gap: rem(35.5);
   }
 }
 
@@ -125,7 +129,7 @@
   padding-top: rem(15);
   padding-right: rem(17);
   padding-bottom: rem(13);
-  padding-left: rem(15);
+  padding-left: rem(16);
 
   @include mq("md") {
     padding-top: rem(24);
@@ -159,7 +163,7 @@
   font-size: rem(32);
   font-weight: $bold;
   color: $green;
-  margin-left: rem(18);
+  margin-left: 18px;
 }
 
 .card-price__old-strike-through {

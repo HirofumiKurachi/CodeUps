@@ -80,7 +80,7 @@ jQuery(function ($) {
 
         //resizeイベント
         $(window).resize(function () {
-            if (window.matchMedia("(min-width: 767px)").matches) {
+            if (window.matchMedia("(min-width: 768px)").matches) {
                 closeDrawer();
             }
         });
