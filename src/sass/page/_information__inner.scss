@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.information__inner.inner {
+padding-left: rem(15);
+padding-right: rem(15);
+margin-left: auto;
+margin-right: auto;
+padding-top: rem(80);
+padding-bottom: rem(70);
+
+@include mq("md") {
+  padding-top: rem(100);
+  padding-left: rem(25);
+  padding-right: rem(25);
+  padding-bottom: rem(74);
+  }
+}
