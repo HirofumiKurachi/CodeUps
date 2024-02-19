@@ -4,3 +4,75 @@
   width: 100%;
   background-color: $green2;
 }
+
+.information.section-title {
+  text-indent: -0.4rem;
+}
+
+.information__text-line {
+  background-color: $green; /* 横線の色 */
+  content: "";
+  height: rem(1.5); /* 横線の高さ */
+  margin-top: rem(-4);
+  flex-grow: 1;
+
+  @include mq("md") {
+    height: rem(1);
+    margin-top: 3px;
+  }
+}
+
+.information__img {
+  margin-top: 26px;
+  aspect-ratio: 345/227;
+  object-fit: cover;
+  width: 100%;
+
+  @include mq("md") {
+    max-width: 540px;
+    aspect-ratio: 540/356;
+    margin-top: 0;
+  }
+}
+
+.information__box {
+  margin-top: 25px;
+
+  @include mq("md") {
+    margin-top: 0;
+    max-width: 492px;
+    width: 100%;
+    margin-left: 48px;
+  }
+}
+
+.information__box-title {
+  font-size: 20px;
+
+  @include mq("md") {
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
+.information__text {
+  margin-top: 7px;
+  font-weight: $regular;
+  font-family: Noto Sans JP;
+  line-height: 1.5;
+}
+
+.information__button-layout {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.information__container {
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+}

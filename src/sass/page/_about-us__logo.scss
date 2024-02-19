@@ -13,5 +13,6 @@
     transform: translate(228%, 110%);
     aspect-ratio: 194/181;
     object-fit: cover;
+    right: calc(50% - min(48%, 40rem));
   }
 }

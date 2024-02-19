@@ -4,3 +4,12 @@
   width: 100%;
   overflow: visible;
 }
+
+.about-us__img::after {
+  content: url(./assets/images/about-us-logo.svg);
+  width: 194px;
+  position: absolute;
+  display: block;
+  aspect-ratio: 194/181;
+  object-fit: cover;
+}
