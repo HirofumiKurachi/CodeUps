@@ -32,13 +32,13 @@
   overflow: visible;
 }
 
-.campaign.section-title {
-  text-indent: -0.9rem;
+// .campaign.section-title {
+//   text-indent: -0.9rem;
 
-  // @include mq("md") {
-  //   text-indent: -2rem;
-  // }
-}
+//   // @include mq("md") {
+//   //   text-indent: -2rem;
+//   // }
+// }
 
 // .campaign-card__img img {
 //   max-width: 100%; /* 画像の幅を親要素に合わせて変更します */
@@ -221,18 +221,23 @@
 /* 前へ次への矢印カスタマイズ */
 .campaign-swiper__button-prev,
 .campaign-swiper__button-next {
-  position: absolute;
   display: none; /* 初期状態では非表示 */
-}
 
-@include mq("md") {
-.campaign-swiper__button-prev,
-.campaign-swiper__button-next {
-    display: block; /* md メディアクエリの場合に表示 */
-    height: 80px;
+  @include mq("md") {
     width: 80px;
+    height: 80px;
+    display: block;
   }
 }
+
+// @include mq("md") {
+// .campaign-swiper__button-prev,
+// .campaign-swiper__button-next {
+//     display: block; /* md メディアクエリの場合に表示 */
+//     height: 80px;
+//     width: 80px;
+//   }
+// }
 
 /* 矢印の擬似要素カスタマイズ */
 .campaign-swiper__button-prev::after,
@@ -240,28 +245,49 @@
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
-  height: 34px;
+  height: 80px;
   margin: auto;
-  width: 34px;
+  width: 80px;
 }
 
 /* 前への矢印カスタマイズ */
 .campaign-swiper__button-prev::after {
-  background-image: url(./assets/images/arrow1.svg);
+
+  @include mq("md") {
+  background-image: url(/assets/images/arrow1.svg);
+  width: 80px;
+  display: block;
+  }
 }
 
 /* 次への矢印カスタマイズ */
 .campaign-swiper__button-next:after  {
-  background-image: url(./assets/images/arrow2.svg);
+
+  @include mq("md") {
+  background-image: url(/assets/images/arrow2.svg);
+  width: 80px;
+  display: block;
+
+  }
 }
 
 // .campaign-slider {
 //   position: relative; /* 相対位置指定 */
 // }
 
-.campaign-slider .campaign-swiper__button-prev,
-.campaign-slider .campaign-swiper__button-next {
-  position: absolute; /* 絶対位置指定 */
-  top: 50%; /* 上端を親要素の上端から50%の位置に配置 */
-  transform: translateY(-50%); /* 垂直方向に中央揃え */
+// .campaign-slider .campaign-swiper__button-prev,
+// .campaign-slider .campaign-swiper__button-next {
+//   position: absolute; /* 絶対位置指定 */
+//   top: 50%; /* 上端を親要素の上端から50%の位置に配置 */
+//   transform: translateY(-50%); /* 垂直方向に中央揃え */
+// }
+
+.campaign-swiper__button-box {
+  display: flex;
+  position: absolute;
+  // z-index: 10;
+  // width: 100%;
+  top: 55.3%;
+  left: 64%;
+  transform: translate(-50%, -50%);
 }
