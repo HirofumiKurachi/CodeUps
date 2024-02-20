@@ -269,9 +269,13 @@ jQuery(function ($) {
                 spaceBetween: 16,
                 slidesPerView: 3,
             },
+            375: {
+                spaceBetween: 24,
+                slidesPerView: 2.5,
+            },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.campaign-swiper__button-next',
+                prevEl: '.campaign-swiper__button-prev',
             },
         });
     }

@@ -8,3 +8,14 @@
     margin-top: rem(120);
   }
 }
+
+// .about-us__img::after {
+//     content: "";
+//     background-image: url(./assets/images/about-us-logo.svg);
+//     width: 194px;
+//     height: auto; /* 画像のアスペクト比を保持するため */
+//     position: absolute;
+//     display: block;
+//     bottom: 0;
+//     right: calc(50% - min(48%, 40rem));
+//   }

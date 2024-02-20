@@ -50,6 +50,7 @@
     padding-right: calc((100vw - 100%) / 2);
     width: 100%;
     margin-top: 10px;
+    position: relative;
 
     // @include mq("md") {
     //   padding-right: calc((100vw - 100%) / 2);
@@ -74,15 +75,16 @@
 
   .campaign-slider-slide {
     display: block; /* inline-block から block に変更 */
-    // box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
     margin-bottom: rem(10); /* 下側のマージンを追加 */
     // margin-right: 10px; /* 右側のマージンを追加 */
     margin-left: rem(1);
     min-width: rem(280);
+    // width: 280px;
     margin-top: rem(17);
 
     @include mq("md") {
       min-width: rem(334);
+      // width: 334px;
     }
   }
 
@@ -91,9 +93,7 @@
   display: block;
   // max-width: rem(280);
   width: 100%;
-  // box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.06);
-  // box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: rem(3) rem(3) rem(4) rem(0) rgba(29, 29, 29, 0.75);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 
   @include mq("md") {
     // max-width: rem(334);
@@ -219,15 +219,15 @@
 // }
 
 /* 前へ次への矢印カスタマイズ */
-.swiper-button-prev,
-.swiper-button-next {
+.campaign-swiper__button-prev,
+.campaign-swiper__button-next {
   position: absolute;
   display: none; /* 初期状態では非表示 */
 }
 
 @include mq("md") {
-  .swiper-button-prev,
-  .swiper-button-next {
+.campaign-swiper__button-prev,
+.campaign-swiper__button-next {
     display: block; /* md メディアクエリの場合に表示 */
     height: 80px;
     width: 80px;
@@ -235,8 +235,8 @@
 }
 
 /* 矢印の擬似要素カスタマイズ */
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.campaign-swiper__button-prev::after,
+.campaign-swiper__button-next:after {
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -246,11 +246,22 @@
 }
 
 /* 前への矢印カスタマイズ */
-.swiper-button-prev::after {
+.campaign-swiper__button-prev::after {
   background-image: url(./assets/images/arrow1.svg);
 }
 
 /* 次への矢印カスタマイズ */
-.swiper-button-next::after {
+.campaign-swiper__button-next:after  {
   background-image: url(./assets/images/arrow2.svg);
+}
+
+// .campaign-slider {
+//   position: relative; /* 相対位置指定 */
+// }
+
+.campaign-slider .campaign-swiper__button-prev,
+.campaign-slider .campaign-swiper__button-next {
+  position: absolute; /* 絶対位置指定 */
+  top: 50%; /* 上端を親要素の上端から50%の位置に配置 */
+  transform: translateY(-50%); /* 垂直方向に中央揃え */
 }
