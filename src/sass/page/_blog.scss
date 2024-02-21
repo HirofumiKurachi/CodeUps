@@ -4,8 +4,17 @@
   width: 100%;
   @include mq("md") {
   background-image: url(/assets/images/blog-img1.jpg);
+  height: 65%;
+  background-size: cover;
   }
 }
+// .blog {
+//   width: 100%;
+//   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/assets/images/blog-img1.jpg);
+//   background-size: 50% auto, cover;
+// }
+
+/* 他のスタイルルールは省略 */
 
 
 .blog__inner.inner {
@@ -113,8 +122,8 @@
     margin-top: 80px;
   }
 }
-// .blog.section-title {
-//   @include mq("md") {
-//     color: transparent;
-//   }
-// }
+.blog.section-title {
+  @include mq("md") {
+    background-image: none;
+  }
+}
