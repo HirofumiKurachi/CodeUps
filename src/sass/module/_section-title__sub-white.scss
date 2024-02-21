@@ -1,8 +1,10 @@
 @use "global" as *;
 
 .section-title__sub-white {
-  font-size: rem(12);
-  color: $white;
-  margin-top: rem(3);
+
+    font-size: rem(12);
+    color: $white;
+    margin-top: rem(3);
+
   // background-color: transparent;
 }

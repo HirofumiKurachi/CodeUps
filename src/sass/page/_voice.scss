@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.voice__inner.inner {
+  padding-left: rem(15);
+  padding-right: rem(15);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: rem(81);
+  padding-bottom: rem(74);
+
+  @include mq("md") {
+    padding-top: rem(133);
+    padding-left: rem(25);
+    padding-right: rem(25);
+    padding-bottom: 0;
+  }
+  }

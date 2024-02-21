@@ -16,6 +16,22 @@
 
 /* 他のスタイルルールは省略 */
 
+.blog__inner {
+  position: relative;
+}
+
+.blog__inner::before {
+  @include mq("md") {
+      position: absolute;
+      content: "";
+      background: url(/assets/images/blog-logo.svg) center center / contain no-repeat;
+      width: rem(437);
+      height: rem(188);
+      // bottom: rem(130);
+      bottom: 74%;
+      left: calc(50% - min(48vw, rem(605)));
+  }
+}
 
 .blog__inner.inner {
   padding-top: 78px;
