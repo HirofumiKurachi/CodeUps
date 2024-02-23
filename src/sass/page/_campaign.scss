@@ -257,6 +257,7 @@
   background-image: url(/assets/images/arrow1.svg);
   width: 80px;
   display: block;
+  position: absolute;
   }
 }
 
@@ -267,7 +268,8 @@
   background-image: url(/assets/images/arrow2.svg);
   width: 80px;
   display: block;
-
+  position: absolute;
+  margin-left: 80px;
   }
 }
 
@@ -284,10 +286,11 @@
 
 .campaign-swiper__button-box {
   display: flex;
-  position: absolute;
+  position: relative;
   // z-index: 10;
   // width: 100%;
-  top: 55.3%;
-  left: 64%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(130%, -90%);
+  max-width: 240px;
 }
