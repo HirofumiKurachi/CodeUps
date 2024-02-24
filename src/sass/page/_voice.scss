@@ -9,7 +9,7 @@
   padding-bottom: rem(85);
 
   @include mq("md") {
-    padding-top: rem(471);
+    padding-top: rem(135);
     padding-left: rem(25);
     padding-right: rem(25);
     padding-bottom: 140px;
@@ -28,6 +28,8 @@
       max-width: 520px;
       padding-left: 24px;
       padding-right: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
       margin-top: 0;
     }
   }
@@ -74,7 +76,7 @@
 // }
 
     @include mq("md") {
-    padding: rem(7) 20px rem(3.5) 20px;
+    padding: 8px 15px 7px 15px;
     // max-width: 117px;
 
     }
@@ -87,6 +89,8 @@
 
     @include mq("md") {
       font-size: 24px;
+      margin-top: 13px;
+      line-height: 1.4;
     }
   }
 
@@ -98,8 +102,9 @@
     flex-grow: 1;
 
     @include mq("md") {
-      height: rem(1);
-      margin-top: rem(7);
+      // height: rem(1);
+      max-width: 276px;
+      // margin-top: -3px;
     }
   }
 
@@ -114,6 +119,7 @@
 
     @include mq("md") {
     max-width: 180px;
+    margin-left: 16px;
     }
   }
 
@@ -127,12 +133,22 @@
       }
   }
 
+  .voice-card__text-box {
+    @include mq("md") {
+      margin-top: 40px;
+    }
+  }
+
   .voice-card__text-sub {
     font-size: 16px;
     font-weight: $regular;
     line-height: 1.5;
     font-family: Noto Sans JP;
     margin-top: 15px;
+
+    @include mq("md") {
+      margin-top: 0;
+    }
   }
 
   .voice-card__title-box {
@@ -162,7 +178,7 @@
     @include mq("md") {
       display: flex;
       // justify-content: space-between;
-      margin-top: 30px;
+      margin-top: 26px;
     }
   }
 
@@ -187,8 +203,8 @@
         width: rem(301);
         height: rem(138);
         // bottom: rem(130);
-        bottom: 55%;
-        left: calc(50% - min(48vw, rem(605)));
+        bottom: 82.3%;
+        left: calc(50% - min(48vw, rem(620)));
     }
   }
 
@@ -200,7 +216,7 @@
         width: rem(71);
         height: rem(162);
         // bottom: rem(130);
-        bottom: 8%;
-        right: calc(50% - min(48vw, rem(550)));
+        bottom: 7.7%;
+        right: calc(50% - min(48vw, rem(540)));
     }
   }
