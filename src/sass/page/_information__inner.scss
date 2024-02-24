@@ -9,10 +9,10 @@ padding-top: rem(78);
 padding-bottom: rem(84);
 
 @include mq("md") {
-  padding-top: 90px;
+  padding-top: 91px;
   padding-left: rem(23);
-  padding-right: rem(25);
+  padding-right: rem(27);
   padding-bottom: rem(74);
-  margin-top: -74px;
+  // margin-top: 10px;
   }
 }
