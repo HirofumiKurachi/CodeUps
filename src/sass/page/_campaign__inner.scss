@@ -9,8 +9,6 @@
 }
 
 .campaign__inner.inner {
-  // padding-right: 0;
-  padding-left: rem(13);
 
   @include mq("md") {
     padding-left: rem(25);

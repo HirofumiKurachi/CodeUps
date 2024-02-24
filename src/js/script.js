@@ -262,17 +262,34 @@ jQuery(function ($) {
     function initializeCampaignSwiper() {
         campaign_swiper = new Swiper(".campaign-slider", {
             loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 24,
             grabCursor: true,
-            slidesPerView: 3,
-            spaceBetween: 40,
-            768: {
-                spaceBetween: 16,
-                slidesPerView: 3,
+            breakpoints: {
+                768: {
+                    spaceBetween: 16,
+                    slidesPerView: 3,
+                },
+                // 1024: {
+                //     spaceBetween: 24,
+                //     slidesPerView: auto,
+                // },
             },
-            375: {
-                spaceBetween: 24,
-                slidesPerView: 2.5,
-            },
+
+    //         loop: true,
+    // slidesPerView: "auto",
+    // spaceBetween: 24,
+    // grabCursor: true,
+    // breakpoints: {
+    //   768: {
+    //     spaceBetween: 16,
+    //     slidesPerView: 3,
+    //   },
+    //   1024: {
+    //     spaceBetween: 40,
+    //     slidesPerView: 3,
+    //   },
+    // },
             navigation: {
                 nextEl: '.campaign-swiper__button-next',
                 prevEl: '.campaign-swiper__button-prev',

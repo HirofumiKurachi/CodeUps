@@ -1,8 +1,10 @@
 @use "global" as *;
 
 .campaign-button-layout {
-  margin-top: rem(32);
-  padding-left: rem(68);
+  margin-top: rem(30);
+  // padding-left: rem(68);
+  display: flex;
+  justify-content: center;
 
   @include mq("md") {
     display: flex;

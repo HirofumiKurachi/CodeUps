@@ -77,15 +77,15 @@
     display: block; /* inline-block から block に変更 */
     margin-bottom: rem(10); /* 下側のマージンを追加 */
     // margin-right: 10px; /* 右側のマージンを追加 */
-    margin-left: rem(1);
-    min-width: rem(280);
+    // margin-left: rem(1);
+    width: rem(280);
     // width: 280px;
     margin-top: rem(17);
 
-    @include mq("md") {
-      min-width: rem(334);
-      // width: 334px;
-    }
+    // @include mq("md") {
+    //   min-width: rem(333);
+    //   // width: 334px;
+    // }
   }
 
 .campaign-card__item {
@@ -137,7 +137,7 @@
 .card__body {
   padding-top: rem(15);
   padding-right: rem(17);
-  padding-bottom: rem(13);
+  padding-bottom: rem(15);
   padding-left: rem(16);
 
   @include mq("md") {
