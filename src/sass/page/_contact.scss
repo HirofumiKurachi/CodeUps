@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: rem(80);
-  padding-bottom: rem(100);
+  padding-bottom: rem(90);
 
   @include mq("md") {
     padding-top: rem(471);
@@ -42,14 +42,28 @@
     max-width: 295px;
     margin-left: auto;
     margin-right: auto;
+
+    @include mq("md") {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 440px;
+    }
   }
 
   .contact-information {
     margin-top: 16px;
+
+    @include mq("md") {
+      display: flex;
+    }
   }
 
   .contact-information__items {
     text-align: center;
+
+    @include mq("md") {
+      text-align: left;
+    }
 
   }
 
@@ -68,6 +82,11 @@
     max-width: 295px;
     height: 160px;
     margin-top: 16px;
+
+    @include mq("md") {
+      height: 273px;
+      height: 148px;
+    }
 
   }
 
@@ -101,8 +120,10 @@
   }
 
   .contact.section-title {
-    margin-top: 17px;
+    margin-top: 16px;
   }
+
+
 
   .contact__inner {
     position: relative;
@@ -115,7 +136,7 @@
     width: rem(109);
     height: rem(50);
     // bottom: rem(130);
-    bottom: 86.7%;
+    bottom: 87.5%;
     right: 4%;
     // right: calc(50% - min(48vw, 600px));
 
@@ -130,5 +151,5 @@
     position: absolute;
     content: "";
     right: 3.8%;
-    bottom: 1.5%;
+    bottom: 0%;
   }

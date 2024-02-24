@@ -49,7 +49,7 @@
     // padding-right: calc(50% - 50vw);
     padding-right: calc((100vw - 100%) / 2);
     width: 100%;
-    margin-top: 10px;
+    margin-top: 22px;
     position: relative;
 
     // @include mq("md") {
@@ -107,11 +107,14 @@
   padding: rem(7) rem(12) rem(3.5) rem(12);
   max-width: rem(108);
   white-space: nowrap;
-  // padding-top: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
+  display: inline-block;
 
   @include mq("md") {
-  padding: rem(7) 20px rem(3.5) 20px;
-  max-width: 117px;
+  padding: 8px 15px 5px 14px;
+  // max-width: 117px;
 
   }
 }
@@ -119,6 +122,10 @@
 .card-text__title-sub {
   margin-top: rem(7);
   font-weight: $medium;
+
+  @include mq("md") {
+    margin-top: 0px;
+  }
 }
 
 .text-line {
@@ -130,7 +137,6 @@
 
   @include mq("md") {
     height: rem(1);
-    margin-top: rem(7);
   }
 }
 
@@ -141,15 +147,16 @@
   padding-left: rem(16);
 
   @include mq("md") {
-    padding-top: rem(24);
+    padding-top: rem(22);
     padding-right: rem(17);
-    padding-bottom: rem(40);
+    padding-bottom: rem(30);
     padding-left: rem(17);
   }
 }
 
 .card-price {
-  margin-top: rem(11);
+  margin-top: rem(19);
+
 }
 
 .card-price__text {
@@ -157,6 +164,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: $regular;
+
+  @include mq("md") {
+    font-size: 16px;
+  }
 }
 
 .card-price-box {
@@ -173,6 +185,12 @@
   font-weight: $bold;
   color: $green;
   margin-left: 18px;
+
+  @include mq("md") {
+    font-size: 40px;
+    margin-top: -5px;
+    margin-left: 27px;
+  }
 }
 
 .card-price__old-strike-through {
@@ -181,6 +199,11 @@
   text-decoration: line-through; /* 打ち消し線を設定します */
   text-decoration-color: $red; /* 打ち消し線の色を赤色に設定します */
   text-decoration-thickness: rem(3); /* 打ち消し線の太さを2pxに設定します */
+
+  @include mq("md") {
+    font-size: 24px;
+    line-height: 1;
+  }
 }
 
 // /* 前へ次への矢印カスタマイズ */
@@ -258,6 +281,9 @@
   width: 80px;
   display: block;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-164%, -42%);
   }
 }
 
@@ -269,7 +295,10 @@
   width: 80px;
   display: block;
   position: absolute;
-  margin-left: 80px;
+  // margin-left: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(35%, -44%);
   }
 }
 

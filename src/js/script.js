@@ -267,7 +267,7 @@ jQuery(function ($) {
             grabCursor: true,
             breakpoints: {
                 768: {
-                    spaceBetween: 16,
+                    spaceBetween: 40,
                     slidesPerView: 3,
                 },
                 // 1024: {

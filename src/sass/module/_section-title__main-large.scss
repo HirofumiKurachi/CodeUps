@@ -4,6 +4,7 @@
   font-size: rem(80);
   // letter-spacing: 0.01em;
   line-height: 1.4;
+  margin-bottom: -25px;
 
   @include mq("md") {
     font-size: rem(40);
@@ -13,3 +14,11 @@
 .section-title__main-large::first-letter {
   color: $green; /* 先頭の文字の色を変更 */
 }
+
+// .section-title__main-large::before {
+//   margin-top: -10px;
+// }
+
+// .section-title__main-large::after {
+//   margin-bottom: -10px;
+// }
