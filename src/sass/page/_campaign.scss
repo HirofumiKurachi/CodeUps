@@ -49,12 +49,12 @@
     // padding-right: calc(50% - 50vw);
     padding-right: calc((100vw - 100%) / 2);
     width: 100%;
-    margin-top: 22px;
+    margin-top: 10px;
     position: relative;
 
-    // @include mq("md") {
-    //   padding-right: calc((100vw - 100%) / 2);
-    // }
+    @include mq("md") {
+      margin-top: 22px;
+    }
   }
 
 // .campaign-slider-wrapper {
@@ -104,7 +104,8 @@
   font-size: rem(12);
   color: $green;
   border: rem(1) solid $green;
-  padding: rem(7) rem(12) rem(3.5) rem(12);
+  padding: rem(7) rem(10) rem(3.5) rem(12);
+  // padding: 7px 12px 3.5px 12px;
   max-width: rem(108);
   white-space: nowrap;
   box-sizing: border-box;
@@ -120,12 +121,10 @@
 }
 
 .card-text__title-sub {
-  margin-top: rem(7);
+  // margin-top: 7px;
   font-weight: $medium;
 
-  @include mq("md") {
-    margin-top: 0px;
-  }
+
 }
 
 .text-line {
@@ -143,7 +142,7 @@
 .card__body {
   padding-top: rem(15);
   padding-right: rem(17);
-  padding-bottom: rem(15);
+  padding-bottom: rem(15  );
   padding-left: rem(16);
 
   @include mq("md") {
@@ -155,7 +154,11 @@
 }
 
 .card-price {
-  margin-top: rem(19);
+  margin-top: 10px;
+
+  @include mq("md") {
+    margin-top: rem(19);
+  }
 
 }
 
@@ -281,9 +284,9 @@
   width: 80px;
   display: block;
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-164%, -42%);
+  transform: translate(-164%, -560%);
   }
 }
 
@@ -296,9 +299,9 @@
   display: block;
   position: absolute;
   // margin-left: 80px;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(35%, -44%);
+  transform: translate(35%, -560%);
   }
 }
 
