@@ -9,7 +9,7 @@ padding-top: rem(81);
 padding-bottom: rem(74);
 
 @include mq("md") {
-  padding-top: rem(133);
+  padding-top: rem(135);
   padding-left: rem(25);
   padding-right: rem(25);
   padding-bottom: 0;
@@ -34,7 +34,7 @@ padding-bottom: rem(74);
       background: url(/assets/images/about-us-logo.svg) center center / contain no-repeat;
       width: rem(194);
       height: rem(181);
-      bottom: rem(130);
+      bottom: rem(147);
       right: calc(50% - min(48vw, rem(637)));
   }
 }
