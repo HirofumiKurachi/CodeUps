@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: rem(80);
-  padding-bottom: rem(85);
+  padding-bottom: rem(100);
 
   @include mq("md") {
     padding-top: rem(471);
@@ -105,4 +105,33 @@
 
   .contact.section-title {
     margin-top: 41px;
+  }
+
+  .contact__inner {
+    position: relative;
+  }
+
+  .contact__inner::before {
+    position: absolute;
+    content: "";
+    background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
+    width: rem(109);
+    height: rem(50);
+    // bottom: rem(130);
+    bottom: 86.7%;
+    right: 4%;
+    // right: calc(50% - min(48vw, 600px));
+
+  }
+
+  .top-button-img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .contact__top-button {
+    position: absolute;
+    content: "";
+    right: 3.5%;
+    bottom: 1%;
   }
