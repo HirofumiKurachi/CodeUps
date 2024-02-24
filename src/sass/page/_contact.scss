@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.contact__inner.inner {
+  padding-left: rem(30);
+  padding-right: rem(30);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: rem(80);
+  padding-bottom: rem(85);
+
+  @include mq("md") {
+    padding-top: rem(471);
+    padding-left: rem(25);
+    padding-right: rem(25);
+    padding-bottom: 140px;
+    }
+  }
+
+  .contact__logo-layout {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__logo {
+    max-width: 174px;
+    filter: drop-shadow( 0px 3px 3px rgba(0, 0, 0, 0.25));
+  }
+
+  .contact-text-line {
+    background-color: $green; /* 横線の色 */
+    content: "";
+    height: rem(1.5); /* 横線の高さ */
+    margin-top: rem(5);
+    flex-grow: 1;
+
+    @include mq("md") {
+      height: rem(1);
+      margin-top: rem(7);
+    }
+  }
+
+  .contact__container {
+    max-width: 295px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-information {
+    margin-top: 16px;
+  }
+
+  .contact-information__items {
+    text-align: center;
+
+  }
+
+  .contact-information__item:not(:first-child) {
+    margin-top: 4px;
+  }
+
+  .contact-information__item-text {
+    font-size: 16px;
+    line-height: calc(24/16);
+    font-weight: $regular;
+    font-family: Noto Sans JP;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  .contact__img {
+    max-width: 295px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 16px;
+
+  }
+
+  .contact__img img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 295/160;
+  }
+
+  .contact-section-title__text {
+    color: $green;
+    font-size: 14px;
+    line-height: calc(18/14);
+    font-weight: $regular;
+    font-family: Noto Sans JP;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 7px;
+  }
+
+  .contact-button-layout {
+    margin-top: 39px;
+    // padding-left: rem(68);
+    display: flex;
+    justify-content: center;
+
+    @include mq("md") {
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      margin-top: rem(80);
+    }
+  }
+
+  .contact.section-title {
+    margin-top: 41px;
+  }
