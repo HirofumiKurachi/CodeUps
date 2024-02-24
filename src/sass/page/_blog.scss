@@ -1,12 +1,30 @@
 @use "global" as *;
 
 .blog {
-  width: 100%;
-  @include mq("md") {
-  background-image: url(/assets/images/blog-img1.jpg);
-  height: 65%;
-  background-size: cover;
+  // width: 100%;
+  position: relative;
+  // @include mq("md") {
+  // // background-image: url(/assets/images/blog-img1.jpg);
+  // height: 65%;
+  // background-size: cover;
   }
+
+
+.blog::after {
+  @include mq("md") {
+    background-image: url(/assets/images/blog-img1.jpg);
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    height: 500px;
+    width: 100%;
+    z-index: -999;
+  }
+}
+
+.blog-section-title {
+  text-align: center;
 }
 // .blog {
 //   width: 100%;
