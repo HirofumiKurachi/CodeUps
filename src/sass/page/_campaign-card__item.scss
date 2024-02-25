@@ -1,6 +1,7 @@
 @use "global" as *;
 
-// .campaign-card__item {
-//   // max-width: rem(280);
-//   // margin-right: calc( 50% - 50vw);
-// }
+.campaign-card__item {
+  display: block;
+  width: 100%;
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+}
