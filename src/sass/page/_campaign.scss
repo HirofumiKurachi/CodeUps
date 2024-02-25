@@ -7,7 +7,7 @@
 
 
 
-.card-text__title {
+.campaign-card-text__title {
   font-size: rem(12);
   color: $green;
   border: rem(1) solid $green;
@@ -24,11 +24,11 @@
   }
 }
 
-.card-text__title-sub {
+.campaign-card-text__title-sub {
   font-weight: $medium;
 }
 
-.text-line {
+.campaign-text-line {
   background-color: $green; /* 横線の色 */
   content: "";
   height: rem(1.5); /* 横線の高さ */
@@ -40,7 +40,7 @@
   }
 }
 
-.card__body {
+.campaign-card__body {
   padding-top: rem(15);
   padding-right: rem(17);
   padding-bottom: rem(15  );
@@ -54,7 +54,7 @@
   }
 }
 
-.card-price {
+.campaign-card-price {
   margin-top: rem(10);
 
   @include mq("md") {
@@ -63,7 +63,7 @@
 
 }
 
-.card-price__text {
+.campaign-card-price__text {
   font-size: rem(14);
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@
   }
 }
 
-.card-price-box {
+.campaign-card-price-box {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -84,7 +84,7 @@
 }
 
 
-.card-price__new {
+.campaign-card-price__new {
   font-size: rem(32);
   font-weight: $bold;
   color: $green;
@@ -97,7 +97,7 @@
   }
 }
 
-.card-price__old-strike-through {
+.campaign-card-price__old-strike-through {
   font-size: rem(20);
   font-weight: $bold;
   text-decoration: line-through; /* 打ち消し線を設定します */
