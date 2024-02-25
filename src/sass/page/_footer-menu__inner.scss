@@ -3,6 +3,31 @@
 .footer-menu__inner {
 padding-left: rem(15);
 padding-right: rem(15);
+padding-top: 30px;
+padding-bottom: 50px;
 margin-left: auto;
 margin-right: auto;
+position: relative;
+}
+
+.footer-menu__inner::before {
+  position: absolute;
+  content: "";
+  background: url(/assets/images/facebook-logo.svg) center center / contain no-repeat;
+  width: rem(19.5);
+  height: rem(19.5);
+  // bottom: rem(130);
+  bottom: 82.3%;
+  left: calc(50% - min(48vw, rem(620)));
+}
+
+.footer-menu__inner.inner::after {
+  position: absolute;
+  content: "";
+  background: url(/assets/images/insta-logo.svg) center center / contain no-repeat;
+  width: rem(19.5);
+  height: rem(19.5);
+  // bottom: rem(130);
+  bottom: 82.3%;
+  left: calc(50% - min(48vw, rem(620)));
 }

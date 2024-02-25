@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: rem(80);
-  padding-bottom: rem(90);
+  padding-bottom: 105px;
 
   @include mq("md") {
     padding-top: 143px;
@@ -192,7 +192,7 @@
     position: absolute;
     content: "";
     right: 3.8%;
-    bottom: 0%;
+    bottom: 2%;
 
     @include mq("md") {
       right: -12%;
