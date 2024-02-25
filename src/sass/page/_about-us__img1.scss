@@ -4,10 +4,11 @@
   position: absolute;
   aspect-ratio: 128/194;
   width: 37%;
-  top: -13%;
+  top: 0;
+  left: 0;
   display: block;
 
-  @include mq("md") {
-    top: -14%;
-  }
+  // @include mq("md") {
+  //   top: -14%;
+  // }
 }

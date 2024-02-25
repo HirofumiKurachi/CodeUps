@@ -2,9 +2,13 @@
 
 .about-us__img {
   position: relative;
-  margin-top: rem(52);
+  margin-top: rem(27);
+  aspect-ratio: 345/212;
+  width: 100%;
 
   @include mq("md") {
-    margin-top: rem(120);
+    margin-top: rem(39);
+  aspect-ratio: 1080/661;
+
   }
 }
