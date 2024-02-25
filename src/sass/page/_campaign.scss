@@ -3,18 +3,20 @@
 .campaign {
   width: 100%;
   overflow: visible;
+  // position: relative;
 }
 
 
-  .campaign-slider {
+  .campaign-slider.swiper {
     box-sizing: content-box;
     padding-right: calc((100vw - 100%) / 2);
     width: 100%;
     margin-top: 10px;
-    position: relative;
+
 
     @include mq("md") {
       margin-top: 22px;
+      position: relative;
     }
   }
 
@@ -145,27 +147,32 @@
   }
 }
 
-/* 矢印の擬似要素カスタマイズ */
-.campaign-swiper__button-prev::after,
-.campaign-swiper__button-next:after {
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 80px;
-  margin: auto;
-  width: 80px;
-}
+// /* 矢印の擬似要素カスタマイズ */
+// .campaign-swiper__button-prev::after,
+// .campaign-swiper__button-next:after {
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   content: "";
+//   height: 80px;
+//   margin: auto;
+//   width: 80px;
+// }
 
 /* 前への矢印カスタマイズ */
 .campaign-swiper__button-prev::after {
 
   @include mq("md") {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
   background-image: url(/assets/images/arrow1.svg);
   width: 80px;
+  height: 80px;
+  margin: auto;
   display: block;
   position: absolute;
-  bottom: 610%;
-  left: calc(50% - min(48vw, rem(131)));
+  top: 0;
+  right: calc(50% - min(48vw, rem(-27)));
   }
 }
 
@@ -173,15 +180,24 @@
 .campaign-swiper__button-next:after  {
 
   @include mq("md") {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
   background-image: url(/assets/images/arrow2.svg);
   width: 80px;
+  height: 80px;
+  margin: auto;
   display: block;
   position: absolute;
-  bottom: 610%;
-  left: calc(50% - min(48vw, rem(-27)));
+  top: 0;
+  right: calc(50% - min(48vw, rem(131)));
   }
 }
 
+// .campaign-swiper__button-box {
+//   display: flex;
+//   position: absolute;
+// }
 
 .campaign-swiper__button-box {
   display: flex;
