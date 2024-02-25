@@ -5,4 +5,10 @@
   display: grid;
   width: 50%;
   max-width: rem(200);
+
+  @include mq("md") {
+    display: flex;
+    max-width: 436px;
+    justify-content: space-between;
+  }
 }

@@ -5,6 +5,10 @@
   width: 100%;
   padding-left: rem(23);
   margin-top: rem(54);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
 }
 
 .footer-menu__items-b {
@@ -12,4 +16,8 @@
   width: 100%;
   padding-left: rem(22);
   margin-top: rem(16);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
 }
