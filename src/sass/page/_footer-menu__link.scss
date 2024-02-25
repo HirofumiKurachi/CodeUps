@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.footer-menu__link-a {
+  width: 100%;
+  font-size: rem(16);
+  text-align: center;
+  color: $white;
+  display: flex;
+  padding-top: rem(12);
+  padding-bottom: rem(10);
+}
+
+.footer-menu__link-b {
+  width: 100%;
+  font-size: rem(16);
+  text-align: center;
+  color: $white;
+  display: flex;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  margin-top: rem(17.3);
+}
+
+.footer-menu__link-a::before {
+  content: '';
+  width: rem(18);/*画像の幅*/
+  height: rem(18);/*画像の高さ*/
+  background-image: url(../images/drawer-logo.svg);
+  background-size: contain;
+  top: rem(9);
+  left: rem(-23);
+  position: absolute;
+}
+.footer-menu__link-b::before {
+  content: '';
+  width: rem(18);/*画像の幅*/
+  height: rem(18);/*画像の高さ*/
+  background-image: url(../images/drawer-logo.svg);
+  background-size: contain;
+  top: rem(9);
+  left: rem(-23);
+  position: absolute;
+}

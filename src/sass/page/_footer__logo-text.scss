@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.footer__logo-text {
+  font-size: rem(16);
+  color: $white;
+  font-weight: $bold;
+  text-align: left;
+  line-height: 1.125;
+}

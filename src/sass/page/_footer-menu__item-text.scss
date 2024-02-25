@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.footer-menu__item-text {
+  padding-top: rem(11);
+  padding-bottom: rem(7);
+  color: $white;
+  vertical-align: middle;
+  list-style-type: none;
+}
+
+.footer-menu__item-text-b {
+  padding-top: rem(9);
+  padding-bottom: rem(9);
+  color: $white;
+  vertical-align: middle;
+  list-style-type: none;
+}
