@@ -5,8 +5,9 @@
   object-fit: cover;
   width: 82%;
   display: block;
-  margin-left: auto; /* 左側の余白を自動計算 */
-  margin-right: 0; /* 右側の余白を0に設定 */
+  max-width: rem(281);
+  margin-left: auto;
+  margin-right: 0;
 
   @include mq("md") {
     aspect-ratio: 880/581;
