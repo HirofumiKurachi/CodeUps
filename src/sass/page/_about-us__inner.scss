@@ -13,7 +13,7 @@ padding-bottom: rem(74);
   padding-left: rem(25);
   padding-right: rem(25);
   padding-bottom: 0;
-  height: 1075px;
+  height: rem(1075);
 }
 }
 
@@ -21,12 +21,6 @@ padding-bottom: rem(74);
   position: relative;
 }
 
-// .about-us__inner::after {
-//   @include mq("md") {
-//     position: absolute;
-//     content: "";
-//   }
-// }
 
 .about-us__inner::after {
   @include mq("md") {
@@ -35,7 +29,6 @@ padding-bottom: rem(74);
       background: url(/assets/images/about-us-logo.svg) center center / contain no-repeat;
       width: rem(194);
       height: rem(181);
-      // bottom: 7%;
       right: calc(50% - min(48vw, rem(637)));
       bottom: calc(50% - min(48vw, rem(465)));
 

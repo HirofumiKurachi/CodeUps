@@ -8,9 +8,6 @@
   right: 0;
   bottom: 0;
   position: absolute;
-  // max-width: rem(281);
-  // margin-left: auto;
-  // margin-right: 0;
 
   @include mq("md") {
     aspect-ratio: 880/581;
