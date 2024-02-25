@@ -3,7 +3,6 @@
 .campaign {
   width: 100%;
   overflow: visible;
-  // position: relative;
 }
 
 
@@ -11,18 +10,18 @@
     box-sizing: content-box;
     padding-right: calc((100vw - 100%) / 2);
     width: 100%;
-    margin-top: 10px;
+    margin-top: rem(10);
 
 
     @include mq("md") {
-      margin-top: 22px;
+      margin-top: rem(22);
       position: relative;
     }
   }
 
   .campaign-slider-slide {
-    display: block; /* inline-block から block に変更 */
-    margin-bottom: rem(10); /* 下側のマージンを追加 */
+    display: block;
+    margin-bottom: rem(10);
     width: rem(280);
     margin-top: rem(17);
   }
@@ -30,7 +29,7 @@
 .campaign-card__item {
   display: block;
   width: 100%;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
 }
 
 .card-text__title {
@@ -46,7 +45,7 @@
   display: inline-block;
 
   @include mq("md") {
-  padding: 8px 15px 5px 14px;
+  padding: rem(8) rem(15) rem(5) rem(14);
   }
 }
 
@@ -81,7 +80,7 @@
 }
 
 .card-price {
-  margin-top: 10px;
+  margin-top: rem(10);
 
   @include mq("md") {
     margin-top: rem(19);
@@ -97,7 +96,7 @@
   font-weight: $regular;
 
   @include mq("md") {
-    font-size: 16px;
+    font-size: rem(16);
     text-indent: -1rem;
   }
 }
@@ -114,12 +113,12 @@
   font-size: rem(32);
   font-weight: $bold;
   color: $green;
-  margin-left: 18px;
+  margin-left: rem(18);
 
   @include mq("md") {
     font-size: rem(40);
-    margin-top: -5px;
-    margin-left: 27px;
+    margin-top: rem(-5);
+    margin-left: rem(27);
   }
 }
 
@@ -131,7 +130,7 @@
   text-decoration-thickness: rem(3); /* 打ち消し線の太さを2pxに設定します */
 
   @include mq("md") {
-    font-size: 24px;
+    font-size: rem(24);
     line-height: 1;
   }
 }
@@ -139,25 +138,14 @@
 /* 前へ次への矢印カスタマイズ */
 .campaign-swiper__button-prev,
 .campaign-swiper__button-next {
-  display: none; /* 初期状態では非表示 */
+  display: none;
 
   @include mq("md") {
-    width: 80px;
-    height: 80px;
+    width: rem(80);
+    height: rem(80);
     display: block;
   }
 }
-
-// /* 矢印の擬似要素カスタマイズ */
-// .campaign-swiper__button-prev::after,
-// .campaign-swiper__button-next:after {
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   content: "";
-//   height: 80px;
-//   margin: auto;
-//   width: 80px;
-// }
 
 /* 前への矢印カスタマイズ */
 .campaign-swiper__button-prev::after {
@@ -167,8 +155,8 @@
   background-size: contain;
   content: "";
   background-image: url(/assets/images/arrow1.svg);
-  width: 80px;
-  height: 80px;
+  width: rem(80);
+  height: rem(80);
   margin: auto;
   display: block;
   position: absolute;
@@ -185,8 +173,8 @@
   background-size: contain;
   content: "";
   background-image: url(/assets/images/arrow2.svg);
-  width: 80px;
-  height: 80px;
+  width: rem(80);
+  height: rem(80);
   margin: auto;
   display: block;
   position: absolute;
@@ -201,8 +189,7 @@
   position: absolute;
   top: -19%;
   right: 5%;
-  // transform: translate(130%, -90%);
-  max-width: 240px;
+  max-width: rem(240);
 }
 
 
