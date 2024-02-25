@@ -7,7 +7,7 @@
 }
 
 
-  .campaign-slider.swiper {
+  .campaign-slider {
     box-sizing: content-box;
     padding-right: calc((100vw - 100%) / 2);
     width: 100%;
@@ -194,16 +194,17 @@
   }
 }
 
-// .campaign-swiper__button-box {
-//   display: flex;
-//   position: absolute;
-// }
 
 .campaign-swiper__button-box {
   display: flex;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(130%, -90%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  // transform: translate(130%, -90%);
   max-width: 240px;
+}
+
+
+.campaign-swiper__container {
+  position: relative;
 }
