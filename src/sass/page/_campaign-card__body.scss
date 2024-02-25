@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.campaign-card__body {
+  padding-top: rem(15);
+  padding-right: rem(17);
+  padding-bottom: rem(15  );
+  padding-left: rem(16);
+
+  @include mq("md") {
+    padding-top: rem(22);
+    padding-right: rem(17);
+    padding-bottom: rem(30);
+    padding-left: rem(17);
+  }
+}

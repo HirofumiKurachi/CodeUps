@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.campaign-card-price__text {
+  font-size: rem(14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $regular;
+
+  @include mq("md") {
+    font-size: rem(16);
+    text-indent: -1rem;
+  }
+}

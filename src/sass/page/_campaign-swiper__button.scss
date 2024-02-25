@@ -1,0 +1,49 @@
+@use "global" as *;
+
+/* 前へ次への矢印カスタマイズ */
+.campaign-swiper__button-prev,
+.campaign-swiper__button-next {
+  display: none;
+
+  @include mq("md") {
+    width: rem(80);
+    height: rem(80);
+    display: block;
+  }
+}
+
+/* 前への矢印カスタマイズ */
+.campaign-swiper__button-prev::after {
+
+  @include mq("md") {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  background-image: url(/assets/images/arrow1.svg);
+  width: rem(80);
+  height: rem(80);
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: calc(50% - min(48vw, rem(-27)));
+  }
+}
+
+/* 次への矢印カスタマイズ */
+.campaign-swiper__button-next:after  {
+
+  @include mq("md") {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  background-image: url(/assets/images/arrow2.svg);
+  width: rem(80);
+  height: rem(80);
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: calc(50% - min(48vw, rem(133)));
+  }
+}
