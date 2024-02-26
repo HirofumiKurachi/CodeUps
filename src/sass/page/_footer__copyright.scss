@@ -10,6 +10,8 @@
   padding-right: rem(14);
   padding-bottom: rem(53);
   background-color: $green;
+  display: block;
+  width: 100%;
 
   @include mq("md") {
     padding-bottom: rem(0);

@@ -172,7 +172,7 @@
     @include mq("md") {
       width: 301px;
       height: 138px;
-      bottom: 65.4%;
+      bottom: 66.4%;
       right: calc(50% - min(48vw, 669px));
     }
 
@@ -196,8 +196,9 @@
     bottom: 2%;
 
     @include mq("md") {
-      // right: -12%;
-    right: calc(50% - min(48vw, rem(620)));
+    bottom: 3%;
+    // right: -12%;
+    right: calc(50% - min(49vw, rem(700)));
 
 
     }
