@@ -3,4 +3,10 @@
 .footer-menu__container {
   display: flex;
   justify-content: center;
+
+  @include mq("md") {
+    justify-content: left;
+    margin-top: 15px;
+    white-space: nowrap;
+  }
 }

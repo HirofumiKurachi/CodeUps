@@ -8,6 +8,12 @@ padding-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
 // position: relative;
+
+@include mq("md") {
+  padding-left: 180px;
+  padding-top: 80px;
+  padding-right: 252px;
+}
 }
 
 // .footer-menu__inner::before {

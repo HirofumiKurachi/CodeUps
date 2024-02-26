@@ -3,10 +3,10 @@
 .footer {
   // height: 74px;
   background-color: $green;
-  padding: 0 14px 56px 14px;
+  // padding: 0 14px 56px 14px;
 
-  @include mq("md") {
-  padding: 0 14px 56px 14px;
+  // @include mq("md") {
+  // padding: 0 14px 56px 14px;
 
-  }
+  // }
 }

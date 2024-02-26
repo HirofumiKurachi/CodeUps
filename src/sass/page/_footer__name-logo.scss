@@ -2,4 +2,9 @@
 
 .footer__name-logo {
   width: rem(120);
+
+  @include mq("md") {
+    width: rem(200);
+  }
+
 }
