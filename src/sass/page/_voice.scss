@@ -111,6 +111,7 @@
   .voice-card__container {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
   }
 
   .voice-card__img {
@@ -152,7 +153,7 @@
   }
 
   .voice-card__title-box {
-    max-width: 149px;
+    // max-width: 149px;
 
     @include mq("md") {
       max-width: 276px;
