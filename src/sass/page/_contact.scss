@@ -158,24 +158,44 @@
     position: relative;
   }
 
-  .contact__inner::before {
+  // .contact__inner::before {
+  //   position: absolute;
+  //   content: "";
+  //   background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
+  //   width: rem(109);
+  //   height: rem(50);
+  //   // bottom: rem(130);
+  //   bottom: 87.5%;
+  //   right: 4%;
+  //   // right: calc(50% - min(48vw, 600px));
+
+  //   @include mq("md") {
+  //     width: 301px;
+  //     height: 138px;
+  //     bottom: 66.4%;
+  //     right: calc(50% - min(48vw, 669px));
+  //   }
+
+  // }
+
+  .contact__inner::after {
     position: absolute;
     content: "";
-    background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
     width: rem(109);
-    height: rem(50);
-    // bottom: rem(130);
-    bottom: 87.5%;
-    right: 4%;
-    // right: calc(50% - min(48vw, 600px));
+     height: rem(50);
+    right: calc(50% - min(48vw, rem(172.5)));
+    top: rem(-24);
+    background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
+
+    @media (orientation: landscape) and (max-width: 767px) {
+     right: calc(52% - min(44vw, rem(650))); }
 
     @include mq("md") {
-      width: 301px;
-      height: 138px;
-      bottom: 66.4%;
-      right: calc(50% - min(48vw, 669px));
-    }
-
+    width: rem(301);
+    height: rem(138);
+    right: calc(50% - min(48vw, rem(670)));
+    top: rem(102);
+   }
   }
 
   .top-button-img {
