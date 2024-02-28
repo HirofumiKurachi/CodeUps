@@ -58,6 +58,8 @@
   padding-top: 78px;
   padding-left: 21px;
   padding-right: 21px;
+  max-width: rem(600);
+
 
   @include mq("md") {
     padding-top: 92px;
