@@ -1,8 +1,20 @@
 @use "global" as *;
 
 .campaign-card__img {
+  max-width: 280px;
+  width: 100%;
+
+  @include mq("md") {
+    max-width: 333px;
+  }
+}
+
+.campaign-card__img img {
   aspect-ratio: 280/188;
   object-fit: cover;
   width: 100%;
-}
 
+  @include mq("md") {
+    aspect-ratio: 333/223;
+  }
+}
