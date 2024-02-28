@@ -1,0 +1,12 @@
+@use "global" as *;
+
+
+.blog-card__img {
+  max-width: rem(301);
+}
+
+.blog-card__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 301/201;
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.blog-card__text {
+  font-size: rem(16);
+  font-weight: $medium;
+  line-height: 1.5;
+  font-family: Noto Sans JP;
+  margin-top: rem(-3);
+
+  @include mq("md") {
+    margin-top: rem(-2);
+  }
+}

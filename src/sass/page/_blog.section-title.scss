@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.blog.section-title {
+  @include mq("md") {
+    background-image: none;
+  }
+}

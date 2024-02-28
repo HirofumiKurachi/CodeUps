@@ -1,0 +1,26 @@
+@use "global" as *;
+
+
+.blog-card__item-box {
+  padding-top: rem(16);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  padding-bottom: rem(22);
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  margin-top: rem(26);
+  // max-width: 333px;
+  background-color: $white;
+
+  @include mq("md") {
+    margin-top: rem(0);
+    padding-bottom: rem(24);
+  }
+}
+
+.blog-card__item-box:not(:first-child) {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}

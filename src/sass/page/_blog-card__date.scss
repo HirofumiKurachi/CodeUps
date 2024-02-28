@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.blog-card__date {
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  font-family: Gotu;
+}

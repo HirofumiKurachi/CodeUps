@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.blog-card__text-sub {
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  font-family: Noto Sans JP;
+  margin-top: rem(16);
+}
