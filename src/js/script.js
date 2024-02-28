@@ -35,40 +35,22 @@ jQuery(function ($) {
 
     // MV過ぎたらヘッダー背景色変化
     $(window).on("scroll", function () {
-        mvHeight = $(".js-mv").height();
-        if ($(window).scrollTop() > mvHeight) {
+        var mvBottom = $(".js-mv").offset().top + $(".js-mv").outerHeight();
+        if ($(window).scrollTop() > mvBottom) {
             $(".js-header").addClass("is-scroll");
         } else {
             $(".js-header").removeClass("is-scroll");
         }
     });
+    // $(window).on("scroll", function () {
+    //     mvHeight = $(".js-mv").height();
+    //     if ($(window).scrollTop() > mvHeight) {
+    //         $(".js-header").addClass("is-scroll");
+    //     } else {
+    //         $(".js-header").removeClass("is-scroll");
+    //     }
+    // });
 
-
-//     //要素の取得とスピードの設定
-// var box = $('.colorbox'),
-// speed = 700;
-
-// //.colorboxの付いた全ての要素に対して下記の処理を行う
-// box.each(function(){
-// $(this).append('<div class="color"></div>')
-// var color = $(this).find($('.color')),
-// image = $(this).find('img');
-// var counter = 0;
-
-// image.css('opacity','0');
-// color.css('width','0%');
-// //inviewを使って背景色が画面に現れたら処理をする
-// color.on('inview', function(){
-//     if(counter == 0){
-//      $(this).delay(200).animate({'width':'100%'},speed,function(){
-//                image.css('opacity','1');
-//                $(this).css({'left':'0' , 'right':'auto'});
-//                $(this).animate({'width':'0%'},speed);
-//             })
-//         counter = 1;
-//       }
-//  });
-// });
 
     let campaign_swiper; // グローバルスコープで campaign_swiper を定義
 

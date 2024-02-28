@@ -8,8 +8,8 @@
   border-bottom: rem(1) solid $black;
   justify-content: space-between;
   padding-right: rem(20);
-  opacity: 0.7;
-  background-color: $black2;
+  // opacity: 0.7;
+  // background-color: $black2;
 
   @include mq("md") {
     height: rem(90);
