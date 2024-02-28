@@ -26,11 +26,12 @@ jQuery(function ($) {
     function openDrawer() {
         $(".js-drawer").fadeIn();
         $(".js-hamburger").addClass("is-active");
+        $(".js-header").addClass("header-opacity"); // .drawer-menu が開いたときに .header の透明度を変更しないクラスを追加
     }
-
     function closeDrawer() {
         $(".js-drawer").fadeOut();
         $(".js-hamburger").removeClass("is-active");
+        $(".js-header").removeClass("header-opacity"); // .drawer-menu が閉じたときに .header の透明度を変更しないクラスを削除
     }
 
     // MV過ぎたらヘッダー背景色変化
@@ -42,14 +43,7 @@ jQuery(function ($) {
             $(".js-header").removeClass("is-scroll");
         }
     });
-    // $(window).on("scroll", function () {
-    //     mvHeight = $(".js-mv").height();
-    //     if ($(window).scrollTop() > mvHeight) {
-    //         $(".js-header").addClass("is-scroll");
-    //     } else {
-    //         $(".js-header").removeClass("is-scroll");
-    //     }
-    // });
+
 
 
     let campaign_swiper; // グローバルスコープで campaign_swiper を定義

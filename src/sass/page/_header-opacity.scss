@@ -1,0 +1,5 @@
+@use "global" as *;
+
+.header-opacity {
+  opacity: 1 !important; /* .header の透明度を固定するために!importantを使用 */
+}
