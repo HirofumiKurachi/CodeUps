@@ -20,3 +20,9 @@
     background-size: cover;
   }
 }
+
+.blog.section-title {
+  @include mq("md") {
+    background-image: none;
+  }
+}
