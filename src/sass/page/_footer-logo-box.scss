@@ -2,6 +2,7 @@
 
 .footer-logo-box {
   display: flex;
+  margin-top: 17px;
 
   @include mq("md") {
     margin-left: 40px;
