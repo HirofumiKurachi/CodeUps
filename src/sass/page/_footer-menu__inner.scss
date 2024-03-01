@@ -3,8 +3,8 @@
 .footer-menu__inner {
   padding-left: rem(15);
   padding-right: rem(15);
-  padding-top: 48px;
-  padding-bottom: 25px;
+  padding-top: rem(48);
+  padding-bottom: rem(25);
   margin-left: auto;
   margin-right: auto;
   max-width: rem(600);
@@ -16,30 +16,6 @@
   // padding-right: 252px;
   padding-left: rem(25);
   padding-right: rem(25);
-  max-width: 1130px;
+  max-width: rem(1130);
 }
 }
-
-// .footer-menu__inner::before {
-//   position: absolute;
-//   content: "";
-//   background: url(/assets/images/facebook-logo.svg) center center / contain no-repeat;
-//   width: rem(19.5);
-//   height: rem(19.5);
-//   // bottom: rem(130);
-//   bottom: 80.3%;
-//   // left: calc(50% - min(48vw, 630px));
-//   left: 4.5%;
-// }
-
-// .footer-menu__inner::after {
-//   position: absolute;
-//   content: "";
-//   background: url(/assets/images/insta-logo.svg) center center / contain no-repeat;
-//   width: rem(19.5);
-//   height: rem(19.5);
-//   // bottom: rem(130);
-//   bottom: 80.3%;
-//   // left: calc(50% - min(48vw, rem(620)));
-//   left: 15%;
-// }

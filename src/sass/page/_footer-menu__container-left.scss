@@ -6,7 +6,7 @@
 
   @include mq("md") {
     display: flex;
-    max-width: 452px;
+    max-width: rem(452);
     justify-content: space-between;
   }
 }

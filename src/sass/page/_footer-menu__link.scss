@@ -21,20 +21,6 @@
   margin-top: rem(17.3);
 }
 
-// .footer-menu__link-a::before,
-// .footer-menu__link-b::before {
-//   content: '';
-//   width: rem(18);
-//   height: rem(18);
-//   background-image: url(../images/drawer-logo.svg);
-//   background-size: contain;
-//   top: 50%; /* 縦方向の中央配置 */
-//   transform: translateY(-50%); /* 上下の中央揃え */
-//   left: 0; /* 左端に配置 */
-//   position: absolute;
-// }
-
-
 .footer-menu__link-a::before {
   content: '';
   width: rem(18);/*画像の幅*/
