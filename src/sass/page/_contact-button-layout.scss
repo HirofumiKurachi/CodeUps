@@ -1,0 +1,14 @@
+@use "global" as *;
+
+  .contact-button-layout {
+    margin-top: rem(39);
+    display: flex;
+    justify-content: center;
+
+    @include mq("md") {
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      margin-top: rem(40);
+    }
+  }

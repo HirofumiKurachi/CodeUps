@@ -1,0 +1,9 @@
+@use "global" as *;
+
+  .contact__title-layout {
+
+    @include mq("md") {
+      padding-left: 81px;
+      border-left: rem(1) solid $green;
+    }
+  }

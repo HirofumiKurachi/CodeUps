@@ -1,0 +1,5 @@
+@use "global" as *;
+
+  .contact-information__item:not(:first-child) {
+    margin-top: rem(4);
+  }
