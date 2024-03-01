@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.information__text-line {
+  background-color: $green; /* 横線の色 */
+  content: "";
+  height: rem(1.5); /* 横線の高さ */
+  margin-top: rem(-4);
+  flex-grow: 1;
+
+  @include mq("md") {
+    height: rem(1);
+    margin-top: rem(3);
+  }
+}

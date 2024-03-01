@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.information {
-  width: 100%;
-  background-color: $green2;
-}
-
 .information__container {
   @include mq("md") {
     display: flex;

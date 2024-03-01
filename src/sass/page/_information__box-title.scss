@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.information__box-title {
+  font-size: rem(20);
+
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: 1;
+  }
+}
