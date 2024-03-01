@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .campaign-card__img {
-  max-width: 280px;
+  max-width: rem(280);
   width: 100%;
 
   @include mq("md") {
-    max-width: 333px;
+    max-width: rem(333);
   }
 }
 
