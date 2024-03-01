@@ -22,16 +22,43 @@ jQuery(function ($) {
             closeDrawer();
         }
     });
-
+    // jQuery(function ($) {
+    //     let isDrawerOpen = false; // ドロワーメニューが開かれているかどうかのフラグ
+    
+    //     // ドロワーメニューを開く処理
+    //     function openDrawer() {
+    //         $(".js-drawer").fadeIn();
+    //         $(".js-header").addClass("no-opacity");
+    //         isDrawerOpen = true;
+    //     }
+    
+    //     // ドロワーメニューを閉じる処理
+    //     function closeDrawer() {
+    //         $(".js-drawer").fadeOut();
+    //         $(".js-header").removeClass("no-opacity");
+    //         isDrawerOpen = false;
+    //     }
+    
+    //     // MV過ぎたらヘッダー背景色変化
+    //     $(window).on("scroll", function () {
+    //         var mvBottom = $(".js-mv").offset().top + $(".js-mv").outerHeight();
+    //         if ($(window).scrollTop() > mvBottom && !isDrawerOpen) {
+    //             $(".js-header").addClass("is-scroll");
+    //         } else {
+    //             $(".js-header").removeClass("is-scroll");
+    //         }
+    //     });
+    // });
+    
     function openDrawer() {
         $(".js-drawer").fadeIn();
         $(".js-hamburger").addClass("is-active");
-        $(".js-header").addClass("header-opacity"); // .drawer-menu が開いたときに .header の透明度を変更しないクラスを追加
+        // $(".js-header").addClass("header-opacity"); // .drawer-menu が開いたときに .header の透明度を変更しないクラスを追加
     }
     function closeDrawer() {
         $(".js-drawer").fadeOut();
         $(".js-hamburger").removeClass("is-active");
-        $(".js-header").removeClass("header-opacity"); // .drawer-menu が閉じたときに .header の透明度を変更しないクラスを削除
+        // $(".js-header").removeClass("header-opacity"); // .drawer-menu が閉じたときに .header の透明度を変更しないクラスを削除
     }
 
     // MV過ぎたらヘッダー背景色変化
@@ -43,6 +70,9 @@ jQuery(function ($) {
             $(".js-header").removeClass("is-scroll");
         }
     });
+
+//     let vw = document.body.clientWidth;// スクロールバーを除いた幅を取得
+// document.documentElement.style.setProperty('--vw', vw + 'px');
 
 
 

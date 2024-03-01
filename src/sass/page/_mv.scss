@@ -12,3 +12,8 @@
     min-height: rem(400);
   }
 }
+
+.body {
+  width:100vw;// 変数をサポートしていないブラウザのフォールバック
+  width: var(--vw);//
+}
