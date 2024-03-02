@@ -23,8 +23,6 @@
 }
 
 
-
-/*現在地とhoverの設定*/
 .header__link:hover::after {
-    transform: scale(1, 1);/*X方向にスケール拡大*/
+    transform: scale(1, 1);
 }

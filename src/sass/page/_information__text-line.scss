@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .information__text-line {
-  background-color: $green; /* 横線の色 */
+  background-color: $green;
   content: "";
-  height: rem(1.5); /* 横線の高さ */
+  height: rem(1.5);
   margin-top: rem(-4);
   flex-grow: 1;
 

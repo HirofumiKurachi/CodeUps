@@ -1,18 +1,15 @@
 @use "global" as *;
 
   .contact__img {
-    // max-width: 295px;
     width: rem(295);
     height: rem(160);
     margin-top: rem(16);
 
     @include mq("md") {
-      // max-width: 273px;
       width: rem(273);
       height: rem(148);
       margin-top: 0;
       margin-left: rem(25);
-      // width: 66%;
     }
   }
 

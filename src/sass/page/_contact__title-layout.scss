@@ -3,8 +3,7 @@
   .contact__title-layout {
 
     @include mq("md") {
-      padding-left: 81px;
+      padding-left: rem(81);
       border-left: rem(1) solid $green;
-      // margin-left: 56px;
     }
   }

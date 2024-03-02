@@ -13,13 +13,11 @@
   .contact__top-button {
     position: absolute;
     content: "";
-    // right: 3.8%;
     right: calc(50% - min(48vw, rem(172)));
     bottom: 2%;
 
     @include mq("md") {
     bottom: 3%;
-    // right: -12%;
     right: calc(50% - min(49vw, rem(700)));
 
 
