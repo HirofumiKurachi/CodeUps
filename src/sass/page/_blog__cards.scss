@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .blog__cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   @include mq("md") {
-    display: flex;
     gap: rem(40);
     margin-top: rem(78);
+    flex-direction: row;
   }
 }

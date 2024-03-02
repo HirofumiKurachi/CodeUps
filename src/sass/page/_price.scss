@@ -86,6 +86,7 @@
     line-height: calc(24/14);
     font-family: Noto Sans JP;
     margin-top: 8px;
+    width: 80%;
 
     @include mq("md") {
       font-size: 16px;
@@ -103,6 +104,8 @@
     line-height: calc(24/14);
     font-family: Noto Sans JP;
     margin-top: 8px;
+    width: 20%;
+    text-align: right;
 
     @include mq("md") {
       font-size: 16px;
@@ -110,7 +113,6 @@
       display: block;
       float: left;
       width: 11.3%;
-      text-align: right;
     }
   }
 

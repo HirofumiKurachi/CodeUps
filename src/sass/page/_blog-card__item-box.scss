@@ -8,7 +8,7 @@
   padding-bottom: rem(22);
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   margin-top: rem(26);
-  // max-width: 333px;
+  max-width: 333px;
   background-color: $white;
 
   @include mq("md") {
