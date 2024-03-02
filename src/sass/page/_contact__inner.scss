@@ -32,7 +32,7 @@
     top: rem(54);
     background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
 
-    @media (orientation: landscape) and (max-width: 767px) {
+    @media (orientation: landscape) and (max-width: rem(767)) {
      right: calc(52% - min(44vw, rem(650))); }
 
     @include mq("md") {

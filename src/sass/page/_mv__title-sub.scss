@@ -10,7 +10,7 @@
   font-weight: $regular;
 
   @include mq("md") {
-    font-size: 80px;
+    font-size: rem(80);
     text-align: center;
     text-indent: 2.6rem;
     letter-spacing: 0.53em;
