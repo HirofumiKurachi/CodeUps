@@ -1,0 +1,9 @@
+@use "global" as *;
+
+  .voice__cards {
+
+    @include mq("md") {
+      display: flex;
+      margin-top: rem(26);
+    }
+  }

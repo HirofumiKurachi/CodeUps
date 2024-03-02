@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.voice__inner.inner {
+  padding-left: rem(15);
+  padding-right: rem(15);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: rem(81);
+  padding-bottom: rem(85);
+  max-width: rem(600);
+
+
+  @include mq("md") {
+    padding-top: rem(135);
+    padding-left: rem(25);
+    padding-right: rem(25);
+    padding-bottom: rem(144);
+    max-width: rem(1130);
+    }
+  }
+
+  .voice__inner {
+    position: relative;
+  }
+
+  .voice__inner::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        background: url(/assets/images/voice-logo.svg) center center / contain no-repeat;
+        width: rem(301);
+        height: rem(138);
+        bottom: 82.3%;
+        left: calc(50% - min(48vw, rem(620)));
+    }
+  }
+
+  .voice__inner::after {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        background: url(/assets/images/voice-logo2.svg) center center / contain no-repeat;
+        width: rem(71);
+        height: rem(162);
+        bottom: 8%;
+        right: calc(50% - min(48vw, rem(540)));
+    }
+  }
