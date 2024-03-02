@@ -3,3 +3,8 @@
   .contact-information__item:not(:first-child) {
     margin-top: rem(4);
   }
+
+  .contact-information__item a[href^="tel:"] {
+    pointer-events: none;
+    text-decoration: none;
+ }
