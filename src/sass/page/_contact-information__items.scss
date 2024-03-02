@@ -5,6 +5,8 @@
 
     @include mq("md") {
       text-align: left;
+      // max-width: rem(141);
+      // width: 100%;
     }
 
   }

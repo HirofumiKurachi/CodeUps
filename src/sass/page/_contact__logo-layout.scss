@@ -4,8 +4,5 @@
     display: flex;
     justify-content: center;
     @include mq("md") {
-      display: block;
-      padding-left: ren(120);
-      padding-right: rem(120);
     }
   }
