@@ -1,0 +1,9 @@
+@use "global" as *;
+
+  .price__container {
+
+    @include mq("md") {
+      display: flex;
+      margin-top: rem(40);
+    }
+  }

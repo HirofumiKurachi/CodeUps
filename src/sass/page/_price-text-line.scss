@@ -1,0 +1,21 @@
+@use "global" as *;
+
+
+  .price-text-line {
+    background-color: $green; /* 横線の色 */
+    content: "";
+    height: rem(1.5); /* 横線の高さ */
+    margin-top: rem(3);
+    flex-grow: 1;
+
+    @include mq("md") {
+      height: rem(1);
+      margin-top: rem(2);
+    }
+  }
+
+  .price-text-line:nth-child(2) {
+    @include mq("md") {
+      margin-top: rem(3);
+    }
+  }
