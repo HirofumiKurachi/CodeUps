@@ -68,11 +68,6 @@ color.on('inview', function(){
  });
 });
 
-//     let vw = document.body.clientWidth;// スクロールバーを除いた幅を取得
-// document.documentElement.style.setProperty('--vw', vw + 'px');
-
-
-
     let campaign_swiper; // グローバルスコープで campaign_swiper を定義
 
     function initializeSwiper() {
@@ -103,10 +98,6 @@ color.on('inview', function(){
                     spaceBetween: 40,
                     slidesPerView: 3,
                 },
-                // 1024: {
-                //     spaceBetween: 24,
-                //     slidesPerView: auto,
-                // },
             },
             navigation: {
                 nextEl: '.campaign-swiper__button-next',
