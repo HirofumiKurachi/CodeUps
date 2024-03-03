@@ -12,6 +12,12 @@
   }
 }
 
+.campaign-swiper__button-prev:hover,
+.campaign-swiper__button-next:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
 /* 前への矢印カスタマイズ */
 .campaign-swiper__button-prev::after {
 
