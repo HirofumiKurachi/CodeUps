@@ -7,13 +7,11 @@
   text-decoration: none;
   position: relative;
   width: rem(203);
-  // margin: auto;
   padding: rem(16) rem(40);
   color: $white;
   background-color: $green;
   font-size: rem(14);
   line-height: calc(22/14);
-	// transition: .2s cubic-bezier(0.45, 0, 0.55, 1), background-color 0.3s ease;
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
 	transform-origin: left top;
 	height: rem(54);
@@ -51,7 +49,6 @@
 
 .button:hover {
   color: $green;
-  // background-color: $white;
   border: 0.0625rem solid $green;
 }
 
