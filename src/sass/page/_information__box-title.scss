@@ -2,6 +2,7 @@
 
 .information__box-title {
   font-size: rem(20);
+  font-family: "Noto Sans JP", serif;
 
   @include mq("md") {
     font-size: rem(24);

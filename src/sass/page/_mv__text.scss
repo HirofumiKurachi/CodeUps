@@ -7,7 +7,7 @@
   letter-spacing: 0.05em;
   text-align: center;
   font-weight: $regular;
-  font-family: Gotu;
+  font-family: "Gotu", sans-serif;
 
   @include mq("md") {
     margin-top: rem(-8);

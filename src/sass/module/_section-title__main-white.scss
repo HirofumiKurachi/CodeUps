@@ -5,6 +5,7 @@
     font-size: rem(32);
     line-height: 1.4;
     color: $white;
+    font-family: "Gotu", sans-serif;
 
     @include mq("md") {
       font-size: rem(40);

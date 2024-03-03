@@ -11,6 +11,7 @@
   overflow: hidden;
   max-width: 100%;
   display: inline-block;
+  font-family: "Noto Sans JP", serif;
 
   @include mq("md") {
   padding: rem(8) rem(15) rem(6) rem(14);

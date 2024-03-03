@@ -12,6 +12,7 @@
   background-color: $green;
   display: block;
   width: 100%;
+  font-family: "Gotu", sans-serif;
 
   @include mq("md") {
     padding-bottom: rem(0);

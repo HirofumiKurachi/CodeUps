@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   font-weight: $regular;
+  font-family: "Noto Sans JP", serif;
 
   @include mq("md") {
     font-size: rem(16);

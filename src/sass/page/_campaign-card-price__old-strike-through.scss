@@ -6,6 +6,7 @@
   text-decoration: line-through;
   text-decoration-color: $red;
   text-decoration-thickness: rem(3);
+  font-family: "Lato", sans-serif;
 
   @include mq("md") {
     font-size: rem(24);
