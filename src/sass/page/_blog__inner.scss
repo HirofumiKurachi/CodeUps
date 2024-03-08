@@ -25,8 +25,8 @@
 
   @include mq("md") {
     padding-top: rem(92);
-    padding-left: rem(25);
-    padding-right: rem(25);
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
     max-width: rem(1130);
   }
 }

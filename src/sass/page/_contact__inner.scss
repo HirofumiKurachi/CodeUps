@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .contact__inner.inner {
-  padding-left: rem(30);
-  padding-right: rem(30);
+  // padding-left: rem(30);
+  // padding-right: rem(30);
   margin-left: auto;
   margin-right: auto;
   padding-top: rem(80);
@@ -12,8 +12,8 @@
 
   @include mq("md") {
     padding-top: rem(143);
-    padding-left: rem(25);
-    padding-right: rem(25);
+    // padding-left: rem(25);
+    // padding-right: rem(25);
     padding-bottom: rem(160);
     max-width: rem(1130);
     }

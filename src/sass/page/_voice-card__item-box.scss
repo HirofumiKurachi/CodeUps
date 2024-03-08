@@ -18,10 +18,10 @@
     }
   }
 
-  // .voice-card__item-box:not(:first-child) {
-  //   margin-top: rem(41);
+  .voice-card__item-box:not(:first-child) {
+    margin-top: rem(41);
 
-  //   @include mq("md") {
-  //     margin-top: rem(0);
-  //   }
-  // }
+    @include mq("md") {
+      margin-top: rem(0);
+    }
+  }
