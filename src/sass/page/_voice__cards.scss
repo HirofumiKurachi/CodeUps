@@ -2,12 +2,10 @@
 
   .voice__cards {
     display: grid;
-    // grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-template-columns: repeat(1, 1fr);
 
 
     @include mq("md") {
-      // display: flex;
       margin-top: rem(26);
       grid-template-columns: repeat(2, 1fr);
       column-gap: rem(40);
