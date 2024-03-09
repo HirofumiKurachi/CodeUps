@@ -71,7 +71,7 @@ color.on('inview', function(){
     let campaign_swiper; // グローバルスコープで campaign_swiper を定義
 
     function initializeSwiper() {
-        const mv_swiper = new Swiper(".mv__slider", {
+        const mv_swiper = new Swiper(".mv__slider.swiper", {
             loop: true,
             speed: 2000,
             effect: "fade",
@@ -88,7 +88,7 @@ color.on('inview', function(){
     initializeSwiper();
 
     function initializeCampaignSwiper() {
-        campaign_swiper = new Swiper(".campaign-slider", {
+        campaign_swiper = new Swiper(".campaign-slider.swiper", {
             loop: true,
             slidesPerView: "auto",
             spaceBetween: 24,
