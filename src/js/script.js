@@ -90,6 +90,7 @@ color.on('inview', function(){
     function initializeCampaignSwiper() {
         campaign_swiper = new Swiper(".campaign-slider.swiper", {
             loop: true,
+            loopedSlides: 4,
             slidesPerView: "auto",
             spaceBetween: 24,
             grabCursor: true,
