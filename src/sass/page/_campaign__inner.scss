@@ -1,12 +1,14 @@
 @use "global" as *;
 
-.campaign__inner {
-  padding-top: rem(38);
+// .campaign__inner {
+//   // padding-top: rem(38);
+//   margin-top: rem(38);
 
-  @include mq("md") {
-    padding-top: rem(111);
-  }
-}
+//   @include mq("md") {
+//     // padding-top: rem(111);
+//     margin-top: rem(111);
+//   }
+// }
 
 .campaign__inner.inner {
 

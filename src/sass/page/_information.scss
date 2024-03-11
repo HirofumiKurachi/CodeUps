@@ -3,6 +3,11 @@
 .information {
   width: 100%;
   background-color: $green2;
+  margin-top: rem(78);
+
+  @include mq("md") {
+    margin-top: rem(164);
+  }
 }
 
 .information__container {

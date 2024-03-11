@@ -3,6 +3,11 @@
 .campaign {
   width: 100%;
   overflow: visible;
+  margin-top: rem(38);
+
+  @include mq("md") {
+    margin-top: rem(111);
+  }
 }
 
 .campaign-swiper__container {

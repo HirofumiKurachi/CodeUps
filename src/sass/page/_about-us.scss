@@ -3,4 +3,9 @@
 .about-us {
   width: 100%;
   overflow: visible;
+  margin-top: rem(81);
+
+  @include mq("md") {
+    margin-top:rem(135);
+  }
 }
