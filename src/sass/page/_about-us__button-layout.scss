@@ -2,12 +2,13 @@
 
 .about-us__button-layout {
   margin-top: rem(47);
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  text-align: center;
 
   @include mq("md") {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     // padding-left: rem(35);
     margin-top: rem(37);
   }

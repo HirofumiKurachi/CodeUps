@@ -6,7 +6,8 @@
     margin-top: rem(16);
 
     @include mq("md") {
-      width: rem(273);
+      // width: rem(273);
+      width: 61%;
       height: rem(148);
       margin-top: 0;
       margin-left: rem(25);
