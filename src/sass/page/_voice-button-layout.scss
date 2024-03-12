@@ -2,13 +2,14 @@
 
   .voice-button-layout {
     margin-top: rem(40);
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    text-align: center;
 
     @include mq("md") {
-      display: flex;
-      justify-content: center;
-      padding-left: rem(0);
+      // display: flex;
+      // justify-content: center;
+      // padding-left: rem(0);
       margin-top: rem(80);
     }
   }
