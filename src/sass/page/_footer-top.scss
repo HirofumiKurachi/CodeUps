@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.footer-top {
+  background-color: $green;
+  margin-top: rem(48);
+
+  @include mq("md") {
+    margin-top: rem(160);
+  }
+}

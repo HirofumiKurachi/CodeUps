@@ -1,19 +1,19 @@
 @use "global" as *;
 
-.price__inner.inner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: rem(77);
-  padding-bottom: rem(84);
-  max-width: rem(600);
+// .price__inner.inner {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-top: rem(77);
+//   padding-bottom: rem(84);
+//   max-width: rem(600);
 
 
-  @include mq("md") {
-    padding-top: rem(91);
-    padding-bottom: rem(100);
-    max-width: rem(1130);
-    }
-  }
+//   @include mq("md") {
+//     padding-top: rem(91);
+//     padding-bottom: rem(100);
+//     max-width: rem(1130);
+//     }
+//   }
 
   .price__inner {
     position: relative;
@@ -26,7 +26,7 @@
         background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
         width: rem(437);
         height: rem(201);
-        bottom: 4.9%;
+        bottom: -4.1%;
         left: calc(50% - min(48vw, rem(620)));
     }
   }

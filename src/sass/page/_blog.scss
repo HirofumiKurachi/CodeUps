@@ -1,11 +1,16 @@
 @use "global" as *;
 
-.blog {
+.blog-top {
   position: relative;
+  padding-top: rem(78);
+
+  @include mq("md") {
+    padding-top: rem(92);
+  }
   }
 
 
-.blog::after {
+.blog-top::after {
   @include mq("md") {
     background-image: url(/assets/images/blog-img1.jpg);
     top: 0;

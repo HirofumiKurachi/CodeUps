@@ -17,7 +17,7 @@
     bottom: 2%;
 
     @include mq("md") {
-    bottom: 3%;
+    bottom: -34%;
     right: calc(50% - min(49vw, rem(700)));
     }
   }
