@@ -5,6 +5,9 @@
   padding-right: rem(17);
   padding-bottom: rem(15);
   padding-left: rem(16);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 
   @include mq("md") {
     padding-top: rem(22);

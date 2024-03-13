@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .information__box {
-  margin-top: rem(25);
+  margin-top: rem(20);
 
   @include mq("md") {
     margin-top: rem(0);

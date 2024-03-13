@@ -2,10 +2,10 @@
 
 .blog-top {
   position: relative;
-  padding-top: rem(78);
+  margin-top: rem(78);
 
   @include mq("md") {
-    padding-top: rem(92);
+    margin-top: rem(92);
   }
   }
 
