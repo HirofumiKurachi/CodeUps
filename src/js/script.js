@@ -26,11 +26,14 @@ jQuery(function ($) {
     function openDrawer() {
         $(".js-drawer").fadeIn();
         $(".js-hamburger").addClass("is-active");
+        $('body').css('overflow', 'hidden');
     }
     function closeDrawer() {
         $(".js-drawer").fadeOut();
         $(".js-hamburger").removeClass("is-active");
+        $('body').css('overflow', '');
     }
+
 
     // MV過ぎたらヘッダー背景色変化
     $(window).on("scroll", function () {

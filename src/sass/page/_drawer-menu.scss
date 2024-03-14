@@ -15,3 +15,12 @@
   overflow-y: scroll;
   opacity: 1;
 }
+
+.drawer-menu__musk {
+  height: rem(80);
+  background-color: $green;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
