@@ -5,7 +5,6 @@
   content: "";
   height: rem(1.5);
   margin-top: rem(1);
-  // flex-grow: 1;
 
   @include mq("md") {
     height: rem(1);
