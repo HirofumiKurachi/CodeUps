@@ -1,0 +1,31 @@
+@use "global" as *;
+
+// .page-section-title {
+//   font-size: rem(32);
+//   line-height: 1.4;
+//   font-family: "Gotu", sans-serif;
+
+//   @include mq("md") {
+//     font-size: rem(40);
+//   }
+// }
+
+.page-section-title  {
+  font-size: rem(40);
+  font-weight: $regular;
+  // letter-spacing: 0.05em;
+  color: $white;
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // width: 100%;
+
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: calc(100/80);
+    top: 61%;
+  }
+
+}
