@@ -140,21 +140,45 @@
       </div>
     </header>
     <main>
-    <!--メインビュー-->
-    <section id="mv-campaign" class="mv-campaign">
-      <div class="mv-campaign">
-        <div class="mv-campaign__inner">
-          <div class="mv-campaign-title">
-            <h1 class="mv-campaign-title__main page-section-title">Campaign</h1>
+    <!--サブビュー-->
+    <section id="sub-page-mv" class="sub-page-mv">
+      <div class="sub-page-mv">
+        <div class="sub-page-mv__inner">
+          <div class="sub-page-mv-title">
+            <h2 class="sub-page-mv-title__main page-section-title">Campaign</h2>
           </div>
-          <!-- <div class="mv-campaign-img">
-            <img src="./assets/images/campaign-page-pc-img.jpg" alt="ウミガメが海を泳いでいる様子" class="u-desktop">
-            <img src="./assets/images/campaign-page-sp-img.jpg" alt="ウミガメが海を泳いでいる様子" class="u-mobile">
-          </div> -->
+          <picture>
+            <source srcset="./assets/images/campaign-page-pc-img.jpg" media="(min-width: 768px)">
+            <img src="./assets/images/campaign-page-sp-img.jpg" alt="サングラスを掛けた男性がサングラスを外そうとしている様子">
+          </picture>
         </div>
+
+      </div>
+    </section>
+    <!--パンくず-->
+    <div class="breadcrumb">
+      <div class="breadcrumb-innner inner">
+        <div>HOME > キャンペーン</div>
+      </div>
+    </div>
+    <!--タブ-->
+    <section id="campaign-page-container" class="campaign-page-container-top">
+      <div class="campaign-page-container__inner inner">
+        <div class="campaign-page__tab-wrap">
+          <input id="tab01" type="radio" name="tab_switch" checked>
+          <label class="campaign-page__tab_label" for="tab01">ALL</label>
+          <input id="campaign-page__tab02" type="radio" name="tab_switch">
+          <label class="campaign-page__tab_label" for="tab02">ライセンス講習</label>
+          <!-- <input id="campaign-page__tab03" type="radio" name="tab_switch">
+          <label class="campaign-page__tab_label" for="tab03">ファンダイビング</label>
+          <input id="campaign-page__tab04" type="radio" name="tab_switch">
+          <label class="campaign-page__tab_label" for="tab04">体験ダイビング</label>
+          <div class="campaign-page__tab-content"> -->
+          </div>
         </div>
       </div>
-      </section>
+
+    </section>
 
 
     <!--コンタクト-->

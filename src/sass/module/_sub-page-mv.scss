@@ -1,0 +1,15 @@
+@use "global" as *;
+
+
+.sub-page-mv {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sub-page-mv__inner {
+  position: relative;
+  width: 100%;
+  height: inherit;
+}
