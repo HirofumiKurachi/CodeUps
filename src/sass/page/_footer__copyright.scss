@@ -8,11 +8,11 @@
   font-family: Gotu;
   padding-left: rem(14);
   padding-right: rem(14);
-  padding-bottom: rem(53);
   background-color: $green;
   display: block;
   width: 100%;
   font-family: "Gotu", sans-serif;
+  margin-top: rem(26);
 
   @include mq("md") {
     padding-bottom: rem(0);
@@ -20,7 +20,6 @@
     justify-content: center;
     font-size: rem(14);
     line-height: calc(18/14);
-    padding-bottom: rem(80);
-    margin-top: rem(41);
+    margin-top: rem(66);
   }
 }

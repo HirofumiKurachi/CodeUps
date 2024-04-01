@@ -1,12 +1,9 @@
 @use "global" as *;
 
 .footer-menu__container-left {
-  width: 50%;
-  max-width: rem(200); /* 必要に応じて適切な幅を指定してください */
 
   @include mq("md") {
     display: flex;
-    max-width: rem(452);
-    justify-content: space-between;
+    column-gap: rem(120);
   }
 }

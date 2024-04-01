@@ -2,11 +2,10 @@
 
 .footer-menu__container {
   display: flex;
-  justify-content: center;
 
   @include mq("md") {
-    justify-content: left;
     margin-top: rem(11);
     white-space: nowrap;
+    column-gap: rem(120);
   }
 }
