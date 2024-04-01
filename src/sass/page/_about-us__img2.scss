@@ -7,10 +7,10 @@
   display: block;
   right: 0;
   bottom: 0;
-  position: absolute;
+  margin-left: auto;
 
   @include mq("md") {
     aspect-ratio: 880/581;
-    max-width: rem(880);
+    width: 81.45%;
   }
 }
