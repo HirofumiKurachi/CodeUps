@@ -37,59 +37,168 @@
   background: url(/assets/images/same-logo.svg) center center / contain no-repeat;
   width: rem(120);
   height: rem(55);
-  // bottom: 50%;
-  top: 50%;
-  left: calc(50% - min(48vw, rem(620)));
+  bottom: 64%;
+  left: calc(50% - min(46vw, rem(620)));
 }
 
-.campaign-page__tab {
-  margin-top: rem(52);
+.campaign-page__tab-layout {
+  margin-top: rem(48);
 }
 
-.campaign-page__tab-list {
+.campaign-page__tab-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: rem(21);
   row-gap: rem(16);
 }
 
-.campaign-page__tab-button {
+.campaign-page__tab-item {
   justify-items: center;
   position: relative;
   border: solid rem(1) $green;
   display: flex;
   justify-content: center;
-
-
+  padding: rem(6) 0;
+  font-size: rem(14);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", serif;
+  cursor: pointer;
+  color: $green;
 
 }
-// .campaign-page__tab-wrap {
-//   display: flex;
-//   flex-wrap: wrap;
+
+.campaign-page__tab-item.is-color {
+  color: $white;
+  background-color: $green;
+}
+
+.campaign-page-contents-top {
+  margin-top: rem(39);
+}
+
+.campaign-page-contents__inner {
+  padding-right: rem(47);
+  padding-left: rem(48);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.campaign-page-contents__items {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: rem(40);
+  row-gap: rem(40);
+}
+
+// .campaign-page-contents__item:not(:first-child) {
+//   margin-top: rem(40);
 // }
-// .campaign-page__tab_label {
-//     color: $green;
-//     border: solid 2px $green;
-//     position: relative;
-//     z-index: 1;
-//     cursor: pointer;
-//     flex: 1;
-//     padding: 5px 0;
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// .campaign-page__tab-content {
-//   width: 100%;
-//   display: none;
+
+.pagination-top {
+  margin-top: rem(78);
+}
+
+.pagination__inner {
+  position: relative;
+  width: 100%;
+}
+
+
+.pagination-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // gap: 0 rem(12);
+  // list-style-type: none;
+  // padding: 0;
+}
+
+.pagination-nav a {
+  // box-sizing: border-box;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: rem(38);
+  height: rem(38);
+  border: rem(1) solid $green;
+  // border-radius: 1px;
+  color: $green;
+  padding: rem(7) rem(14);
+  font-size: rem(16);
+  margin: 0 rem(6);
+  font-family: "Lato",  sans-serif;
+}
+
+.pagination-nav span {
+  width: rem(38);
+  height: rem(38);
+  border: rem(1) solid $green;
+  // border-radius: 1px;
+  color: $white;
+  padding: rem(7) rem(14);
+  font-size: rem(16);
+  font-family: "Lato",  sans-serif;
+  margin: 0 rem(5);
+}
+
+.pagination-nav a:first-child {
+  margin-right: rem(35);
+  padding: rem(18);
+}
+
+.pagination-nav a:last-child {
+  margin-left: rem(35);
+  padding: rem(18);
+}
+
+// .pagination.pagination-nav.pagination__prev {
+//   margin-left: 0;
+//   margin-right: rem(38);
 // }
-// /* アクティブなタブ */
-// .campaign-page__tab-switch:checked+.tab-label {
-//   background: $green;
+
+// .pagination__prev {
+//   margin-right: rem(38);
 // }
-// .campaign-page__tab-switch:checked+.tab-label+.tab-content {
-//    display: block;
+
+.pagination__prev::before {
+  border-right: rem(1) solid $green;
+  border-top: rem(1) solid $green;
+  content: '';
+  display: inline-block;
+  width: rem(11);
+  height: rem(11);
+  position: absolute;
+  transform: rotate(-135deg);
+  left: 8.5%;
+  top: 35%;
+
+}
+
+.pagination__current {
+  // margin-left: rem(28);
+  background-color: $green;
+  color: #fff;
+  width: rem(40);
+  height: rem(40);
+  border: rem(1) solid $green;
+  padding: rem(11) rem(14);
+  margin: 0 rem(5);
+}
+
+// .pagination__next {
+//   margin-left: rem(38);
+//   margin-right: 0;
 // }
-// /* ラジオボタン非表示 */
-// .campaign-page__tab-switch {
-//   display: none;
-// }
+
+.pagination__next::before {
+  border-right: rem(1) solid $green;
+  border-top: rem(1) solid $green;
+  content: '';
+  display: inline-block;
+  width: rem(11);
+  height: rem(11);
+  position: absolute;
+  transform: rotate(45deg);
+  right: 8.5%;
+  top: 35%;
+}
