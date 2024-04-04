@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  // width: 74.5%;
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   height: 100%;
   max-width: rem(280);
@@ -90,115 +89,20 @@
   row-gap: rem(40);
 }
 
-// .campaign-page-contents__item:not(:first-child) {
-//   margin-top: rem(40);
-// }
-
-.pagination-top {
-  margin-top: rem(78);
+.campaign-page__contact-top {
+  margin-top: rem(105);
 }
 
-.pagination__inner {
-  position: relative;
-  width: 100%;
-}
-
-
-.pagination-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // gap: 0 rem(12);
-  // list-style-type: none;
-  // padding: 0;
-}
-
-.pagination-nav a {
-  // box-sizing: border-box;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  width: rem(38);
-  height: rem(38);
-  border: rem(1) solid $green;
-  // border-radius: 1px;
-  color: $green;
-  padding: rem(7) rem(14);
-  font-size: rem(16);
-  margin: 0 rem(6);
-  font-family: "Lato",  sans-serif;
-}
-
-.pagination-nav span {
-  width: rem(38);
-  height: rem(38);
-  border: rem(1) solid $green;
-  // border-radius: 1px;
-  color: $white;
-  padding: rem(7) rem(14);
-  font-size: rem(16);
-  font-family: "Lato",  sans-serif;
-  margin: 0 rem(5);
-}
-
-.pagination-nav a:first-child {
-  margin-right: rem(35);
-  padding: rem(18);
-}
-
-.pagination-nav a:last-child {
-  margin-left: rem(35);
-  padding: rem(18);
-}
-
-// .pagination.pagination-nav.pagination__prev {
-//   margin-left: 0;
-//   margin-right: rem(38);
-// }
-
-// .pagination__prev {
-//   margin-right: rem(38);
-// }
-
-.pagination__prev::before {
-  border-right: rem(1) solid $green;
-  border-top: rem(1) solid $green;
-  content: '';
-  display: inline-block;
-  width: rem(11);
-  height: rem(11);
-  position: absolute;
-  transform: rotate(-135deg);
-  left: 8.5%;
-  top: 35%;
-
-}
-
-.pagination__current {
-  // margin-left: rem(28);
+.campaign-page__footer-top {
   background-color: $green;
-  color: #fff;
-  width: rem(40);
-  height: rem(40);
-  border: rem(1) solid $green;
-  padding: rem(11) rem(14);
-  margin: 0 rem(5);
-}
+  margin-top: rem(105);
+  padding-top: rem(48);
+  padding-bottom: rem(56);
 
-// .pagination__next {
-//   margin-left: rem(38);
-//   margin-right: 0;
-// }
 
-.pagination__next::before {
-  border-right: rem(1) solid $green;
-  border-top: rem(1) solid $green;
-  content: '';
-  display: inline-block;
-  width: rem(11);
-  height: rem(11);
-  position: absolute;
-  transform: rotate(45deg);
-  right: 8.5%;
-  top: 35%;
+  @include mq("md") {
+    margin-top: rem(160);
+    padding-top: rem(74);
+    padding-bottom: rem(80);
+  }
 }
