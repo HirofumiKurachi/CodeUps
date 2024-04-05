@@ -38,10 +38,20 @@
   height: rem(55);
   bottom: 64%;
   left: calc(50% - min(46vw, rem(620)));
+
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    bottom: -96%;
+  }
 }
 
 .campaign-page__tab-layout {
   margin-top: rem(48);
+
+  @include mq("md") {
+    margin-top: rem(146);
+  }
 }
 
 .campaign-page__tab-items {
@@ -49,6 +59,14 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: rem(21);
   row-gap: rem(16);
+
+  @include mq("md") {
+  // grid-template-columns: repeat(4, 1fr);
+  column-gap: rem(32);
+  display: flex;
+
+
+  }
 }
 
 .campaign-page__tab-item {
@@ -64,6 +82,10 @@
   cursor: pointer;
   color: $green;
 
+  @include mq("md") {
+    width: rem(162);
+  }
+
 }
 
 .campaign-page__tab-item.is-color {
@@ -75,11 +97,16 @@
   margin-top: rem(39);
 }
 
-.campaign-page-contents__inner {
+.campaign-page-contents__inner.inner {
   padding-right: rem(47);
   padding-left: rem(48);
   margin-left: auto;
   margin-right: auto;
+
+  @include mq("md") {
+    padding-right: rem(25);
+    padding-left: rem(25);
+  }
 }
 
 .campaign-page-contents__items {
@@ -87,6 +114,85 @@
   grid-template-columns: repeat(1, 1fr);
   column-gap: rem(40);
   row-gap: rem(40);
+
+  @include mq("md") {
+  grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+.campaign-page-campaign-card__img {
+  max-width: rem(280);
+  width: 100%;
+
+  @include mq("md") {
+    max-width: rem(520);
+  }
+}
+
+.campaign-page-campaign-card__img img {
+  aspect-ratio: 280/188;
+  object-fit: cover;
+  width: 100%;
+
+  @include mq("md") {
+    aspect-ratio: 520/347;
+  }
+}
+
+.campaign-page-campaign-card__body {
+  padding-top: rem(16);
+  padding-right: rem(17);
+  padding-bottom: rem(17);
+  padding-left: rem(16);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  @include mq("md") {
+    padding-top: rem(24);
+    padding-right: rem(24);
+    padding-bottom: rem(30);
+    padding-left: rem(24);
+  }
+}
+
+.campaign-page-campaign-card-text__title-sub {
+  font-weight: $medium;
+  font-family: "Noto Sans JP", serif;
+  margin-top: rem(5);
+  font-size: rem(16);
+
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.campaign-page-campaign-text-line {
+  background-color: $green; /* 横線の色 */
+  content: "";
+  height: rem(1.5); /* 横線の高さ */
+  margin-top: rem(5);
+
+  @include mq("md") {
+    height: rem(1);
+    margin-top: rem(3);
+  }
+}
+
+.campaign-page-campaign-card__date {
+  color: $green;
+  font-size: rem(16);
+  font-weight: $bold;
+  text-align: center;
+}
+
+.campaign-page-campaign-card__reserve {
+  color: $green;
+  font-size: rem(14);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", serif;
+  text-align: center;
 }
 
 .campaign-page__contact-top {
