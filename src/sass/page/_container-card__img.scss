@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campaign__container-card-img {
+.container-card__img {
   max-width: rem(280);
   width: 100%;
 
@@ -9,7 +9,7 @@
   }
 }
 
-.campaign__container-card-img img {
+.container-card__img img {
   aspect-ratio: 280/188;
   object-fit: cover;
   width: 100%;
