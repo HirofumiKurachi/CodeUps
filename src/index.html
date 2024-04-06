@@ -21,18 +21,17 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@400;500;700&display=swap">
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <script src="./assets/js/jquery.inview.min.js" defer></script>
 </head>
 <body>
- <div class="wrap">
     <header class="header js-header">
       <div class="header__inner">
         <a href="index.html" class="header__name-layout">
@@ -181,12 +180,12 @@
     <!--キャンペーン-->
     <section id="campaign" class="campaign campaign-top">
       <div class="campaign__inner inner">
-        <div class="campaign section-title">
+        <div class="campaign__title section-title">
           <p class="section-title__main">Campaign</p>
           <h2 class="section-title__sub">キャンペーン</h2>
         </div>
-        <div class="campaign-swiper__container">
-          <div class="campaign-slider swiper">
+        <div class="campaign__container">
+          <div class="campaign__container-slider swiper">
             <div class="campaign-slider-wrapper swiper-wrapper">
               <div class="campaign-slider-slide swiper-slide">
               <a href="#" class="campaign-card__item">
@@ -281,7 +280,7 @@
             <div class="campaign-swiper__button-next"></div>
           </div>
         </div>
-        <div class="campaign-button-layout">
+        <div class="campaign__button-layout">
           <a href="campaign-page.html" class="button">View&nbsp;more<span class="button-arrow2"></span><span class="button-arrow"></span>
           </a>
         </div>
@@ -667,7 +666,6 @@
       </div>
       <small class="footer__copyright">Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
     </footer>
- </div>
 </body>
 
 </html>
