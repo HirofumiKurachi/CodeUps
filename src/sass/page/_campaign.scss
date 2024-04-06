@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.campaign-top {
+  width: 100%;
+  overflow: visible;
+  margin-top: rem(38);
+  position: relative;
+
+  @include mq("md") {
+    margin-top: rem(111);
+  }
+}
+
+.campaign__inner.inner {
+
+  @include mq("md") {
+    padding-left: rem(25);
+    padding-right: rem(25);
+  }
+}
+
+.campaign__container-slider {
+  box-sizing: content-box;
+  padding-right: calc((100vw - 100%) / 2);
+  width: 100%;
+  margin-top: rem(26);
+
+
+  @include mq("md") {
+    margin-top: rem(40);
+    position: relative;
+  }
+}
