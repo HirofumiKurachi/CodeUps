@@ -117,7 +117,7 @@
 
   @include mq("md") {
   grid-template-columns: repeat(2, 1fr);
-
+  row-gap: rem(78);
   }
 }
 
@@ -152,13 +152,13 @@
   @include mq("md") {
     padding-top: rem(24);
     padding-right: rem(24);
-    padding-bottom: rem(30);
+    padding-bottom: rem(45);
     padding-left: rem(24);
   }
 }
 
 .campaign-page-contents__card-price {
-  margin-top: rem(26.5);
+  margin-top: rem(24);
 }
 
 .campaign-page-campaign-card-text__title-sub {
@@ -219,8 +219,16 @@
   margin-top: rem(3);
 }
 
+.campaign-page-contents-layout {
+  text-align: center;
+  margin-top: rem(12);
+}
 .campaign-page__contact-top {
   margin-top: rem(105);
+
+  @include mq("md") {
+    margin-top: rem(140);
+  }
 }
 
 .campaign-page__footer-top {
