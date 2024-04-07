@@ -1,0 +1,246 @@
+@use "global" as *;
+
+.footer-top {
+  background-color: $green;
+  margin-top: rem(105);
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+
+  @include mq("md") {
+    margin-top: rem(160);
+    padding-top: rem(74);
+    padding-bottom: rem(80);
+  }
+}
+
+.footer__title {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.footer__name-layout {
+  display: flex;
+  align-items: center;
+}
+
+.footer__name-logo {
+  width: rem(120);
+
+  @include mq("md") {
+    width: rem(200);
+  }
+}
+
+.footer__name-logo:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer-title__logo-box {
+  display: flex;
+  margin-top: rem(17);
+
+  @include mq("md") {
+    margin-left: rem(40);
+    padding-top: rem(30);
+    padding-bottom: rem(5);
+  }
+}
+
+.footer-title__facebook-logo {
+  display: block;
+  width: rem(24);
+  height: rem(24);
+
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.footer-title__facebook-logo:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer-title__instagram-logo {
+  display: block;
+  width: rem(24);
+  height: rem(24);
+  margin-left: rem(16);
+
+  @include mq("md") {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.footer-title__instagram-logo:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer__container {
+  display: flex;
+
+  @include mq("md") {
+    margin-top: rem(11);
+    white-space: nowrap;
+    column-gap: rem(120);
+  }
+}
+
+.footer-menu__left {
+  @include mq("md") {
+    display: flex;
+    column-gap: rem(120);
+  }
+}
+
+.footer-menu__item {
+  text-align: center;
+  position: relative;
+  align-items: center;
+  display: block;
+}
+
+.footer-menu__items-a {
+  width: 100%;
+  padding-left: rem(23);
+  margin-top: rem(30.5);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}
+
+.footer-menu__items-b {
+  width: 100%;
+  padding-left: rem(22);
+  margin-top: rem(16);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}
+
+.footer-menu__link-a {
+  width: 100%;
+  font-size: rem(16);
+  text-align: center;
+  color: $white;
+  display: flex;
+  padding-top: rem(12);
+  padding-bottom: rem(10);
+}
+
+.footer-menu__link-b {
+  width: 100%;
+  font-size: rem(16);
+  text-align: center;
+  color: $white;
+  display: flex;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  margin-top: rem(17.3);
+}
+
+.footer-menu__link-a::before {
+  content: "";
+  width: rem(18); /*画像の幅*/
+  height: rem(18); /*画像の高さ*/
+  background-image: url(../images/drawer-logo.svg);
+  background-size: contain;
+  top: rem(9);
+  left: rem(-23);
+  position: absolute;
+}
+.footer-menu__link-b::before {
+  content: "";
+  width: rem(18); /*画像の幅*/
+  height: rem(18); /*画像の高さ*/
+  background-image: url(../images/drawer-logo.svg);
+  background-size: contain;
+  top: rem(9);
+  left: rem(-23);
+  position: absolute;
+}
+
+.footer-menu__logo-text {
+  font-size: rem(16);
+  color: $white;
+  font-weight: $bold;
+  text-align: left;
+  line-height: 1.125;
+  font-family: "Noto Sans JP", serif;
+}
+
+.footer-menu__logo-text:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer-menu__item-text {
+  padding-top: rem(11);
+  padding-bottom: rem(7);
+  color: $white;
+  vertical-align: middle;
+  list-style-type: none;
+  white-space: nowrap;
+  font-family: "Noto Sans JP", serif;
+}
+
+.footer-menu__item-text-b {
+  padding-top: rem(9);
+  padding-bottom: rem(9);
+  color: $white;
+  vertical-align: middle;
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+.footer-menu__item-text:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer-menu__item-text-b:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer-menu__container-right {
+  margin-left: rem(18);
+  display: grid;
+
+  @include mq("md") {
+    display: flex;
+    column-gap: rem(120);
+    margin-left: 0;
+  }
+}
+
+.footer__copyright {
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $white;
+  font-family: Gotu;
+  padding-left: rem(14);
+  padding-right: rem(14);
+  background-color: $green;
+  display: block;
+  width: 100%;
+  font-family: "Gotu", sans-serif;
+  margin-top: rem(26);
+
+  @include mq("md") {
+    padding-bottom: rem(0);
+    display: flex;
+    justify-content: center;
+    font-size: rem(14);
+    line-height: calc(18 / 14);
+    margin-top: rem(66);
+  }
+}

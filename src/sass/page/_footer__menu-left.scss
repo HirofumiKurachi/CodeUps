@@ -1,9 +1,0 @@
-@use "global" as *;
-
-.footer-menu__left {
-
-  @include mq("md") {
-    display: flex;
-    column-gap: rem(120);
-  }
-}
