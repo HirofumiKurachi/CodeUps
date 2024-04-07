@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.price__items {
+  @include mq("md") {
+    max-width: rem(492);
+  }
+}
+
+.price__items-item {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(-2);
+  }
+}
+
+.price__items-item:not(:first-child) {
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
