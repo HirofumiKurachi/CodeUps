@@ -1,10 +1,10 @@
 @use "global" as *;
 
-  .contact-information__item:not(:first-child) {
+  .contact-box__items-item:not(:first-child) {
     margin-top: rem(4);
   }
 
-  .contact-information__item a[href^="tel:"] {
+  .contact-box__items-item a[href^="tel:"] {
     pointer-events: none;
     text-decoration: none;
  }

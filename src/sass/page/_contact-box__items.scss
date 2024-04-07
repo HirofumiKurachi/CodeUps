@@ -1,6 +1,6 @@
 @use "global" as *;
 
-  .contact-information__items {
+  .contact-box__items {
     text-align: center;
 
     @include mq("md") {

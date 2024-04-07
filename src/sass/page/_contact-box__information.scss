@@ -1,6 +1,6 @@
 @use "global" as *;
 
-  .contact-information {
+  .contact-box__information {
     margin-top: rem(16);
 
     @include mq("md") {

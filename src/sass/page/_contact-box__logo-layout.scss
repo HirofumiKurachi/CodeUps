@@ -1,6 +1,6 @@
 @use "global" as *;
 
-  .contact__logo-layout {
+  .contact-box__logo-layout {
     display: flex;
     justify-content: center;
     @include mq("md") {

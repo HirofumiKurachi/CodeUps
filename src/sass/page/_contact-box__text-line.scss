@@ -1,6 +1,6 @@
 @use "global" as *;
 
-  .contact-text-line {
+  .contact-box__text-line {
     background-color: $green; /* 横線の色 */
     content: "";
     height: rem(1.5); /* 横線の高さ */

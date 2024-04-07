@@ -1,6 +1,6 @@
 @use "global" as *;
 
-  .contact__img {
+  .contact-box__img {
     width: rem(295);
     height: rem(160);
     margin-top: rem(16);
@@ -13,7 +13,7 @@
     }
   }
 
-  .contact__img img {
+  .contact-box__img img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 295/160;
