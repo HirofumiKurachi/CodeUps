@@ -1,7 +1,7 @@
 @use "global" as *;
 
 
-.blog-card__item-box {
+.blog__cards-item-box {
   padding-top: rem(16);
   padding-left: rem(16);
   padding-right: rem(16);
@@ -16,7 +16,7 @@
   }
 }
 
-.blog-card__item-box:hover {
+.blog__cards-item-box:hover {
   opacity: 0.9;
   transition: 0.3s;
 }
