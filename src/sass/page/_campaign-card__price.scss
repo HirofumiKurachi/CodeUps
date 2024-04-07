@@ -1,7 +1,7 @@
 @use "global" as *;
 
 
-.campaign-card-price {
+.campaign-card__price {
   margin-top: rem(10);
 
   @include mq("md") {

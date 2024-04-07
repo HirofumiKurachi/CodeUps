@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campaign-card-price__old-strike-through {
+.campaign-card__price-old {
   font-size: rem(20);
   font-weight: $bold;
   text-decoration: line-through;
