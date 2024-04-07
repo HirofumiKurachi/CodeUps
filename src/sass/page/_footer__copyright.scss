@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.footer__copyright {
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $white;
+  font-family: Gotu;
+  padding-left: rem(14);
+  padding-right: rem(14);
+  background-color: $green;
+  display: block;
+  width: 100%;
+  font-family: "Gotu", sans-serif;
+  margin-top: rem(26);
+
+  @include mq("md") {
+    padding-bottom: rem(0);
+    display: flex;
+    justify-content: center;
+    font-size: rem(14);
+    line-height: calc(18 / 14);
+    margin-top: rem(66);
+  }
+}
