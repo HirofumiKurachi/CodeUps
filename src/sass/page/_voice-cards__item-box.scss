@@ -1,0 +1,28 @@
+@use "global" as *;
+
+
+  .voice-cards__item-box {
+    padding-top: rem(15);
+    padding-left: rem(16);
+    padding-right: rem(16);
+    padding-bottom: rem(24);
+    box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+    margin-top: rem(45);
+
+    @include mq("md") {
+      max-width: rem(520);
+      padding-left: rem(24);
+      padding-right: rem(24);
+      padding-top: rem(24);
+      padding-bottom: rem(24);
+      margin-top: rem(0);
+    }
+  }
+
+  .voice-cards__item-box:not(:first-child) {
+    margin-top: rem(41);
+
+    @include mq("md") {
+      margin-top: rem(0);
+    }
+  }

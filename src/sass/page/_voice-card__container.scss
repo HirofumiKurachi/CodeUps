@@ -1,0 +1,7 @@
+@use "global" as *;
+
+  .voice-card__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
