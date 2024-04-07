@@ -1,7 +1,0 @@
-@use "global" as *;
-
-  .voice-card__text-box {
-    @include mq("md") {
-      margin-top: rem(40);
-    }
-  }

@@ -1,8 +1,0 @@
-@use "global" as *;
-
-  .voice-card__title-box {
-
-    @include mq("md") {
-      max-width: rem(276);
-    }
-  }
