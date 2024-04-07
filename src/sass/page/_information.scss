@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.information-top {
+  width: 100%;
+  background-color: $green2;
+  margin-top: rem(78);
+  padding-top: rem(78);
+  padding-bottom: rem(84);
+
+  @include mq("md") {
+    margin-top: rem(84);
+    padding-top: rem(92);
+    padding-bottom: rem(76);
+  }
+}
+
+.information__container {
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(39);
+  }
+}
+
+
+.information__img {
+  margin-top: rem(26);
+  max-width: rem(570);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq("md") {
+    max-width: rem(540);
+    margin-top: rem(0);
+  }
+}
+.information__img img {
+  aspect-ratio: 345/227;
+  object-fit: cover;
+  width: 100%;
+
+  @include mq("md") {
+    aspect-ratio: 540/356;
+    margin-top: rem(0);
+  }
+}
+
+.information__box {
+  margin-top: rem(20);
+
+  @include mq("md") {
+    max-width: rem(492);
+    width: 100%;
+    margin-left: rem(48);
+    margin-top: 0;
+    padding-top: rem(60);
+  }
+}
+
+.information__box-title {
+  font-size: rem(20);
+  font-family: "Noto Sans JP", serif;
+  font-weight: $bold;
+
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: 1;
+  }
+}
+
+.information__text-line {
+  background-color: $green;
+  content: "";
+  height: rem(1.5);
+  margin-top: rem(1);
+
+  @include mq("md") {
+    height: rem(1);
+    margin-top: rem(7);
+  }
+}
+
+.information__text {
+  margin-top: rem(7);
+  font-weight: $regular;
+  font-family: Noto Sans JP;
+  line-height: 1.5;
+}
+
+
+.information__button-layout {
+  margin-top: rem(40);
+  text-align: center;
+}

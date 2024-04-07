@@ -1,9 +1,0 @@
-@use "global" as *;
-
-.information__container {
-  @include mq("md") {
-    display: flex;
-    justify-content: center;
-    margin-top: rem(39);
-  }
-}
