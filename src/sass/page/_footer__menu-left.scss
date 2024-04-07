@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.footer__container-left {
+.footer-menu__left {
 
   @include mq("md") {
     display: flex;

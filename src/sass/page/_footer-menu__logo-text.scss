@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.footer__logo-text {
+.footer-menu__logo-text {
   font-size: rem(16);
   color: $white;
   font-weight: $bold;
@@ -9,7 +9,7 @@
   font-family: "Noto Sans JP", serif;
 }
 
-.footer__logo-text:hover {
+.footer-menu__logo-text:hover {
   opacity: 0.7;
   transition: 0.3s;
 }

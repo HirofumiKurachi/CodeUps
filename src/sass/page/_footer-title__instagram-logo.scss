@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.footer__instagram-logo {
+.footer-title__instagram-logo {
   display: block;
   width: rem(24);
   height: rem(24);
@@ -12,7 +12,7 @@
   }
 }
 
-.footer__instagram-logo:hover {
+.footer-title__instagram-logo:hover {
   opacity: 0.7;
   transition: 0.3s;
 }
