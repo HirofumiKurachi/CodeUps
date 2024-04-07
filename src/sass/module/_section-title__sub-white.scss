@@ -12,3 +12,10 @@
       color: $white;
     }
   }
+
+  .section-title__sub-white::first-letter {
+
+    @include mq("md") {
+      color: $white;
+    }
+  }

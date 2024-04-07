@@ -13,7 +13,7 @@
 .section-title__sub::first-letter {
   color: $green; /* 先頭の文字の色を変更 */
 
-  @include mq("md") {
-    color: $white;
-  }
+  // @include mq("md") {
+  //   color: $white;
+  // }
 }

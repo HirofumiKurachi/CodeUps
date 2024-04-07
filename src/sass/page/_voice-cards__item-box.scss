@@ -1,6 +1,6 @@
 @use "global" as *;
 
-  .voice-card__item-box {
+  .voice-cards__item-box {
     padding-top: rem(15);
     padding-left: rem(16);
     padding-right: rem(16);
@@ -18,7 +18,7 @@
     }
   }
 
-  .voice-card__item-box:not(:first-child) {
+  .voice-cards__item-box:not(:first-child) {
     margin-top: rem(41);
 
     @include mq("md") {

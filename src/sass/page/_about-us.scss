@@ -28,7 +28,7 @@
 
 .about-us__img {
   position: relative;
-  margin-top: rem(27);
+  margin-top: rem(50);
   aspect-ratio: 345/212;
   width: 100%;
 
@@ -76,7 +76,7 @@
   color: $green;
   line-height: 1;
   font-weight: $regular;
-  margin-top: rem(40);
+  margin-top: rem(14);
   font-family: "Gotu", sans-serif;
 
   @include mq("md") {
