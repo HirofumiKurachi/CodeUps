@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.section-title__main-large {
+.section-title__sub-large {
   font-size: rem(80);
   line-height: 1.4;
   margin-bottom: rem(-25);
@@ -12,6 +12,6 @@
   }
 }
 
-.section-title__main-large::first-letter {
+.section-title__sub-large::first-letter {
   color: $green;
 }

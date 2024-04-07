@@ -2,12 +2,10 @@
 
 .section-title__main-white {
 
-    font-size: rem(32);
-    line-height: 1.4;
+    font-size: rem(12);
     color: $white;
-    font-family: "Gotu", sans-serif;
+    margin-top: rem(2);
+    font-family: "Noto Sans JP", serif;
+    font-weight: $regular;
 
-    @include mq("md") {
-      font-size: rem(40);
-    }
-  }
+}

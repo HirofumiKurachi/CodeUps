@@ -1,15 +1,9 @@
 @use "global" as *;
 
 .section-title__main {
-  font-size: rem(32);
-  line-height: 1.4;
-  font-family: "Gotu", sans-serif;
-
-  @include mq("md") {
-    font-size: rem(40);
-  }
-}
-
-.section-title__main::first-letter {
-  color: $green; /* 先頭の文字の色を変更 */
+  font-size: rem(12);
+  color: $green;
+  margin-top: rem(3);
+  font-family: "Noto Sans JP", serif;
+  font-weight: $regular;
 }
