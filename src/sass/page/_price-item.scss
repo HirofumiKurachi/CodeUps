@@ -1,6 +1,6 @@
 @use "global" as *;
 
-  .price-item {
+  .price__items-item {
     margin-top: rem(40);
 
     @include mq("md") {
@@ -8,7 +8,7 @@
     }
   }
 
-  .price-item:not(:first-child) {
+  .price__items-item:not(:first-child) {
 
     @include mq("md") {
       margin-top: rem(40);

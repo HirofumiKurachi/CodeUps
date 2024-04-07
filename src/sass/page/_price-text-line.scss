@@ -1,7 +1,7 @@
 @use "global" as *;
 
 
-  .price-text-line {
+  .price__text-line {
     background-color: $green; /* 横線の色 */
     content: "";
     height: rem(1.5); /* 横線の高さ */
@@ -14,7 +14,7 @@
     }
   }
 
-  .price-text-line:nth-child(2) {
+  .price__text-line:nth-child(2) {
     @include mq("md") {
       margin-top: rem(3);
     }
