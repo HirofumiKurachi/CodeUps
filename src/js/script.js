@@ -105,8 +105,8 @@ color.on('inview', function(){
                 },
             },
             navigation: {
-                nextEl: '.campaign-swiper__button-next',
-                prevEl: '.campaign-swiper__button-prev',
+                nextEl: '.campaign__container-button-next',
+                prevEl: '.campaign__container-button-prev',
             },
         });
     }

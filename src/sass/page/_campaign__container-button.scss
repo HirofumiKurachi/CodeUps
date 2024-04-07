@@ -1,8 +1,8 @@
 @use "global" as *;
 
 /* 前へ次への矢印カスタマイズ */
-.campaign-swiper__button-prev,
-.campaign-swiper__button-next {
+.campaign__container-button-prev,
+.campaign__container-button-next {
   display: none;
 
   @include mq("md") {
@@ -12,15 +12,15 @@
   }
 }
 
-.campaign-swiper__button-prev:hover,
-.campaign-swiper__button-next:hover {
+.campaign__container-button-prev:hover,
+.campaign__container-button-next:hover {
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
 }
 
 /* 前への矢印カスタマイズ */
-.campaign-swiper__button-prev::after {
+.campaign__container-button-prev::after {
 
   @include mq("md") {
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 }
 
 /* 次への矢印カスタマイズ */
-.campaign-swiper__button-next:after  {
+.campaign__container-button-next:after  {
 
   @include mq("md") {
   background-repeat: no-repeat;
