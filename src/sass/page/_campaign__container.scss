@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.campaign__container-slider {
+  box-sizing: content-box;
+  padding-right: calc((100vw - 100%) / 2);
+  width: 100%;
+  margin-top: rem(26);
+
+  @include mq("md") {
+    margin-top: rem(40);
+    position: relative;
+  }
+}
+
+.campaign__container-slide {
+  display: flex;
+  margin-bottom: rem(10);
+  width: rem(280);
+  height: auto;
+}
+
+.campaign__container-button-box {
+  display: flex;
+  position: absolute;
+  top: 1.5%;
+  right: 12.5%;
+  max-width: rem(240);
+  gap: rem(80);
+}
+
+/* 前へ次への矢印カスタマイズ */
+.campaign__container-button-prev,
+.campaign__container-button-next {
+  display: none;
+
+  @include mq("md") {
+    width: rem(80);
+    height: rem(80);
+    display: block;
+  }
+}
+
+.campaign__container-button-prev:hover,
+.campaign__container-button-next:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 前への矢印カスタマイズ */
+.campaign__container-button-prev::after {
+  @include mq("md") {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    background-image: url(/assets/images/arrow1.svg);
+    width: rem(80);
+    height: rem(80);
+    display: block;
+    top: 0;
+  }
+}
+
+/* 次への矢印カスタマイズ */
+.campaign__container-button-next:after {
+  @include mq("md") {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    background-image: url(/assets/images/arrow2.svg);
+    width: rem(80);
+    height: rem(80);
+    display: block;
+    top: 0;
+  }
+}
