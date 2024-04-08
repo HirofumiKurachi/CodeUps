@@ -4,7 +4,7 @@
   display: flex;
 
   @include mq("md") {
-    margin-top: rem(11);
+    margin-top: rem(14);
     white-space: nowrap;
     column-gap: rem(120);
   }

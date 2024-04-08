@@ -144,8 +144,8 @@
     <section id="sub-page-mv" class="sub-page-mv">
       <div class="sub-page-mv js-mv">
         <div class="sub-page-mv__inner">
-          <div class="sub-page-mv-title">
-            <h2 class="sub-page-mv-title__main page-section-title">Campaign</h2>
+          <div class="sub-page-mv__title">
+            <h2 class="sub-page-mv__title-main page-section-title">Campaign</h2>
           </div>
           <picture>
             <source srcset="./assets/images/campaign-page-pc-img.jpg" media="(min-width: 768px)">
@@ -162,14 +162,14 @@
       </div>
     </div>
     <!--タブ-->
-    <div class="campaign-page-container campaign-page-container-top">
-      <div class="campaign-page-container__inner inner">
+    <div class="campaign-page__tab campaign-page__tab-top">
+      <div class="campaign-page__tab-inner inner">
         <div class="campaign-page__tab-layout">
-          <ul class="campaign-page__tab-items">
-            <li class="campaign-page__tab-item is-color"><a href="#">ALL</a></li>
-            <li class="campaign-page__tab-item"><a href="#">ライセンス講習</a></li>
-            <li class="campaign-page__tab-item"><a href="#">ファンダイビング</a></li>
-            <li class="campaign-page__tab-item"><a href="#">体験ダイビング</a></li>
+          <ul class="campaign-page__tab-items campaign-tab">
+            <li class="campaign-tab__item is-color"><a href="#">ALL</a></li>
+            <li class="campaign-tab__item"><a href="#">ライセンス講習</a></li>
+            <li class="campaign-tab__item"><a href="#">ファンダイビング</a></li>
+            <li class="campaign-tab__item"><a href="#">体験ダイビング</a></li>
           </ul>
         </div>
       </div>
@@ -177,138 +177,128 @@
     <!--コンテンツ-->
     <section id="campaign-page-contents" class="campaign-page-contents campaign-page-contents-top">
       <div class="campaign-page-contents__inner inner">
-        <ul class="campaign-page-contents__items">
-          <li class="campaign-page-contents__item">
-            <div class="campaign-card__item">
-              <div class="campaign-page-contents__card-img">
+        <ul class="campaign-page-contents__items  campaign-page-card">
+          <li class="campaign-page-card__item">
+              <div class="campaign-page-card__img">
                 <img src="./assets/images/campaign-img1.jpg" alt="多種多様のカラフルな魚たちが泳いでいる様子">
               </div>
-              <div class="campaign-page-contents__card-body">
-                <div class="campaign-card-text">
-                  <p class="campaign-card-text__title">ライセンス講習</p>
-                  <p class="campaign-page-campaign-card-text__title-sub">ライセンス取得</p>
+              <div class="campaign-page-card__body">
+                <div class="campaign-page-card__text">
+                  <p class="campaign-page-card__title">ライセンス講習</p>
+                  <p class="campaign-page-card__title-sub">ライセンス取得</p>
                 </div>
-                <p class="campaign-page-contents__text-line"></p>
-                <div class="campaign-page-contents__card-price">
-                  <p class="campaign-card-price__text">全部コミコミ(お一人様)</p>
-                  <div class="campaign-card-price-box">
-                    <p class="campaign-card-price__old-strike-through">¥56,000</p>
-                    <p class="campaign-page-contents__price-new">¥46,000</p>
+                <p class="campaign-page-card__text-line"></p>
+                <div class="campaign-page-card__price">
+                  <p class="campaign-page-card__price-text">全部コミコミ(お一人様)</p>
+                  <div class="campaign-page-card__price-box">
+                    <p class="campaign-page-card__price-old">¥56,000</p>
+                    <p class="campaign-page-card__price-new">¥46,000</p>
                   </div>
                 </div>
-                <div class="campaign-page-contents__text-box md-none">
-                  <p class="campaign-page-contents__text">
+                <div class="campaign-page-card__text-box md-none">
+                  <p class="campaign-page-card__text">
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
-                  <div class="campaign-page-campaign-card__date">2023/6/1-9/30</div>
-                  <p class="campaign-page-campaign-card__reserve">ご予約・お問い合わせはコチラ</p>
+                  <div class="campaign-page-card__date">2023/6/1-9/30</div>
+                  <p class="campaign-page-card__reserve">ご予約・お問い合わせはコチラ</p>
                 </div>
-                <!-- <div class="campaign-page-campaign-card__date md-none">2023/6/1-9/30</div>
-                <p class="campaign-page-campaign-card__reserve md-none">ご予約・お問い合わせはコチラ</p> -->
-                <div class="campaign-page-contents-layout md-none">
+                <div class="campaign-page-card__layout md-none">
                   <a href="#" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span>
                   </a>
                 </div>
               </div>
-            </div>
           </li>
-          <li class="campaign-page-contents__item">
-            <div class="campaign-card__item">
-              <div class="campaign-page-contents__card-img">
+          <li class="campaign-page-card__item">
+              <div class="campaign-page-card__img">
                   <img src="./assets/images/campaign-img2.jpg" alt="綺麗な海に船が3隻停泊している様子">
               </div>
-              <div class="campaign-page-contents__card-body">
-                <div class="campaign-card-text">
-                  <p class="campaign-card-text__title">体験ダイビング</p>
-                  <p class="campaign-page-campaign-card-text__title-sub">貸切体験ダイビング</p>
+              <div class="campaign-page-card__body">
+                <div class="campaign-page-card__text">
+                  <p class="campaign-page-card__title">体験ダイビング</p>
+                  <p class="campaign-page-card__title-sub">貸切体験ダイビング</p>
                 </div>
-                <p class="campaign-page-contents__text-line"></p>
-                <div class="campaign-page-contents__card-price">
-                  <p class="campaign-card-price__text">全部コミコミ(お一人様)</p>
-                  <div class="campaign-card-price-box">
-                    <p class="campaign-card-price__old-strike-through">¥24,000</p>
-                    <p class="campaign-page-contents__price-new">¥18,000</p>
+                <p class="campaign-page-card__text-line"></p>
+                <div class="campaign-page-card__price">
+                  <p class="campaign-page-card__price-text">全部コミコミ(お一人様)</p>
+                  <div class="campaign-page-card__price-box">
+                    <p class="campaign-page-card__price-old">¥24,000</p>
+                    <p class="campaign-page-card__price-new">¥18,000</p>
                   </div>
                 </div>
-                <div class="campaign-page-contents__text-box md-none">
-                  <p class="campaign-page-contents__text">
+                <div class="campaign-page-card__text-box md-none">
+                  <p class="campaign-page-card__text">
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
-                  <div class="campaign-page-campaign-card__date">2023/6/1-9/30</div>
-                  <p class="campaign-page-campaign-card__reserve">ご予約・お問い合わせはコチラ</p>
+                  <div class="campaign-page-card__date">2023/6/1-9/30</div>
+                  <p class="campaign-page-card__reserve">ご予約・お問い合わせはコチラ</p>
                 </div>
-                <div class="campaign-page-contents-layout md-none">
+                <div class="campaign-page-card__layout md-none">
                   <a href="#" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span>
                   </a>
                 </div>
               </div>
-            </div>
           </li>
-          <li class="campaign-page-contents__item">
-            <div class="campaign-card__item">
-              <div class="campaign-page-contents__card-img">
+          <li class="campaign-page-card__item">
+              <div class="campaign-page-card__img">
                 <img src="./assets/images/campaign-img3.jpg" alt="暗い海の中を泳いているクラゲが光に当てられている様子">
               </div>
-              <div class="campaign-page-contents__card-body">
-                <div class="campaign-card-text">
-                  <p class="campaign-card-text__title">体験ダイビング</p>
-                  <p class="campaign-page-campaign-card-text__title-sub">ナイトダイビング</p>
+              <div class="campaign-page-card__body">
+                <div class="campaign-page-card__text">
+                  <p class="campaign-page-card__title">体験ダイビング</p>
+                  <p class="campaign-page-card__title-sub">ナイトダイビング</p>
                 </div>
-                <p class="campaign-page-contents__text-line"></p>
-                <div class="campaign-page-contents__card-price">
-                  <p class="campaign-card-price__text">全部コミコミ(お一人様)</p>
-                  <div class="campaign-card-price-box">
-                    <p class="campaign-card-price__old-strike-through">¥10,000</p>
-                    <p class="campaign-page-contents__price-new">¥8,000</p>
+                <p class="campaign-page-card__text-line"></p>
+                <div class="campaign-page-card__price">
+                  <p class="campaign-page-card__price-text">全部コミコミ(お一人様)</p>
+                  <div class="campaign-page-card__price-box">
+                    <p class="campaign-page-card__price-old">¥10,000</p>
+                    <p class="campaign-page-card__price-new">¥8,000</p>
                   </div>
                 </div>
-                <div class="campaign-page-contents__text-box md-none">
-                  <p class="campaign-page-contents__text">
+                <div class="campaign-page-card__text-box md-none">
+                  <p class="campaign-page-card__text">
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
-                  <div class="campaign-page-campaign-card__date">2023/6/1-9/30</div>
-                  <p class="campaign-page-campaign-card__reserve">ご予約・お問い合わせはコチラ</p>
+                  <div class="campaign-page-card__date">2023/6/1-9/30</div>
+                  <p class="campaign-page-card__reserve">ご予約・お問い合わせはコチラ</p>
                 </div>
-                <div class="campaign-page-contents-layout md-none">
+                <div class="campaign-page-card__layout md-none">
                   <a href="#" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span>
                   </a>
                 </div>
               </div>
-            </div>
           </li>
-          <li class="campaign-page-contents__item">
-            <div class="campaign-card__item">
-              <div class="campaign-page-contents__card-img">
+          <li class="campaign-page-card__item">
+              <div class="campaign-page-card__img">
                 <img src="./assets/images/campaign-img4.jpg" alt="複数のダイバーたちが海の上で今にも潜ろうとしている様子">
               </div>
-              <div class="campaign-page-contents__card-body">
-                <div class="campaign-card-text">
-                  <p class="campaign-card-text__title">ファンダイビング</p>
-                  <p class="campaign-page-campaign-card-text__title-sub">貸切ファンダイビング</p>
+              <div class="campaign-page-card__body">
+                <div class="campaign-page-card__text">
+                  <p class="campaign-page-card__title">ファンダイビング</p>
+                  <p class="campaign-page-card__title-sub">貸切ファンダイビング</p>
                 </div>
-                <p class="campaign-page-contents__text-line"></p>
-                <div class="campaign-page-contents__card-price">
-                  <p class="campaign-card-price__text">全部コミコミ(お一人様)</p>
-                  <div class="campaign-card-price-box">
-                    <div class="campaign-card-price-box">
-                      <p class="campaign-card-price__old-strike-through">¥20,000</p>
-                      <p class="campaign-page-contents__price-new">¥16,000</p>
+                <p class="campaign-page-card__text-line"></p>
+                <div class="campaign-page-card__price">
+                  <p class="campaign-page-card__price-text">全部コミコミ(お一人様)</p>
+                  <div class="campaign-page-card__price-box">
+                    <div class="campaign-page-card__price-box">
+                      <p class="campaign-page-card__price-old">¥20,000</p>
+                      <p class="campaign-page-card__price-new">¥16,000</p>
                     </div>
                   </div>
-                  <div class="campaign-page-contents__text-box md-none">
-                    <p class="campaign-page-contents__text">
+                  <div class="campaign-page-card__text-box md-none">
+                    <p class="campaign-page-card__text">
                       ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                     </p>
-                    <div class="campaign-page-campaign-card__date">2023/6/1-9/30</div>
-                    <p class="campaign-page-campaign-card__reserve">ご予約・お問い合わせはコチラ</p>
+                    <div class="campaign-page-card__date">2023/6/1-9/30</div>
+                    <p class="campaign-page-card__reserve">ご予約・お問い合わせはコチラ</p>
                   </div>
-                  <div class="campaign-page-contents-layout md-none">
+                  <div class="campaign-page-card__layout md-none">
                     <a href="#" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span>
                     </a>
                   </div>
                 </div>
               </div>
-            </div>
           </li>
         </ul>
       </div>
@@ -328,144 +318,152 @@
       </div>
     </div>
     <!--コンタクト-->
-    <section id="contact" class="campaign-page__contact campaign-page__contact-top">
+    <section id="contact" class="contact contact-top">
       <div class="contact__inner inner">
         <div class="contact__container">
-          <div class="contact__box">
-            <a href="index.html" class="contact__logo-layout">
-              <h3 class="contact__logo">
-                <img src="./assets/images/contact-logo.svg" alt="CodeUps">
+          <div class="contact__box contact-box">
+            <a href="index.html" class="contact-box__logo-layout">
+              <h3 class="contact-box__logo">
+                <img src="./assets/images/contact-logo.svg" alt="CodeUps" />
               </h3>
             </a>
-            <p class="contact-text-line"></p>
-            <div class="contact-information">
-              <ul class="contact-information__items">
-                <address class="contact-private-information">
-                  <li class="contact-information__item">
-                    <p class="contact-information__item-text">沖縄県那覇市1-1</p>
+            <p class="contact-box__text-line"></p>
+            <div class="contact-box__information">
+              <ul class="contact-box__items">
+                <address class="contact-box__private">
+                  <li class="contact-box__items-item contact-item">
+                    <p class="contact-item__text">沖縄県那覇市1-1</p>
                   </li>
-                  <li class="contact-information__item">
+                  <li class="contact-box__items-item contact-item">
                     <a href="TEL:0120-000-0000">
-                      <p class="contact-information__item-text">TEL:0120-000-0000</p>
+                      <p class="contact-item__text">TEL:0120-000-0000</p>
                     </a>
                   </li>
                 </address>
-                <li class="contact-information__item">
-                  <p class="contact-information__item-text">営業時間:8:30-19:00</p>
+                <li class="contact-box__items-item contact-item">
+                  <p class="contact-item__text">営業時間:8:30-19:00</p>
                 </li>
-                <li class="contact-information__item">
-                  <p class="contact-information__item-text">定休日:毎週火曜日</p>
+                <li class="contact-box__items-item contact-item">
+                  <p class="contact-item__text">定休日:毎週火曜日</p>
                 </li>
               </ul>
-              <iframe class="contact__img" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2467.513625872067!2d127.69482336933658!3d26.222972059058005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6YKj6KaH5biCMS0x!5e0!3m2!1sja!2sjp!4v1708751870509!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                class="contact-box__img"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2467.513625872067!2d127.69482336933658!3d26.222972059058005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6YKj6KaH5biCMS0x!5e0!3m2!1sja!2sjp!4v1708751870509!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div class="contact__title-layout">
-            <div class="contact section-title">
-              <p class="section-title__main-large">Contact</p>
-              <h2 class="section-title__sub">お問い合わせ</h2>
-              <p class="contact-section-title__text">ご予約・お問い合わせはコチラ</p>
-              <div class="contact-button-layout">
-                <a href="#" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span>
-                </a>
+            <div class="contact__title section-title">
+              <p class="section-title__sub-large">Contact</p>
+              <h2 class="section-title__main">お問い合わせ</h2>
+              <p class="contact__title-text">ご予約・お問い合わせはコチラ</p>
+              <div class="contact__button-layout">
+                <a href="#" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span> </a>
               </div>
             </div>
             <a href="#" class="contact__top-button">
-              <img class="top-button-img" src="./assets/images/contact-top-button.svg" alt="トップボタン">
+              <img class="top-button-img" src="./assets/images/contact-top-button.svg" alt="トップボタン" />
             </a>
           </div>
         </div>
       </div>
     </section>
-    </main>
+  </main>
     <!--フッター-->
-    <footer class="campaign-page__footer campaign-page__footer-top">
-      <div class="footer-menu__inner inner">
-        <div class="footer-menu__title">
+    <footer class="footer footer-top">
+      <div class="footer__inner inner">
+        <div class="footer__title footer-title">
           <a href="#" class="footer__name-layout">
             <h3 class="footer__name">
-              <img class="footer__name-logo" src="./assets/images/logo.svg" alt="CodeUps">
+              <img class="footer__name-logo" src="./assets/images/logo.svg" alt="CodeUps" />
             </h3>
           </a>
-          <div class="footer-logo-box">
-            <a class="facebook-logo">
-              <img src="./assets/images/facebook-logo.svg" alt="facebook">
+          <div class="footer-title__logo-box">
+            <a class="footer-title__facebook-logo">
+              <img src="./assets/images/facebook-logo.svg" alt="facebook" />
             </a>
-            <a class="instagram-logo">
-              <img src="./assets/images/insta-logo.svg" alt="instagram">
+            <a class="footer-title__instagram-logo">
+              <img src="./assets/images/insta-logo.svg" alt="instagram" />
             </a>
           </div>
         </div>
-        <div class="footer-menu__container">
-          <div class="footer-menu__container-left">
+        <div class="footer__container footer-menu">
+          <div class="footer-menu__left">
             <ul class="footer-menu__items-a">
-                <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link-a">
-                    <p class="footer__logo-text">キャンペーン</p>
-                  </a>
-                </li>
-                  <li class="footer-menu__item-text"><a href="#">ライセンス取得</a></li>
-                  <li class="footer-menu__item-text"><a href="#">貸切体験ダイビング</a></li>
-                  <li class="footer-menu__item-text"><a href="#">ナイトダイビング</a></li>
-                  <li class="footer-menu__item">
-                    <a href="#" class="footer-menu__link-b">
-                      <p class="footer__logo-text">私たちについて</p>
-                    </a>
-                  </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-a">
+                  <p class="footer-menu__logo-text">キャンペーン</p>
+                </a>
+              </li>
+              <li class="footer-menu__item-text"><a href="#">ライセンス取得</a></li>
+              <li class="footer-menu__item-text"><a href="#">貸切体験ダイビング</a></li>
+              <li class="footer-menu__item-text"><a href="#">ナイトダイビング</a></li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-b">
+                  <p class="footer-menu__logo-text">私たちについて</p>
+                </a>
+              </li>
             </ul>
             <ul class="footer-menu__items-b">
-                <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link-a">
-                    <p class="footer__logo-text">ダイビング情報</p>
-                  </a>
-                </li>
-                  <li class="footer-menu__item-text"><a href="#">ライセンス講習</a></li>
-                  <li class="footer-menu__item-text"><a href="#">体験ダイビング</a></li>
-                  <li class="footer-menu__item-text"><a href="#">ファンダイビング</a></li>
-                  <li class="footer-menu__item">
-                    <a href="#" class="footer-menu__link-b">
-                      <p class="footer__logo-text">ブログ</p>
-                    </a>
-                  </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-a">
+                  <p class="footer-menu__logo-text">ダイビング情報</p>
+                </a>
+              </li>
+              <li class="footer-menu__item-text"><a href="#">ライセンス講習</a></li>
+              <li class="footer-menu__item-text"><a href="#">体験ダイビング</a></li>
+              <li class="footer-menu__item-text"><a href="#">ファンダイビング</a></li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-b">
+                  <p class="footer-menu__logo-text">ブログ</p>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="footer-menu__container-right">
             <ul class="footer-menu__items-a">
               <li class="footer-menu__item">
                 <a href="#" class="footer-menu__link-a">
-                  <p class="footer__logo-text">お客様の声</p>
+                  <p class="footer-menu__logo-text">お客様の声</p>
                 </a>
-              </li>
-                <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link-b">
-                    <p class="footer__logo-text">料金一覧</p>
-                  </a>
-                </li>
-                  <li class="footer-menu__item-text-b"><a href="#">ライセンス講習</a></li>
-                  <li class="footer-menu__item-text-b"><a href="#">体験ダイビング</a></li>
-                  <li class="footer-menu__item-text-b"><a href="#">ファンダイビング</a></li>
-            </ul>
-            <ul class="footer-menu__items-b">
-              <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link-a">
-                    <p class="footer__logo-text">よくある質問</p>
-                  </a>
               </li>
               <li class="footer-menu__item">
                 <a href="#" class="footer-menu__link-b">
-                  <p class="footer__logo-text">プライバシー<br class="md-show">ポリシー</p>
+                  <p class="footer-menu__logo-text">料金一覧</p>
                 </a>
               </li>
-                <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link-b">
-                    <p class="footer__logo-text">利用規約</p>
-                  </a>
-                </li>
-                <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link-b">
-                    <p class="footer__logo-text">お問い合わせ</p>
-                  </a>
-                </li>
+              <li class="footer-menu__item-text-b"><a href="#">ライセンス講習</a></li>
+              <li class="footer-menu__item-text-b"><a href="#">体験ダイビング</a></li>
+              <li class="footer-menu__item-text-b"><a href="#">ファンダイビング</a></li>
+            </ul>
+            <ul class="footer-menu__items-b">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-a">
+                  <p class="footer-menu__logo-text">よくある質問</p>
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-b">
+                  <p class="footer-menu__logo-text">プライバシー<br class="md-show" />ポリシー</p>
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-b">
+                  <p class="footer-menu__logo-text">利用規約</p>
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link-b">
+                  <p class="footer-menu__logo-text">お問い合わせ</p>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

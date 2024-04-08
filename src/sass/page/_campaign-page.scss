@@ -6,7 +6,6 @@
   width: 100%;
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   height: 100%;
-  max-width: rem(280);
 }
 
 .campaign-page-cards {
@@ -26,11 +25,11 @@
   }
 }
 
-.campaign-page-container__inner {
+.campaign-page__tab-inner {
   position: relative;
 }
 
-.campaign-page-container__inner::before {
+.campaign-page__tab-inner::before {
   position: absolute;
   content: "";
   background: url(/assets/images/same-logo.svg) center center / contain no-repeat;
@@ -69,7 +68,7 @@
   }
 }
 
-.campaign-page__tab-item {
+.campaign-tab__item {
   justify-items: center;
   position: relative;
   border: solid rem(1) $green;
@@ -88,7 +87,7 @@
 
 }
 
-.campaign-page__tab-item.is-color {
+.campaign-tab__item.is-color {
   color: $white;
   background-color: $green;
 }
@@ -117,18 +116,18 @@
 
   @include mq("md") {
   grid-template-columns: repeat(2, 1fr);
-  row-gap: rem(78);
+  row-gap: rem(80);
   }
 }
 
-.campaign-page-contents__item {
+.campaign-page-card__item {
     max-width: rem(600);
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
-.campaign-page-contents__card-img {
+.campaign-page-card__img {
   // max-width: rem(280);
   width: 100%;
 
@@ -137,7 +136,7 @@
   // }
 }
 
-.campaign-page-contents__card-img img {
+.campaign-page-card__img img {
   aspect-ratio: 280/188;
   object-fit: cover;
   width: 100%;
@@ -147,7 +146,7 @@
   }
 }
 
-.campaign-page-contents__card-body {
+.campaign-page-card__body {
   padding-top: rem(16);
   padding-right: rem(17);
   padding-bottom: rem(17);
@@ -168,7 +167,23 @@
   margin-top: rem(24);
 }
 
-.campaign-page-campaign-card-text__title-sub {
+.campaign-page-card__title {
+  font-size: rem(12);
+  color: $green;
+  border: rem(1) solid $green;
+  padding: rem(7) rem(10) rem(3.5) rem(12);
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: inline-flex;
+  font-family: "Noto Sans JP", serif;
+
+  @include mq("md") {
+  padding: rem(8) rem(15) rem(6) rem(14);
+  }
+}
+
+.campaign-page-card__title-sub {
   font-weight: $medium;
   font-family: "Noto Sans JP", serif;
   margin-top: rem(5);
@@ -179,7 +194,7 @@
   }
 }
 
-.campaign-page-contents__text-line {
+.campaign-page-card__text-line {
   background-color: $green; /* 横線の色 */
   content: "";
   height: rem(1.5); /* 横線の高さ */
@@ -191,7 +206,48 @@
   }
 }
 
-.campaign-page-contents__price-new {
+.campaign-page-card__price {
+  margin-top: rem(10);
+
+  @include mq("md") {
+    margin-top: rem(23);
+  }
+}
+
+.campaign-page-card__price-text {
+  font-size: rem(14);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", serif;
+  text-align: center;
+
+  @include mq("md") {
+    font-size: rem(16);
+    text-align: center;
+  }
+}
+
+.campaign-page-card__price-box {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-family: Lato;
+}
+
+.campaign-page-card__price-old {
+  font-size: rem(20);
+  font-weight: $bold;
+  text-decoration: line-through;
+  text-decoration-color: $red;
+  text-decoration-thickness: rem(3);
+  font-family: "Lato", sans-serif;
+
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: 1;
+  }
+}
+
+.campaign-page-card__price-new {
   font-size: rem(32);
   font-weight: $bold;
   color: $green;
@@ -200,16 +256,16 @@
 
   @include mq("md") {
     font-size: rem(40);
-    // margin-top: rem(-5);
-    margin-left: rem(42);
+    margin-top: rem(0);
+    margin-left: rem(38);
   }
 }
 
-.campaign-page-contents__text-box {
+.campaign-page-card__text-box {
   margin-top: rem(15);
 }
 
-.campaign-page-campaign-card__date {
+.campaign-page-card__date {
   color: $green;
   font-size: rem(16);
   font-weight: $bold;
@@ -218,7 +274,7 @@
   font-family: "Lato", sans-serif;
 }
 
-.campaign-page-campaign-card__reserve {
+.campaign-page-card__reserve {
   color: $green;
   font-size: rem(14);
   font-weight: $regular;
@@ -227,7 +283,7 @@
   margin-top: rem(3);
 }
 
-.campaign-page-contents-layout {
+.campaign-page-card__layout {
   text-align: center;
   margin-top: rem(12);
 }
