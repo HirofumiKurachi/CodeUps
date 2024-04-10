@@ -1,0 +1,124 @@
+@use "global" as *;
+
+.about-us-page__top {
+  width: 100%;
+  overflow: visible;
+  margin-top: rem(83);
+
+  @include mq("md") {
+    margin-top: rem(135);
+  }
+}
+
+.about-us-page__inner {
+  position: relative;
+}
+
+.about-us-page__inner::before {
+  position: absolute;
+  content: "";
+  background: url(/assets/images/same-logo.svg) center center / contain no-repeat;
+  width: rem(120);
+  height: rem(55);
+  bottom: 76%;
+  left: calc(50% - min(46vw, rem(620)));
+  z-index: 1;
+
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    bottom: 78%;
+    z-index: 0;
+  }
+}
+
+.about-us-page__img {
+  position: relative;
+  margin-top: rem(50);
+  aspect-ratio: 345/212;
+  width: 100%;
+
+  @include mq("md") {
+    margin-top: rem(119);
+    aspect-ratio: 1080/661;
+  }
+}
+
+.about-us-page__img1 {
+  position: relative;
+  aspect-ratio: 128/194;
+  width: 37%;
+  margin-top: -61%;
+}
+
+.about-us-page__img2 {
+  aspect-ratio: 281/186;
+  object-fit: cover;
+  // width: 82%;
+  width: 100%;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+
+  @include mq("md") {
+    aspect-ratio: 880/581;
+    width: 81.45%;
+  }
+}
+
+.about-us-page__container {
+  @include mq("md") {
+    position: absolute;
+    top: 36.8%;
+    left: 19.8%;
+    display: flex;
+    gap: rem(40);
+    max-width: rem(840);
+  }
+}
+
+.about-us-page__head {
+  font-size: rem(40);
+  color: $white;
+  line-height: 1;
+  font-weight: $regular;
+  margin-top: rem(14);
+  font-family: "Gotu", sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  // top: 0;
+  // left: 0;
+  // transform: translate(15%, 150%);
+
+  @include mq("md") {
+    font-size: rem(80);
+    color: $white;
+    line-height: 1.25;
+    margin-top: 0;
+    position: relative;
+    left: 0%;
+  }
+}
+
+.about-us-page__text {
+  line-height: 1.5;
+  font-weight: $regular;
+  margin-top: rem(17);
+  font-family: "Noto Sans JP", serif;
+
+  @include mq("md") {
+    margin-top: rem(0);
+    color: $white;
+  }
+}
+
+.about-us-page__button-layout {
+  margin-top: rem(47);
+  text-align: center;
+
+  @include mq("md") {
+    margin-top: rem(37);
+  }
+}
