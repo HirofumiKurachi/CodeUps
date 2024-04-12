@@ -1,12 +1,13 @@
 @use "global" as *;
 
-.about-us-page__top {
+.about-us-page-top {
   width: 100%;
   overflow: visible;
-  margin-top: rem(83);
+  margin-top: rem(50);
 
   @include mq("md") {
-    margin-top: rem(135);
+    // margin-top: rem(135);
+    margin-top: rem(225);
   }
 }
 
@@ -20,26 +21,27 @@
   background: url(/assets/images/same-logo.svg) center center / contain no-repeat;
   width: rem(120);
   height: rem(55);
-  bottom: 76%;
+  bottom: 93%;
   left: calc(50% - min(46vw, rem(620)));
   z-index: 1;
 
   @include mq("md") {
     width: rem(301);
     height: rem(138);
-    bottom: 78%;
+    // bottom: 78%;
+    bottom: 101.5%;
     z-index: 0;
   }
 }
 
 .about-us-page__img {
   position: relative;
-  margin-top: rem(50);
+  // margin-top: rem(50);
   aspect-ratio: 345/212;
   width: 100%;
 
   @include mq("md") {
-    margin-top: rem(119);
+    // margin-top: rem(119);
     aspect-ratio: 1080/661;
   }
 }
@@ -70,8 +72,9 @@
 .about-us-page__container {
   @include mq("md") {
     position: absolute;
-    top: 36.8%;
-    left: 19.8%;
+    // top: 36.8%;
+    top: 18.8%;
+    left: 20.2%;
     display: flex;
     gap: rem(40);
     max-width: rem(840);
@@ -83,14 +86,12 @@
   color: $white;
   line-height: 1;
   font-weight: $regular;
-  margin-top: rem(14);
+  // margin-top: rem(14);
   font-family: "Gotu", sans-serif;
   position: absolute;
-  top: 20%;
+  top: 5.5%;
   left: 10%;
-  // top: 0;
-  // left: 0;
-  // transform: translate(15%, 150%);
+
 
   @include mq("md") {
     font-size: rem(80);
@@ -105,12 +106,13 @@
 .about-us-page__text {
   line-height: 1.5;
   font-weight: $regular;
-  margin-top: rem(17);
+  margin-top: rem(40);
   font-family: "Noto Sans JP", serif;
 
   @include mq("md") {
     margin-top: rem(0);
     color: $white;
+    padding-top: rem(23);
   }
 }
 
