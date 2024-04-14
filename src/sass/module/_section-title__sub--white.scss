@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.section-title__sub-white {
+.section-title__sub--white {
 
     font-size: rem(32);
     line-height: 1.4;
@@ -13,7 +13,7 @@
     }
   }
 
-  .section-title__sub-white::first-letter {
+  .section-title__sub--white::first-letter {
 
     @include mq("md") {
       color: $white;
