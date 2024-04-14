@@ -6,7 +6,12 @@
   font-weight: $bold;
   font-family: Noto Sans JP;
   border-bottom: rem(1) solid $green;
+  padding-bottom: rem(3);
+
+  @include mq("md") {
   padding-bottom: rem(7);
+
+  }
 
 }
 

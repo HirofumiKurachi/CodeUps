@@ -1,10 +1,12 @@
 @use "global" as *;
 
-  .contact__title-layout {
+.contact__title-layout {
+  margin-top: rem(16);
 
-    @include mq("md") {
-      padding-left: rem(81);
-      border-left: rem(1) solid $green;
-      padding-top: rem(5);
-    }
+  @include mq("md") {
+    padding-left: rem(81);
+    border-left: rem(1) solid $green;
+    padding-top: rem(5);
+    margin-top: rem(0);
   }
+}
