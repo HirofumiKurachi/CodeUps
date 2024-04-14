@@ -56,25 +56,25 @@
   top: rem(-2);
 }
 
-.hamburger span:nth-child(2) {
+.header__hamburger span:nth-child(2) {
   top: rem(10);
   transition: 0.3s opacity;
 }
 
-.hamburger span:nth-child(3) {
+.header__hamburger span:nth-child(3) {
   top: rem(22);
 }
 
-.hamburger.is-active span:nth-child(1) {
+.header__hamburger.is-active span:nth-child(1) {
   top: rem(11);
   transform: rotate(37deg);
 }
 
-.hamburger.is-active span:nth-child(2) {
+.header__hamburger.is-active span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.is-active span:nth-child(3) {
+.header__hamburger.is-active span:nth-child(3) {
   top: rem(12);
   transform: rotate(-37deg);
 }
