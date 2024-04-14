@@ -75,7 +75,7 @@ color.on('inview', function(){
     let campaign_swiper; // グローバルスコープで campaign_swiper を定義
 
     function initializeSwiper() {
-        const mv_swiper = new Swiper(".mv__slider.swiper", {
+        const mv_swiper = new Swiper(".js-mv-swiper", {
             loop: true,
             speed: 2000,
             effect: "fade",
