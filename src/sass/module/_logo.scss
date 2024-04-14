@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.logo {
+  max-width: rem(102);
+
+  @include mq("md") {
+    max-width: rem(133);
+  }
+}
