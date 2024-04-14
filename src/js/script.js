@@ -38,7 +38,7 @@ jQuery(function ($) {
 
         //MV過ぎたらヘッダー背景色変化
         $(window).on("scroll", function () {
-            var mvBottom = $(".js-mv").offset().top + $(".js-mv").outerHeight();
+            var mvBottom = $(".mv").offset().top + $(".mv").outerHeight();
             if ($(window).scrollTop() > mvBottom) {
                 $(".js-header").addClass("is-scroll");
             } else {
