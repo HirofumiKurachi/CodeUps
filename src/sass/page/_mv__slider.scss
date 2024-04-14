@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .mv__slider,
-.mv__slider .swiper-img,
-.mv__slider .swiper-img img {
+.mv__slider .picture,
+.mv__slider .picture img {
     height: inherit;
     min-height: inherit;
 }
 
-.mv__slider .swiper-img img {
+.mv__slider .picture img {
     width: 100%;
     object-fit: cover;
 }
