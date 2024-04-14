@@ -6,8 +6,12 @@
   line-height: 1.5;
   font-family: Noto Sans JP;
   margin-top: rem(-3);
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(7);
 
   @include mq("md") {
-    margin-top: rem(-2);
+  margin-top: rem(-2);
+  padding-bottom: rem(3);
+
   }
 }

@@ -107,24 +107,17 @@
   font-weight: $medium;
   font-family: "Noto Sans JP", serif;
   margin-top: rem(5);
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(7);
 }
 
-.campaign-card__text-line {
-  background-color: $green; /* 横線の色 */
-  content: "";
-  height: rem(1.5); /* 横線の高さ */
-  margin-top: rem(5);
-
-  @include mq("md") {
-    height: rem(1);
-  }
-}
 
 .campaign-card__price {
   margin-top: rem(10);
 
   @include mq("md") {
-    margin-top: rem(19);
+    // margin-top: rem(19);
+    margin-top: rem(15);
   }
 }
 
@@ -145,6 +138,10 @@
   justify-content: center;
   align-items: baseline;
   font-family: Lato;
+
+  @include mq("md") {
+    margin-top: rem(2);
+  }
 }
 
 .campaign-card__price-old {

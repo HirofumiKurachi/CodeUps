@@ -3,6 +3,11 @@
   .contact-box__logo-layout {
     display: flex;
     justify-content: center;
+    border-bottom: rem(1) solid $green;
+    padding-bottom: rem(7);
+
     @include mq("md") {
+    padding-bottom: rem(7);
+
     }
   }

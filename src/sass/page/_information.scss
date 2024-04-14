@@ -61,24 +61,18 @@
   font-size: rem(20);
   font-family: "Noto Sans JP", serif;
   font-weight: $bold;
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(7);
+
+
 
   @include mq("md") {
     font-size: rem(24);
     line-height: 1;
+    padding-bottom: rem(7);
   }
 }
 
-.information__text-line {
-  background-color: $green;
-  content: "";
-  height: rem(1.5);
-  margin-top: rem(1);
-
-  @include mq("md") {
-    height: rem(1);
-    margin-top: rem(7);
-  }
-}
 
 .information__text {
   margin-top: rem(7);
