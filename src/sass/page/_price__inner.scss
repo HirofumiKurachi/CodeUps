@@ -2,6 +2,7 @@
 
 .price__inner {
   position: relative;
+  max-width: rem(600);
 }
 
 .price__inner::after {

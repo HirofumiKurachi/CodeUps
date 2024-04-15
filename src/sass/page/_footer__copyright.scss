@@ -13,6 +13,7 @@
   width: 100%;
   font-family: "Gotu", sans-serif;
   margin-top: rem(26);
+  text-align: center;
 
   @include mq("md") {
     padding-bottom: rem(0);

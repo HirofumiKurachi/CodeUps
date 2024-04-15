@@ -2,6 +2,7 @@
 
 .blog__inner {
   position: relative;
+  max-width: rem(600);
 }
 
 .blog__inner::before {
