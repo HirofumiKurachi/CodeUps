@@ -1,0 +1,69 @@
+@use "global" as *;
+
+  .contact-box__img {
+    width: rem(295);
+    height: rem(160);
+    margin-top: rem(16);
+
+    @include mq("md") {
+      width: 61%;
+      height: rem(148);
+      margin-top: 0;
+      margin-left: rem(25);
+    }
+  }
+
+  .contact-box__img img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 295/160;
+  }
+
+  .contact-box__logo {
+    max-width: rem(174);
+    width: 100%;
+
+    @include mq("md") {
+      max-width: rem(200);
+    }
+  }
+
+  .contact-box__information {
+    margin-top: rem(16);
+
+    @include mq("md") {
+      display: flex;
+      margin-top: rem(24);
+    }
+  }
+
+  .contact-box__items {
+    text-align: center;
+
+    @include mq("md") {
+      text-align: left;
+    }
+  }
+
+  .contact-box__items-item:not(:first-child) {
+    margin-top: rem(4);
+  }
+
+  .contact-box__items-item a[href^="tel:"] {
+    pointer-events: none;
+    text-decoration: none;
+ }
+
+
+
+.contact-box__logo-layout {
+  display: flex;
+  justify-content: center;
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(7);
+
+  @include mq("md") {
+  padding-bottom: rem(7);
+
+  }
+}
