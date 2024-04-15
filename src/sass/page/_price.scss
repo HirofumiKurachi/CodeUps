@@ -1,0 +1,115 @@
+@use "global" as *;
+
+.price-top {
+  width: 100%;
+  background-color: $green2;
+  padding-top: rem(85);
+  padding-bottom: rem(84);
+  margin-top: rem(80);
+
+  @include mq("md") {
+    padding-top: rem(90);
+    padding-bottom: rem(102);
+    margin-top: rem(145);
+  }
+}
+
+.price__inner {
+  position: relative;
+  max-width: rem(600);
+}
+
+.price__inner::after {
+  @include mq("md") {
+      position: absolute;
+      content: "";
+      background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
+      width: rem(437);
+      height: rem(201);
+      bottom: -4.5%;
+      left: calc(50% - min(48vw, rem(620)));
+  }
+}
+
+.price__container {
+  @include mq("md") {
+    display: flex;
+    margin-top: rem(40);
+  }
+}
+
+
+.price__items {
+  @include mq("md") {
+    max-width: rem(492);
+  }
+}
+
+.price__items-item {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(-2);
+  }
+}
+
+.price__items-item:not(:first-child) {
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.price__text-line {
+  background-color: $green; /* 横線の色 */
+  content: "";
+  height: rem(1.5); /* 横線の高さ */
+  margin-top: rem(3);
+  flex-grow: 1;
+
+  @include mq("md") {
+    height: rem(1);
+    margin-top: rem(2);
+  }
+}
+
+.price__text-line:nth-child(2) {
+  @include mq("md") {
+    margin-top: rem(3);
+  }
+}
+
+.price__img-sp {
+  margin-top: rem(25);
+}
+
+.price__img-sp img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 345/227;
+}
+
+.price__img-pc {
+  @include mq("md") {
+    max-width: rem(492);
+    margin-left: rem(93);
+    margin-top: rem(-1);
+  }
+}
+
+.price__img-pc img {
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 492/746;
+  }
+}
+
+
+.price__button-layout {
+  margin-top: rem(39);
+  text-align: center;
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

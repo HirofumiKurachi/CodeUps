@@ -1,16 +1,4 @@
 @use "global" as *;
 
-.mv__text {
-  margin-top: rem(-3);
-  color: $white;
-  font-size: rem(20);
-  letter-spacing: 0.05em;
-  text-align: center;
-  font-weight: $regular;
-  font-family: "Gotu", sans-serif;
 
-  @include mq("md") {
-    margin-top: rem(-8);
-  }
-}
 
