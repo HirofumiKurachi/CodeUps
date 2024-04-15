@@ -1,5 +1,13 @@
 @use "global" as *;
 
+.voice-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .voice-cards__item-box {
   padding-top: rem(15);

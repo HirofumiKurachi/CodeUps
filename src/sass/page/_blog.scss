@@ -7,8 +7,7 @@
   @include mq("md") {
     padding-top: rem(90);
   }
-  }
-
+}
 
 .blog-top::after {
   @include mq("md") {
@@ -33,14 +32,14 @@
 
 .blog__inner::before {
   @include mq("md") {
-      position: absolute;
-      content: "";
-      background: url(/assets/images/blog-logo.svg) center center / contain no-repeat;
-      width: rem(437);
-      height: rem(201);
-      bottom: 81.7%;
-      left: calc(50% - min(48vw, rem(620)));
-      z-index: -1;
+    position: absolute;
+    content: "";
+    background: url(/assets/images/blog-logo.svg) center center / contain no-repeat;
+    width: rem(437);
+    height: rem(201);
+    bottom: 81.7%;
+    left: calc(50% - min(48vw, rem(620)));
+    z-index: -1;
   }
 }
 
@@ -53,8 +52,6 @@
     padding-right: $padding-pc;
   }
 }
-
-
 
 .blog__button-layout {
   margin-top: rem(42);
