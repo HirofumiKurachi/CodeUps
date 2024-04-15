@@ -65,7 +65,7 @@
   height: 100%;
 
   @include mq("md") {
-    aspect-ratio: 583/369;
+    aspect-ratio: 583/361;
   }
 }
 
@@ -77,6 +77,6 @@
   height: 100%;
 
   @include mq("md") {
-    aspect-ratio: 492/746;
+    aspect-ratio: 746/492;
   }
 }
