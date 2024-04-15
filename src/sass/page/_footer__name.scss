@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.footer__name-layout {
+.footer-title__name-layout {
   display: flex;
   align-items: center;
 }
 
-.footer__name-logo {
+.footer-title__name-logo {
   width: rem(120);
 
   @include mq("md") {
@@ -13,7 +13,7 @@
   }
 }
 
-.footer__name-logo:hover {
+.footer-title__name-logo:hover {
   opacity: 0.7;
   transition: 0.3s;
 }
