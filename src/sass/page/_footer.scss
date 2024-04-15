@@ -1,5 +1,35 @@
 @use "global" as *;
 
+.footer-top {
+  background-color: $green;
+  margin-top: rem(105);
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+
+  @include mq("md") {
+    margin-top: rem(158);
+    padding-top: rem(79);
+    padding-bottom: rem(82);
+  }
+}
+
+.footer__inner {
+  max-width: rem(600);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+
+  @include mq("md") {
+    margin-top: rem(12);
+    white-space: nowrap;
+    column-gap: rem(120);
+    justify-content: initial;
+  }
+}
+
+
 .footer__copyright {
   font-size: rem(12);
   font-weight: $regular;
