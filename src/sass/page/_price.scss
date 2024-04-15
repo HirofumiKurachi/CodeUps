@@ -11,6 +11,8 @@
     padding-top: rem(90);
     padding-bottom: rem(102);
     margin-top: rem(145);
+    // padding-top: rem(88);
+
   }
 }
 
@@ -55,7 +57,8 @@
 
 .price__items-item:not(:first-child) {
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(38);
+
   }
 }
 
