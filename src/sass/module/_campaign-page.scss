@@ -47,7 +47,6 @@
   row-gap: rem(16);
 
   @include mq("md") {
-    // grid-template-columns: repeat(4, 1fr);
     column-gap: rem(32);
     display: flex;
   }
@@ -76,9 +75,6 @@
   background-color: $green;
 }
 
-.campaign-page-contents-top {
-  margin-top: rem(39);
-}
 
 .campaign-page-contents__inner.inner {
   padding-right: rem(47);

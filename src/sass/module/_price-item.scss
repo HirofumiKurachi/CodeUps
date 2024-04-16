@@ -9,11 +9,8 @@
   padding-bottom: rem(3);
 
   @include mq("md") {
-  padding-bottom: rem(5);
-
-
+    padding-bottom: rem(5);
   }
-
 }
 
 .price-item__box {

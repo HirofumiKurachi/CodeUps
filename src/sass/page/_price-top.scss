@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.price-top {
+  width: 100%;
+  background-color: $green2;
+  padding-top: rem(85);
+  padding-bottom: rem(84);
+  margin-top: rem(80);
+
+  @include mq("md") {
+    padding-top: rem(90);
+    padding-bottom: rem(102);
+    margin-top: rem(145);
+  }
+}

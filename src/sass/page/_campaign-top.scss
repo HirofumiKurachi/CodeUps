@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.campaign-top {
+  width: 100%;
+  overflow: visible;
+  margin-top: rem(38);
+  position: relative;
+
+  @include mq("md") {
+    margin-top: rem(111);
+  }
+}

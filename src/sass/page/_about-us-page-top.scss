@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.about-us-page-top {
+  width: 100%;
+  overflow: visible;
+  margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(225);
+  }
+}
