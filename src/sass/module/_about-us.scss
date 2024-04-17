@@ -18,14 +18,14 @@
 }
 
 
-.about-us-page__img {
+.about-us__img {
   position: relative;
   aspect-ratio: 345/212;
   width: 100%;
 
   @include mq("md") {
     aspect-ratio: 1080/661;
-    // margin-top: rem(40);
+    margin-top: rem(40);
   }
 }
 
@@ -74,7 +74,7 @@
 .about-us__container {
   @include mq("md") {
     position: absolute;
-    top: 36.8%;
+    top: 40.8%;
     left: 19.8%;
     display: flex;
     gap: rem(40);

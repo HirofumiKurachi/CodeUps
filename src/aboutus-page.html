@@ -35,9 +35,9 @@
     <header class="header js-header">
       <div class="header__inner">
         <a href="index.html" class="header__name-layout">
-          <h1 class="header__name">
+          <div class="header__name">
             <img class="logo" src="./assets/images/logo.svg" alt="CodeUps" />
-          </h1>
+          </div>
         </a>
         <nav class="header__nav md-none">
           <ul class="header__items">
@@ -157,16 +157,14 @@
     <main>
       <!--サブビュー-->
       <section id="sub-page-mv" class="sub-page-mv">
-        <div class="sub-page-mv mv">
-          <div class="sub-page-mv__inner">
-            <div class="sub-page-mv__title">
-              <h2 class="sub-page-mv__title-main page-section-title">About us</h2>
-            </div>
-            <picture>
-              <source srcset="./assets/images/aboutus-page-pc-img.jpg" media="(min-width: 768px)" />
-              <img src="./assets/images/aboutus-page-sp-img.jpg" alt="屋根の上のシーサーがこちらを見ている様子" />
-            </picture>
+        <div class="sub-page-mv__inner">
+          <div class="sub-page-mv__title">
+            <h1 class="sub-page-mv__title-main page-section-title">About us</h1>
           </div>
+          <picture class="sub-page-mv__picture">
+            <source srcset="./assets/images/aboutus-page-pc-img.jpg" media="(min-width: 768px)" />
+            <img src="./assets/images/aboutus-page-sp-img.jpg" alt="屋根の上のシーサーがこちらを見ている様子" />
+          </picture>
         </div>
       </section>
       <!--パンくず-->
