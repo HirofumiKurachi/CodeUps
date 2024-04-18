@@ -156,7 +156,7 @@
     </header>
     <main>
       <!--サブビュー-->
-      <section id="sub-page-mv" class="sub-page-mv">
+      <section id="sub-page-mv" class="sub-page-mv js-mv">
         <div class="sub-page-mv__inner">
           <div class="sub-page-mv__title">
             <h1 class="sub-page-mv__title-main page-section-title">Campaign</h1>
@@ -355,16 +355,18 @@
                     <p class="contact-item__text">定休日:毎週火曜日</p>
                   </li>
                 </ul>
-                <iframe
-                  class="contact-box__img"
-                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2467.513625872067!2d127.69482336933658!3d26.222972059058005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6YKj6KaH5biCMS0x!5e0!3m2!1sja!2sjp!4v1708751870509!5m2!1sja!2sjp"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <div class="contact-box__map">
+                  <iframe
+                    class="contact-box__img"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2467.513625872067!2d127.69482336933658!3d26.222972059058005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6YKj6KaH5biCMS0x!5e0!3m2!1sja!2sjp!4v1708751870509!5m2!1sja!2sjp"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
             <div class="contact__title-layout">
@@ -376,7 +378,7 @@
                   <a href="#" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span> </a>
                 </div>
               </div>
-              <a href="#" class="contact__top-button">
+              <a href="#" class="contact__top-button js-top-button">
                 <img class="top-button-img" src="./assets/images/contact-top-button.svg" alt="トップボタン" />
               </a>
             </div>
@@ -385,7 +387,7 @@
       </section>
     </main>
     <!--フッター-->
-    <footer class="footer footer-top">
+    <footer class="footer footer-top js-footer">
       <div class="footer__inner inner">
         <div class="footer__title footer-title">
           <a href="#" class="footer-title__name-layout">

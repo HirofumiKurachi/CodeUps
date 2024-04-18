@@ -2,6 +2,7 @@
 
 .gallery__inner {
   position: relative;
+  max-width: rem(600);
 }
 
 .gallery__inner::before {

@@ -1,22 +1,27 @@
 @use "global" as *;
 
-  .contact-box__img {
-    width: rem(295);
-    height: rem(160);
+  .contact-box__map {
+    // width: rem(295);
+    // height: rem(160);
     margin-top: rem(16);
 
     @include mq("md") {
       width: 61%;
-      height: rem(148);
+      // height: rem(148);
       margin-top: 0;
       margin-left: rem(25);
     }
   }
 
-  .contact-box__img img {
+  .contact-box__img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 295/160;
+    height: 100%;
+
+    @include mq("md") {
+    aspect-ratio: 273/148;
+    }
   }
 
   .contact-box__logo {

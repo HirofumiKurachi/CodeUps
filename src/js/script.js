@@ -14,6 +14,23 @@ jQuery(function ($) {
     closeDrawer();
   });
 
+  // スクロールイベント
+  $(window).on("scroll", function () {
+    let scrollHeight = $(document).height();
+    let scrollPosition = $(window).height() + $(window).scrollTop();
+    let footHeight = $(".js-footer").innerHeight();
+    let scrollPositionFromTop = $(window).scrollTop();
+    // ボタン位置の調整
+    let cssSettings = scrollHeight - scrollPosition <= footHeight ? { position: "absolute", bottom: footHeight + "px", top: "auto" } : { position: "fixed", bottom: "20px", top: "auto" };
+    $(".js-top-button").css(cssSettings);
+    // ボタンの表示・非表示
+    if (scrollPositionFromTop > 200) {
+      $(".js-top-button").fadeIn();
+    } else {
+      $(".js-top-button").fadeOut();
+    }
+  });
+
   // モーダル
   $(function () {
     const open = $(".js-modal-open"),
@@ -53,7 +70,7 @@ jQuery(function ($) {
 
   //MV過ぎたらヘッダー背景色変化
   $(window).on("scroll", function () {
-    var mvBottom = $(".mv").offset().top + $(".mv").outerHeight();
+    var mvBottom = $(".mv, .sub-page-mv").offset().top + $(".mv, .sub-page-mv").outerHeight();
     if ($(window).scrollTop() > mvBottom) {
       $(".js-header").addClass("is-scroll");
     } else {
@@ -90,7 +107,7 @@ jQuery(function ($) {
   });
 
   let campaign_swiper; // グローバルスコープで campaign_swiper を定義
-
+  //mvスワイパー
   function initializeSwiper() {
     const mv_swiper = new Swiper(".js-mv-swiper", {
       loop: true,
@@ -107,10 +124,13 @@ jQuery(function ($) {
   }
 
   initializeSwiper();
-
+  //campaignスワイパー
   function initializeCampaignSwiper() {
     campaign_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
+      autoplay: true,
+      delay: 4000,
+      speed: 1000, // スライドの切り替えスピード（ミリ秒）
       loopedSlides: 4,
       slidesPerView: "auto",
       spaceBetween: 24,

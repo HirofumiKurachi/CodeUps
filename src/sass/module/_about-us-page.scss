@@ -3,6 +3,7 @@
 
 .about-us-page__inner {
   position: relative;
+  max-width: rem(600);
 }
 
 .about-us-page__inner::before {
@@ -51,7 +52,6 @@
   }
 }
 
-
 .about-us-page__img-big {
   margin-left: auto;
   margin-top: -48.7%;
@@ -73,7 +73,6 @@
       aspect-ratio: 880/581;
   }
 }
-
 .about-us-page__container {
   @include mq("md") {
     position: absolute;
