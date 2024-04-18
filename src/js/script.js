@@ -21,7 +21,7 @@ jQuery(function ($) {
     let footHeight = $(".js-footer").innerHeight();
     let scrollPositionFromTop = $(window).scrollTop();
     // ボタン位置の調整
-    let cssSettings = scrollHeight - scrollPosition <= footHeight ? { position: "absolute", bottom: footHeight + "px", top: "auto" } : { position: "fixed", bottom: "20px", top: "auto" };
+    let cssSettings = scrollHeight - scrollPosition <= footHeight ? { position: "absolute", bottom: footHeight + "px", top: "auto" } : { position: "fixed", bottom: "0px", top: "auto" };
     $(".js-top-button").css(cssSettings);
     // ボタンの表示・非表示
     if (scrollPositionFromTop > 200) {
