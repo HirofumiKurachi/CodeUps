@@ -58,27 +58,21 @@
     text-align: center;
   }
 
+  .contact__top-button {
+    bottom: 0;
+    padding: rem(20);
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+}
 
-  .top-button-img {
+  .contact__top-button img {
     width: rem(48);
     height: rem(48);
 
     @include mq("md") {
       width: rem(80);
       height: rem(80);
-    }
-  }
-
-  .contact__top-button {
-    position: absolute;
-    content: "";
-    right: calc(50% - min(48vw, rem(172)));
-    bottom: -14.5%;
-    // right: rem(15);
-
-    @include mq("md") {
-    bottom: -34%;
-    right: calc(50% - min(49vw, rem(700)));
     }
   }
 

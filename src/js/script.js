@@ -14,21 +14,27 @@ jQuery(function ($) {
     closeDrawer();
   });
 
-  // スクロールイベント
-  $(window).on("scroll", function () {
-    let scrollHeight = $(document).height();
-    let scrollPosition = $(window).height() + $(window).scrollTop();
-    let footHeight = $(".js-footer").innerHeight();
-    let scrollPositionFromTop = $(window).scrollTop();
-    // ボタン位置の調整
-    let cssSettings = scrollHeight - scrollPosition <= footHeight ? { position: "absolute", bottom: footHeight + "px", top: "auto" } : { position: "fixed", bottom: "0px", top: "auto" };
-    $(".js-top-button").css(cssSettings);
-    // ボタンの表示・非表示
-    if (scrollPositionFromTop > 200) {
-      $(".js-top-button").fadeIn();
-    } else {
-      $(".js-top-button").fadeOut();
-    }
+  // トップに戻るボタン
+  $(document).ready(function () {
+    $(".js-top-button").hide();
+    $(window).on("scroll", function () {
+      let scrollPositionFromTop = $(window).scrollTop();
+      let windowHeight = $(window).height();
+      let footerTop = $(".footer").offset().top;
+      let triggerOffset = 200;
+
+      // ボタンの表示・非表示
+      if (scrollPositionFromTop > triggerOffset && scrollPositionFromTop + windowHeight < footerTop) {
+        $(".js-top-button").fadeIn();
+      } else {
+        $(".js-top-button").fadeOut();
+      }
+    });
+    // ボタンクリックでトップに戻る
+    $(".js-top-button").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 500);
+      return false;
+    });
   });
 
   // モーダル
