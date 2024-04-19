@@ -140,7 +140,7 @@
 
   @include mq("md") {
     font-size: rem(24);
-    padding-bottom: rem(3);
+    padding-bottom: rem(5);
   }
 }
 
@@ -173,4 +173,12 @@
 .campaign-card__layout {
   text-align: center;
   margin-top: rem(12);
+}
+
+.campaign-card__price-campaign {
+  margin-top: rem(10);
+
+  @include mq("md") {
+    margin-top: rem(24);
+  }
 }
