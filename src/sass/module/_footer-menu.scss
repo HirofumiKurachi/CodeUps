@@ -1,9 +1,19 @@
 @use "global" as *;
 
+.footer-menu {
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: 1fr;
+  display: flex;
+}
+
 .footer-menu__left {
   @include mq("md") {
     display: flex;
-    column-gap: rem(120);
+    // column-gap: rem(120);
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: 1fr;
   }
 }
 
@@ -31,8 +41,14 @@
 
   @include mq("md") {
     margin-top: rem(0);
+    margin-left: rem(120);
   }
 }
+
+// .footer-menu__items-b:nth-child(2) {
+//   margin-left: 15px;
+// }
+
 
 .footer-menu__link-a {
   width: 100%;
@@ -120,12 +136,16 @@
 }
 
 .footer-menu__right {
-  margin-left: rem(18);
-  display: grid;
+  margin-left: rem(16);
+  // display: grid;
 
   @include mq("md") {
     display: flex;
-    column-gap: rem(120);
-    margin-left: 0;
+    margin-left: rem(120);
+    // column-gap: rem(120);
+    // margin-left: 0;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: 1fr;
   }
 }

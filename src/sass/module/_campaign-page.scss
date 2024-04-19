@@ -75,7 +75,6 @@
   background-color: $green;
 }
 
-
 .campaign-page-contents__inner.inner {
   padding-right: rem(47);
   padding-left: rem(48);
@@ -92,15 +91,13 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: rem(40);
-  row-gap: rem(40);
+  row-gap: rem(38);
 
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
     row-gap: rem(80);
   }
 }
-
-
 
 .campaign-card__img-large {
   width: 100%;
@@ -143,11 +140,16 @@
 
   @include mq("md") {
     font-size: rem(24);
+    padding-bottom: rem(3);
   }
 }
 
 .campaign-card__text-box {
   margin-top: rem(15);
+
+  @include mq("md") {
+    margin-top: rem(17);
+  }
 }
 
 .campaign-card__date {
