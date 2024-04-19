@@ -29,15 +29,15 @@
     @include mq("md") {
       display: flex;
       box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
-      padding: rem(80) rem(112) rem(80) rem(50);
+      padding: rem(80) rem(112) rem(76) rem(50);
       justify-content: space-between;
     }
   }
 
   .contact__box {
-    max-width: rem(600);
     margin-left: auto;
     margin-right: auto;
+    width: 85.5%;
 
     @include mq("md") {
       margin-left: 0;

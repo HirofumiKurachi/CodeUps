@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .about-us-page__inner {
   position: relative;
   max-width: rem(600);
@@ -34,7 +33,6 @@
   }
 }
 
-
 .about-us-page__img-small {
   position: relative;
   width: 37.1014%;
@@ -48,18 +46,21 @@
   width: 100%;
 
   @include mq("md") {
-      aspect-ratio: 400/606;
+    aspect-ratio: 400/606;
   }
 }
 
 .about-us-page__img-big {
-  margin-left: auto;
-  margin-top: -48.7%;
-  width: 81.45%;
+  margin-left: 0;
+  margin-top: 0;
+  width: 100%;
   z-index: 1;
 
   @include mq("md") {
-      margin-top: -48.8%;
+    margin-top: -48.8%;
+    margin-left: auto;
+  width: 81.45%;
+
   }
 }
 
@@ -70,7 +71,7 @@
   width: 100%;
 
   @include mq("md") {
-      aspect-ratio: 880/581;
+    aspect-ratio: 880/581;
   }
 }
 .about-us-page__container {
@@ -97,7 +98,6 @@
   top: 5.5%;
   left: 10%;
 
-
   @include mq("md") {
     font-size: rem(80);
     color: $white;
@@ -120,4 +120,3 @@
     padding-top: rem(23);
   }
 }
-
