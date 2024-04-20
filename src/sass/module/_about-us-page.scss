@@ -77,7 +77,6 @@
 .about-us-page__container {
   @include mq("md") {
     position: absolute;
-    // top: 36.8%;
     top: 30.8%;
     left: 20.2%;
     display: flex;
@@ -92,7 +91,6 @@
   color: $white;
   line-height: 1;
   font-weight: $regular;
-  // margin-top: rem(14);
   font-family: "Gotu", sans-serif;
   position: absolute;
   top: 5.5%;

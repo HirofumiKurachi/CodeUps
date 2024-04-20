@@ -37,7 +37,6 @@
   @include mq("md") {
     height: rem(90);
     padding-left: rem(25);
-   padding-right: rem(40);
     margin-right: rem(1);
     border-bottom: none;
   }
@@ -51,12 +50,13 @@
   display: flex;
   align-items: center;
   height: inherit;
-  gap: rem(40);
 }
 
 .header__item {
   height: inherit;
   color: $white;
+  padding-right: rem(20);
+  padding-left: rem(20);
 }
 
 .header__item a:hover{

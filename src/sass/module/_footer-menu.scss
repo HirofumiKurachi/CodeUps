@@ -129,15 +129,9 @@
 .footer-menu__right {
   margin-left: rem(16);
   width: 50%;
-  // display: grid;
 
   @include mq("md") {
     display: flex;
     margin-left: rem(120);
-    // column-gap: rem(120);
-    // margin-left: 0;
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: 1fr;
   }
 }

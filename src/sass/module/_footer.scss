@@ -5,17 +5,10 @@
 }
 
 .footer__container {
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: 1fr;
-  // display: flex;
-  // justify-content: space-around;
 
   @include mq("md") {
     margin-top: rem(12);
     white-space: nowrap;
-    // column-gap: rem(120);
-    // justify-content: initial;
   }
 }
 
