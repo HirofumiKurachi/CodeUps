@@ -2,6 +2,7 @@
 
   .contact__inner {
     position: relative;
+    max-width: rem(600);
   }
 
   .contact__inner::after {
