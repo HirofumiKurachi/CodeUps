@@ -95,7 +95,7 @@
 
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: rem(80);
+    row-gap: rem(76.8);
   }
 }
 

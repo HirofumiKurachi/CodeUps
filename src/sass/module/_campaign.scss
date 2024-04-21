@@ -128,7 +128,7 @@
   font-family: Lato;
 
   @include mq("md") {
-    margin-top: rem(2);
+    margin-top: rem(-1);
   }
 }
 
@@ -157,6 +157,19 @@
     font-size: rem(40);
     margin-top: rem(-5);
     margin-left: rem(27);
+  }
+}
+
+.campaign-card__campaign-price-new {
+  font-size: rem(32);
+  font-weight: $bold;
+  color: $green;
+  margin-left: rem(18);
+  font-family: "Lato", sans-serif;
+
+  @include mq("md") {
+    font-size: rem(40);
+    margin-left: rem(43);
   }
 }
 
