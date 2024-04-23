@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.information-tab__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: rem(19);
+}
+
+.information-tab__button {
+  font-size: rem(14);
+  font-weight: $regular;
+  background-color: $green2;
+  padding: rem(10) rem(16);
+  color: $green;
+  font-family: "Noto Sans JP", serif;
+  box-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+
+.information-tab__button.is-active {
+  background-color: $green;
+  color: $white;
+}
+
+.information-tab__content {
+  display: none;
+}
+
+.information-tab__content.is-active {
+  display: block;
+}

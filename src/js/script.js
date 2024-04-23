@@ -56,6 +56,32 @@ jQuery(function ($) {
     });
   });
 
+  //タブ
+// $(function () {
+//   const tabButton = $(".js-tab-button"),
+//     tabContent = $(".js-tab-content");
+//   tabButton.on("click", function () {
+//     let index = tabButton.index(this);
+
+//     tabButton.removeClass("is-active");
+//     $(this).addClass("is-active");
+//     tabContent.removeClass("is-active");
+//     tabContent.eq(index).addClass("is-active");
+//   });
+// });
+$(function () {
+  const tabButton = $(".js-tab-button"),
+    tabContent = $(".js-tab-content");
+  tabButton.on("click", function () {
+    let index = tabButton.index(this);
+
+    tabButton.removeClass("is-active");
+    $(this).addClass("is-active");
+    tabContent.removeClass("is-active");
+    tabContent.eq(index).addClass("is-active");
+  });
+});
+
   //resizeイベント
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 768px)").matches) {
