@@ -1,5 +1,9 @@
 @use "global" as *;
 
 .information-page-top {
-  margin-top: rem(121);
+  margin-top: rem(117);
+
+  @include mq("md") {
+    margin-top: rem(148);
+  }
 }

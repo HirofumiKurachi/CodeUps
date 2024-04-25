@@ -3,23 +3,56 @@
 .information-tab__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   column-gap: rem(19);
+
+  @include mq("md") {
+    column-gap: rem(90);
+  }
 }
 
 .information-tab__button {
-  font-size: rem(14);
-  font-weight: $regular;
   background-color: $green2;
-  padding: rem(10) rem(16);
+  padding: rem(10) rem(10);
   color: $green;
   font-family: "Noto Sans JP", serif;
   box-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.25);
   transition: all 0.5s;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+
+  @include mq("md") {
+    padding: rem(13) rem(10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
+
+.information-tab__button-img {
+  width: rem(63);
+  height: rem(63);
 }
 
 .information-tab__button.is-active {
   background-color: $green;
   color: $white;
+}
+
+.information-tab__button.is-active .information-tab__button-img {
+  filter: brightness(0) invert(1);
+}
+
+.information-tab__title {
+  font-size: rem(14);
+  font-weight: $regular;
+
+  @include mq("md") {
+    font-size: rem(24);
+    margin-left: rem(8);
+  }
 }
 
 .information-tab__content {

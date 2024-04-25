@@ -18,7 +18,11 @@
   @include mq("md") {
     width: rem(301);
     height: rem(138);
-    bottom: 89.5%;
+    bottom: 86%;
     z-index: 0;
   }
+}
+
+.information-page__tab {
+  position: relative;
 }
