@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.blog-heading__inner.inner {
+  width: 86%;
+}
+
+.blog-heading__container:not(:first-child) {
+  margin-top: rem(80);
+}
+
+.blog-heading__icon {
+  width: rem(50);
+  height: rem(50);
+}
+
+.blog-heading__title-box {
+  display: flex;
+  align-items: center;
+  border-left: rem(8) solid $green;
+  // width: 86%;
+}
+
+.blog-heading__title {
+  font-size: rem(24);
+  font-family: "Noto Sans JP", serif;
+  font-weight: $regular;
+}

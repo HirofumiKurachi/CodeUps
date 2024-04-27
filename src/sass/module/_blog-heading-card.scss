@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.blog-heading-card {
+  align-self: stretch;
+  background-color: #fff;
+  box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+  padding-bottom: 1.375rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.blog-heading-card__item {
+  display: flex;
+}
+
+.blog-heading-card__body {
+  margin-left: rem(16);
+}
+
+.blog-heading-card__text {
+  font-size: rem(16);
+  font-weight: $medium;
+  line-height: 1.5;
+  font-family: Noto Sans JP;
+  margin-top: rem(-3);
+
+  @include mq("md") {
+  margin-top: rem(-2);
+
+  }
+}
+
+.blog-heading-card__img {
+  width: 50%;
+}
+
+.blog-heading-card__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 121/90;
+}
+
+.blog-heading-card__date {
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  font-family: Gotu;
+}
