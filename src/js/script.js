@@ -70,6 +70,20 @@ $(function () {
   });
 });
 
+
+//アコーディオン
+$(function () {
+  $(".js-blog-heading-accordion__item:first-child .js-blog-heading-accordion__content").css(
+    "display",
+    "block"
+  );
+  $(".js-blog-heading-accordion__item:first-child .js-blog-heading-accordion__title").addClass("is-open");
+  $(".js-blog-heading-accordion__title").on("click", function () {
+    $(this).toggleClass("is-open");
+    $(this).next().slideToggle(300);
+  });
+});
+
   //resizeイベント
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 768px)").matches) {

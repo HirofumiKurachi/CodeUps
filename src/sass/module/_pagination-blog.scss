@@ -1,18 +1,18 @@
 @use "global" as *;
 
-.pagination__inner {
+.pagination-blog__inner {
   position: relative;
   width: 100%;
 }
 
 
-.pagination__nav {
+.pagination-blog__nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.pagination__nav a {
+.pagination-blog__nav a {
   width: rem(38);
   height: rem(38);
   border: rem(1) solid $green;
@@ -24,7 +24,7 @@
   position: relative;
 }
 
-.pagination__nav span {
+.pagination-blog__nav span {
   width: rem(38);
   height: rem(38);
   border: rem(1) solid $green;
@@ -36,17 +36,17 @@
   position: relative;
 }
 
-.pagination__nav a:first-child {
+.pagination-blog__nav a:first-child {
   margin-right: rem(35);
   padding: rem(18);
 }
 
-.pagination__nav a:last-child {
+.pagination-blog__nav a:last-child {
   margin-left: rem(35);
   padding: rem(18);
 }
 
-.pagination__prev::before {
+.pagination-blog__prev::before {
   border-right: rem(1) solid $green;
   border-top: rem(1) solid $green;
   content: '';
@@ -60,7 +60,7 @@
 
 }
 
-.pagination__current {
+.pagination-blog__current {
   background-color: $green;
   color: #fff;
   width: rem(40);

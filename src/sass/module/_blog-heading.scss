@@ -17,16 +17,18 @@
   display: flex;
   align-items: center;
   border-left: rem(8) solid $green;
+  padding-left: rem(16);
 }
 
 .blog-heading__title {
   font-size: rem(24);
   font-family: "Noto Sans JP", serif;
   font-weight: $regular;
+  padding-left: rem(7);
 }
 
 .blog-heading__button-layout {
-  margin-top: rem(40);
+  margin-top: rem(42);
   text-align: center;
 
   @include mq("md") {

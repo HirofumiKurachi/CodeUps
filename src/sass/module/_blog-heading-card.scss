@@ -4,10 +4,10 @@
   align-self: stretch;
   background-color: #fff;
   box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
-  padding-bottom: 1.375rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding-bottom: rem(16);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  padding-top: rem(16);
 }
 
 .blog-heading-card__item {
@@ -16,6 +16,7 @@
 
 .blog-heading-card__body {
   margin-left: rem(16);
+  margin-top: rem(-5);
 }
 
 .blog-heading-card__text {
@@ -23,16 +24,10 @@
   font-weight: $medium;
   line-height: 1.5;
   font-family: Noto Sans JP;
-  margin-top: rem(-3);
-
-  @include mq("md") {
-  margin-top: rem(-2);
-
-  }
 }
 
 .blog-heading-card__img {
-  width: 50%;
+  width: 46%;
 }
 
 .blog-heading-card__img img {
