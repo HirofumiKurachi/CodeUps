@@ -1,0 +1,147 @@
+@use "global" as *;
+
+
+.campaign-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+
+.campaign-card__img {
+  max-width: rem(280);
+  width: 100%;
+
+  @include mq("md") {
+    max-width: rem(333);
+  }
+}
+
+.campaign-card__img img {
+  aspect-ratio: 280/188;
+  object-fit: cover;
+  width: 100%;
+
+  @include mq("md") {
+    aspect-ratio: 333/223;
+  }
+}
+
+.campaign-card__body {
+  padding-top: rem(16);
+  padding-right: rem(17);
+  padding-bottom: rem(17);
+  padding-left: rem(16);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  @include mq("md") {
+    padding-top: rem(22);
+    padding-right: rem(17);
+    padding-bottom: rem(30);
+    padding-left: rem(17);
+  }
+}
+.campaign-card__text {
+  flex: 1;
+}
+
+.campaign-card__title {
+  font-size: rem(12);
+  color: $green;
+  border: rem(1) solid $green;
+  padding: rem(7) rem(10) rem(3.5) rem(12);
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: inline-flex;
+  font-family: "Noto Sans JP", serif;
+
+  @include mq("md") {
+  padding: rem(8) rem(15) rem(6) rem(14);
+  }
+}
+
+.campaign-card__title-sub {
+  font-weight: $medium;
+  font-family: "Noto Sans JP", serif;
+  margin-top: rem(5);
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(7);
+}
+
+
+.campaign-card__price {
+  margin-top: rem(10);
+
+  @include mq("md") {
+    margin-top: rem(17);
+  }
+}
+
+.campaign-card__price-text {
+  font-size: rem(14);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", serif;
+  text-align: center;
+
+  @include mq("md") {
+    font-size: rem(16);
+    text-align: center;
+  }
+}
+
+.campaign-card__price-box {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-family: Lato;
+
+  @include mq("md") {
+    margin-top: rem(-1);
+  }
+}
+
+.campaign-card__price-old {
+  font-size: rem(20);
+  font-weight: $bold;
+  text-decoration: line-through;
+  text-decoration-color: $red;
+  text-decoration-thickness: rem(3);
+  font-family: "Lato", sans-serif;
+
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: 1;
+  }
+}
+
+.campaign-card__price-new {
+  font-size: rem(32);
+  font-weight: $bold;
+  color: $green;
+  margin-left: rem(18);
+  font-family: "Lato", sans-serif;
+
+  @include mq("md") {
+    font-size: rem(40);
+    margin-top: rem(-5);
+    margin-left: rem(27);
+  }
+}
+
+.campaign-card__campaign-price-new {
+  font-size: rem(32);
+  font-weight: $bold;
+  color: $green;
+  margin-left: rem(18);
+  font-family: "Lato", sans-serif;
+
+  @include mq("md") {
+    font-size: rem(40);
+    margin-left: rem(43);
+  }
+}
+
