@@ -11,15 +11,15 @@
   background: url(/assets/images/same-logo.svg) center center / contain no-repeat;
   width: rem(120);
   height: rem(55);
-  bottom: 98.9%;
+  bottom: 99.59%;
   left: calc(50% - min(46vw, rem(620)));
   z-index: 1;
 
   @include mq("md") {
     width: rem(301);
     height: rem(138);
-    bottom: 86%;
-    z-index: 0;
+    bottom: 97.5%;
+    z-index: -1;
   }
 }
 
@@ -30,5 +30,24 @@
   @include mq("md") {
     padding-left: $padding-pc;
     padding-right: $padding-pc;
+  }
+}
+
+.blog-page__container {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.blog-page__container-left {
+  @include mq("md") {
+    width: 65.5%;
+  }
+}
+
+.blog-page__container-right {
+  @include mq("md") {
+    width: 27%;
+    margin-left: rem(80);
   }
 }

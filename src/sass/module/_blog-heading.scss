@@ -2,6 +2,12 @@
 
 .blog-heading__inner.inner {
   width: 86%;
+
+  @include mq("md") {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .blog-heading__container:not(:first-child) {
@@ -30,8 +36,4 @@
 .blog-heading__button-layout {
   margin-top: rem(42);
   text-align: center;
-
-  @include mq("md") {
-    margin-top: rem(80);
-  }
 }

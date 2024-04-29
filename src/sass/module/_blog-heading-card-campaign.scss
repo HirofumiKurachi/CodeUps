@@ -34,10 +34,10 @@
   flex: 1;
 
   @include mq("md") {
-    padding-top: rem(22);
-    padding-right: rem(17);
-    padding-bottom: rem(30);
-    padding-left: rem(17);
+    padding-top: rem(16);
+    padding-right: rem(23);
+    padding-bottom: rem(16);
+    padding-left: rem(23);
   }
 }
 .blog-heading-card-campaign__text {
@@ -51,6 +51,10 @@
   border-bottom: rem(1) solid $green;
   padding-bottom: rem(7);
   text-align: center;
+
+  @include mq("md") {
+    margin-top: rem(2);
+  }
 }
 
 
@@ -58,7 +62,7 @@
   margin-top: rem(10);
 
   @include mq("md") {
-    margin-top: rem(17);
+    margin-top: rem(8);
   }
 }
 
@@ -69,7 +73,7 @@
   text-align: center;
 
   @include mq("md") {
-    font-size: rem(16);
+    font-size: rem(14);
     text-align: center;
   }
 }
@@ -81,7 +85,7 @@
   font-family: Lato;
 
   @include mq("md") {
-    margin-top: rem(-1);
+    margin-top: rem(7);
   }
 }
 
@@ -94,7 +98,7 @@
   font-family: "Lato", sans-serif;
 
   @include mq("md") {
-    font-size: rem(24);
+    font-size: rem(20);
     line-height: 1;
   }
 }
@@ -107,7 +111,7 @@
   font-family: "Lato", sans-serif;
 
   @include mq("md") {
-    font-size: rem(40);
+    font-size: rem(32);
     margin-top: rem(-5);
     margin-left: rem(27);
   }

@@ -70,7 +70,7 @@
   margin: 0 rem(5);
 }
 
-.pagination__next::before {
+.pagination-blog__next::before {
   border-right: rem(1) solid $green;
   border-top: rem(1) solid $green;
   content: '';

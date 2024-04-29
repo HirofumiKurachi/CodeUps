@@ -28,13 +28,14 @@
   height: rem(24); /*画像の高さ*/
   background-image: url(/assets/images/polygon1.svg);
   background-size: contain;
-  top: rem(4);
-  left: rem(-19);
+  top: 30%;
+  left: -6%;
   position: absolute;
 }
 
 .blog-heading-accordion__title.is-open::before {
-  top: 23%;
+  top: 38%;
+  left: -8%;
   transform: rotate(90deg);
 }
 
@@ -59,8 +60,8 @@
   height: rem(24); /*画像の高さ*/
   background-image: url(/assets/images/polygon1.svg);
   background-size: contain;
-  top: rem(4);
-  left: rem(8);
+  top: 24%;
+  left: 3%;
   position: absolute;
   display: block;
   background-repeat: no-repeat;
