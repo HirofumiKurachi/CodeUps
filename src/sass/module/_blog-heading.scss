@@ -1,7 +1,8 @@
 @use "global" as *;
 
-.blog-heading__inner.inner {
-  width: 86%;
+.blog-heading__inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
 
   @include mq("md") {
     width: 100%;
@@ -12,6 +13,22 @@
 
 .blog-heading__container:not(:first-child) {
   margin-top: rem(80);
+}
+
+.blog-heading__container-b {
+  margin-top: rem(83);
+
+  @include mq("md") {
+    margin-top: rem(85);
+  }
+}
+
+.blog-heading__container-c {
+  margin-top: rem(83);
+
+  @include mq("md") {
+    margin-top: rem(82);
+  }
 }
 
 .blog-heading__icon {

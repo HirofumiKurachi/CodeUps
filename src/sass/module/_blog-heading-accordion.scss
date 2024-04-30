@@ -2,11 +2,16 @@
 
 .blog-heading-accordion {
   width: 100%;
-  margin-top: rem(24);
+  margin-top: rem(20);
+
+  @include mq("md") {
+    margin-top: rem(24);
+  }
 }
 
 .blog-heading-accordion__item {
   padding-left: rem(21);
+  margin-top: rem(3);
 }
 
 .blog-heading-accordion__title {
@@ -14,9 +19,13 @@
   font-size: rem(24);
   cursor: pointer;
   color: $green;
-  padding-left: rem(8);
+  padding-left: rem(10);
   font-family: "Noto Sans JP", serif;
   font-weight: $regular;
+
+  @include mq("md") {
+    padding-left: rem(8);
+  }
 }
 
 .blog-heading-accordion__title::before {
@@ -31,12 +40,20 @@
   top: 30%;
   left: -6%;
   position: absolute;
+
+  @include mq("md") {
+    top: 13%;
+  }
 }
 
 .blog-heading-accordion__title.is-open::before {
   top: 38%;
   left: -8%;
   transform: rotate(90deg);
+
+  @include mq("md") {
+    top: 33%;
+  }
 }
 
 .blog-heading-accordion__content {
@@ -53,6 +70,7 @@
   padding-left: rem(8);
   font-family: "Noto Sans JP", serif;
   font-weight: $regular;
+  cursor: pointer;
 }
 
 .blog-heading-accordion__text::before {
@@ -66,4 +84,8 @@
   display: block;
   background-repeat: no-repeat;
   content: "";
+
+  @include mq("md") {
+    top: 15%;
+  }
 }
