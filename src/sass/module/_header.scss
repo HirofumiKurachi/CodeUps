@@ -55,8 +55,6 @@
 .header__item {
   height: inherit;
   color: $white;
-  padding-right: rem(20);
-  padding-left: rem(20);
 }
 
 .header__item a:hover{
@@ -89,6 +87,8 @@
   align-items: center;
   white-space: nowrap;
   position: relative;
+  padding-right: rem(20);
+  padding-left: rem(20);
 }
 
 .header__link span {
