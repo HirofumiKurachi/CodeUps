@@ -12,14 +12,15 @@
   width: 100%;
 }
 
-.campaign-page__tab-inner {
+.campaign-page-tab__inner {
   position: relative;
 }
 
-.campaign-page__tab-inner::before {
+
+.campaign-page-tab__inner::before {
   position: absolute;
   content: "";
-  background: url(/assets/images/same-logo.svg) center center / contain no-repeat;
+  background: url(./..//images/same-logo.svg) center center / contain no-repeat;
   width: rem(120);
   height: rem(55);
   bottom: 64%;
@@ -32,7 +33,7 @@
   }
 }
 
-.campaign-page__tab-layout {
+.campaign-page-tab-top {
   margin-top: rem(48);
 
   @include mq("md") {
@@ -40,7 +41,7 @@
   }
 }
 
-.campaign-page__tab-items {
+.campaign-page-tab__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: rem(21);
@@ -70,9 +71,21 @@
   }
 }
 
+.campaign-tab__item:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: $white;
+  background-color: $green;
+}
+
 .campaign-tab__item.is-color {
   color: $white;
   background-color: $green;
+}
+
+.campaign-tab__item.is-color:hover {
+  color: $green;
+  background-color: $white;
 }
 
 .campaign-page-contents__inner.inner {

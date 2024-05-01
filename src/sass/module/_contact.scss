@@ -12,7 +12,7 @@
      height: rem(50);
     right: calc(50% - min(48vw, rem(172.5)));
     top: rem(-25);
-    background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
+    background: url(./../images/prco-logo.svg) center center / contain no-repeat;
 
     @media (orientation: landscape) and (max-width: rem(767)) {
      right: calc(52% - min(44vw, rem(650))); }

@@ -8,7 +8,7 @@
 .blog-page__inner::before {
   position: absolute;
   content: "";
-  background: url(/assets/images/same-logo.svg) center center / contain no-repeat;
+  background: url(./../images/same-logo.svg) center center / contain no-repeat;
   width: rem(120);
   height: rem(55);
   bottom: 99.4%;

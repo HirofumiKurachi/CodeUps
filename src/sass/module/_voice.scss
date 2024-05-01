@@ -10,7 +10,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        background: url(/assets/images/voice-logo.svg) center center / contain no-repeat;
+        background: url(./..//images/voice-logo.svg) center center / contain no-repeat;
         width: rem(301);
         height: rem(138);
         bottom: 95.7%;
@@ -22,7 +22,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        background: url(/assets/images/voice-logo2.svg) center center / contain no-repeat;
+        background: url(./../images/voice-logo2.svg) center center / contain no-repeat;
         width: rem(71);
         height: rem(162);
         bottom: -11%;

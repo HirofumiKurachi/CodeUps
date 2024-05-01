@@ -9,7 +9,7 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    background: url(/assets/images/blog-logo.svg) center center / contain no-repeat;
+    background: url(./..//images/blog-logo.svg) center center / contain no-repeat;
     width: rem(437);
     height: rem(201);
     bottom: 81.7%;

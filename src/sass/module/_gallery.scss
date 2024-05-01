@@ -9,7 +9,7 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    background: url(/assets/images/prco-logo.svg) center center / contain no-repeat;
+    background: url(./../images/prco-logo.svg) center center / contain no-repeat;
     width: rem(301);
     height: rem(138);
     top: -4.5%;

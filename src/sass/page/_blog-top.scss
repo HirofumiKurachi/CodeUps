@@ -11,7 +11,7 @@
 
 .blog-top::after {
   @include mq("md") {
-    background-image: url(/assets/images/blog-img1.jpg);
+    background-image: url(./../images/blog-img1.jpg);
     top: 0;
     left: 0;
     position: absolute;
