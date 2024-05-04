@@ -31,6 +31,18 @@
   }
 }
 
+.information-tab__button:hover {
+  background-color: $green;
+  color: $white;
+  transition: 0.3s ease-in-out;
+}
+
+.information-tab__button:hover .color-change {
+  filter: brightness(0) invert(1);
+  transition: 0.3s ease-in-out;
+}
+
+
 .information-tab__button-img {
   width: rem(63);
   height: rem(63);
