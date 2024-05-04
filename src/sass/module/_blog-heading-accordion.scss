@@ -21,7 +21,7 @@
   color: $green;
   padding-left: rem(10);
   font-family: "Noto Sans JP", serif;
-  font-weight: $regular;
+  font-weight: $normal;
 
   @include mq("md") {
     padding-left: rem(8);
@@ -35,7 +35,7 @@
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   width: rem(24); /*画像の幅*/
   height: rem(24); /*画像の高さ*/
-  background-image: url(/assets/images/polygon1.svg);
+  background-image: url(./../images/polygon1.svg);
   background-size: contain;
   top: 30%;
   left: -6%;
@@ -69,14 +69,14 @@
   margin-top: rem(3);
   padding-left: rem(8);
   font-family: "Noto Sans JP", serif;
-  font-weight: $regular;
+  font-weight: $normal;
   cursor: pointer;
 }
 
 .blog-heading-accordion__text::before {
   width: rem(24); /*画像の幅*/
   height: rem(24); /*画像の高さ*/
-  background-image: url(/assets/images/polygon1.svg);
+  background-image: url(./../images/polygon1.svg);
   background-size: contain;
   top: 24%;
   left: 3%;

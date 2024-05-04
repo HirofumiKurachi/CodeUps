@@ -15,7 +15,7 @@
   margin-top: rem(80);
 }
 
-.blog-heading__container-b {
+.blog-heading__container-campaign {
   margin-top: rem(83);
 
   @include mq("md") {
@@ -23,7 +23,7 @@
   }
 }
 
-.blog-heading__container-c {
+.blog-heading__container-archive {
   margin-top: rem(83);
 
   @include mq("md") {
@@ -46,7 +46,7 @@
 .blog-heading__title {
   font-size: rem(24);
   font-family: "Noto Sans JP", serif;
-  font-weight: $regular;
+  font-weight: $normal;
   padding-left: rem(7);
 }
 

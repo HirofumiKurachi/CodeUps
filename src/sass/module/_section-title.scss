@@ -24,7 +24,7 @@
   color: $green;
   margin-top: rem(3);
   font-family: "Noto Sans JP", serif;
-  font-weight: $regular;
+  font-weight: $normal;
 }
 
 .section-title__sub--white {
@@ -53,7 +53,7 @@
   font-size: rem(12);
   margin-top: rem(2);
   font-family: "Noto Sans JP", serif;
-  font-weight: $regular;
+  font-weight: $normal;
 
   @include mq("md") {
       color: $white;
@@ -65,7 +65,7 @@
   font-size: rem(80);
   line-height: 1.4;
   margin-bottom: rem(-25);
-  font-weight: $regular;
+  font-weight: $normal;
   font-family: "Gotu", sans-serif;
 
   @include mq("md") {

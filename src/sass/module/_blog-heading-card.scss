@@ -14,6 +14,11 @@
   cursor: pointer;
 }
 
+.blog-heading-card:hover .blog-heading-card__img img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
 .blog-heading-card__item {
   display: flex;
 }
@@ -52,7 +57,7 @@
 
 .blog-heading-card__date {
   font-size: rem(12);
-  font-weight: $regular;
+  font-weight: $normal;
   line-height: 1.5;
   font-family: "Gotu", sans-serif;
 }

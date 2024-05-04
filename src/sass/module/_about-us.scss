@@ -94,7 +94,7 @@
   font-size: rem(40);
   color: $green;
   line-height: 1;
-  font-weight: $regular;
+  font-weight: $normal;
   font-family: "Gotu", sans-serif;
 
   @include mq("md") {
@@ -107,7 +107,7 @@
 
 .about-us__text {
   line-height: 1.5;
-  font-weight: $regular;
+  font-weight: $normal;
   margin-top: rem(17);
   font-family: "Noto Sans JP", serif;
 
