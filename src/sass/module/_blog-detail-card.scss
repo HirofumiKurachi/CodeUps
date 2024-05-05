@@ -45,7 +45,6 @@
   font-weight: $normal;
   line-height: 1.5;
   font-family: "Noto Sans JP", serif;
-  // margin-top: rem(16);
 
   @include mq("md") {
     letter-spacing: 0.005em;

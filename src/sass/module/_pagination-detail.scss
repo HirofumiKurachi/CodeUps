@@ -80,8 +80,21 @@
   transform: rotate(-135deg);
   left: 40.5%;
   top: 35%;
-
 }
+
+.pagination-detail__prev:hover::before {
+  border-right-color: $white; /* 右の線を白色に変更 */
+  border-top-color: $white; /* 上の線を白色に変更 */
+  transition: .3s ease-in-out;
+}
+
+
+.pagination-detail__prev:hover {
+  background-color: $green;
+  color: $white;
+  transition: .3s ease-in-out;
+}
+
 
 .pagination-detail__next::before {
   border-right: rem(1) solid $green;
@@ -94,4 +107,16 @@
   transform: rotate(45deg);
   right: 44.5%;
   top: 35%;
+}
+
+.pagination-detail__next:hover {
+  background-color: $green;
+  color: $white;
+  transition: .3s ease-in-out;
+}
+
+.pagination-detail__next:hover::before {
+  border-right-color: $white; /* 右の線を白色に変更 */
+  border-top-color: $white; /* 上の線を白色に変更 */
+  transition: .3s ease-in-out;
 }
