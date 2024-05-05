@@ -54,7 +54,7 @@
               <a class="header__link" href="blog-page.html"><span>Blog</span>ブログ</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="voice-page.html"><span>Voice</span>お客様の声</a>
+              <a class="header__link" href="#"><span>Voice</span>お客様の声</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="#"><span>Price</span>料金一覧</a>
@@ -112,7 +112,7 @@
               <div class="drawer-menu__container-right">
                 <ul class="drawer-menu__items-upper">
                   <li class="drawer-menu__item">
-                    <a href="voice-page.html" class="drawer-menu__link-a">
+                    <a href="#" class="drawer-menu__link-a">
                       <p class="drawer__logo-text">お客様の声</p>
                     </a>
                   </li>
@@ -159,11 +159,11 @@
       <section id="sub-page-mv" class="sub-page-mv">
         <div class="sub-page-mv__inner">
           <div class="sub-page-mv__title">
-            <h1 class="sub-page-mv__title-main page-section-title">About us</h1>
+            <h1 class="sub-page-mv__title-main page-section-title">Campaign</h1>
           </div>
           <picture class="sub-page-mv__picture">
-            <source srcset="./assets/images/aboutus-page-pc-img.jpg" media="(min-width: 768px)" />
-            <img src="./assets/images/aboutus-page-sp-img.jpg" alt="シーサーがこちらを見ている様子" />
+            <source srcset="./assets/images/campaign-page-pc-img.jpg" media="(min-width: 768px)" />
+            <img src="./assets/images/campaign-page-sp-img.jpg" alt="2匹の黄色い魚が泳いでいる様子" />
           </picture>
         </div>
       </section>
@@ -173,107 +173,24 @@
           <span>
             <a href="./"><span>TOP</span></a>
           </span>
-          <span>私たちについて</span>
+          <span>キャンペーン</span>
         </div>
       </div>
-      <!--アバウトアス-->
-      <section id="about-us-page" class="about-us-page about-us-page-top">
-        <div class="about-us-page__inner inner">
-          <div class="about-us-page__img">
-            <div class="about-us-page__img-small md-none">
-              <img src="./assets/images/aboutus-img1.jpg" alt="屋根の上にシーサーの置物がおいてある様子" class="about-us-page__img1" />
-            </div>
-            <div class="about-us-page__img-big">
-              <img src="./assets/images/aboutus-img3.jpg" alt="2匹の黄色い魚が海中を泳いでいる様子" class="about-us-page__img2" />
-            </div>
-          </div>
-          <div class="about-us-page__container">
-            <h3 class="about-us-page__head">Dive&nbsp;into<br />the&nbsp;Ocean</h3>
-            <div class="about-us-page__container-box">
-              <p class="about-us-page__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--ギャラリー-->
-      <section id="gallery" class="gallery gallery-top">
-        <div class="gallery__inner inner">
-          <div class="gallery__title section-title">
-            <p class="section-title__sub">Gallery</p>
-            <h2 class="section-title__main">フォト</h2>
-          </div>
-          <ul class="gallery__list gallery-list">
-            <li class="gallery-list__item js-modal-open" data-target="1">
-              <img src="./assets/images/gallery1.jpg" alt="珊瑚礁の周りをオレンジ色の魚達が泳いでいる様子" />
-            </li>
-            <li class="gallery-list__item js-modal-open" data-target="2">
-              <img src="./assets/images/gallery2.jpg" alt="綺麗な海に船が3隻停泊している様子" />
-            </li>
-            <li class="gallery-list__item js-modal-open" data-target="3">
-              <img src="./assets/images/gallery3.jpg" alt="2匹の熱帯魚が泳いでいる様子" />
-            </li>
-            <li class="gallery-list__item js-modal-open" data-target="4">
-              <img src="./assets/images/gallery4.jpg" alt="1匹の熱帯魚が泳いでいる様子" />
-            </li>
-            <li class="gallery-list__item js-modal-open" data-target="5">
-              <img src="./assets/images/gallery5.jpg" alt="熱帯魚が群れで泳いでいる様子" />
-            </li>
-            <li class="gallery-list__item js-modal-open" data-target="6">
-              <img src="./assets/images/gallery6.jpg" alt="珊瑚礁の周りを黄色い魚が泳いでいる様子" />
-            </li>
+      <!--タブ-->
+      <div class="campaign-page-tab campaign-page-tab-top">
+        <div class="campaign-page-tab__inner inner">
+          <ul class="campaign-page-tab__items campaign-tab">
+            <li class="campaign-tab__item is-color"><a href="#">ALL</a></li>
+            <li class="campaign-tab__item"><a href="#">ライセンス講習</a></li>
+            <li class="campaign-tab__item"><a href="#">ファンダイビング</a></li>
+            <li class="campaign-tab__item"><a href="#">体験ダイビング</a></li>
           </ul>
         </div>
-        <!-- モーダル -->
-        <div class="gallery__modal gallery-modal">
-          <ul class="gallery-modal__items">
-            <li class="gallery-modal__item js-modal js-modal-close" id="gallery-modal-1">
-              <div class="gallery-modal__inner inner">
-                <div class="gallery-modal__img">
-                  <img src="./assets/images/gallery1.jpg" alt="珊瑚礁の周りをオレンジ色の魚達が泳いでいる様子" />
-                </div>
-              </div>
-            </li>
-            <li class="gallery-modal__item js-modal js-modal-close" id="gallery-modal-2">
-              <div class="gallery-modal__inner inner">
-                <div class="gallery-modal__img">
-                  <img src="./assets/images/gallery2.jpg" alt="綺麗な海に船が3隻停泊している様子" />
-                </div>
-              </div>
-            </li>
-            <li class="gallery-modal__item js-modal js-modal-close" id="gallery-modal-3">
-              <div class="gallery-modal__inner inner">
-                <div class="gallery-modal__img">
-                  <img src="./assets/images/gallery3.jpg" alt="2匹の熱帯魚が泳いでいる様子" />
-                </div>
-              </div>
-            </li>
-            <li class="gallery-modal__item js-modal js-modal-close" id="gallery-modal-4">
-              <div class="gallery-modal__inner inner">
-                <div class="gallery-modal__img">
-                  <img src="./assets/images/gallery4.jpg" alt="1匹の熱帯魚が泳いでいる様子" />
-                </div>
-              </div>
-            </li>
-            <li class="gallery-modal__item js-modal js-modal-close" id="gallery-modal-5">
-              <div class="gallery-modal__inner inner">
-                <div class="gallery-modal__img">
-                  <img src="./assets/images/gallery5.jpg" alt="熱帯魚が群れで泳いでいる様子" />
-                </div>
-              </div>
-            </li>
-            <li class="gallery-modal__item js-modal js-modal-close" id="gallery-modal-6">
-              <div class="gallery-modal__inner inner">
-                <div class="gallery-modal__img">
-                  <img src="./assets/images/gallery6.jpg" alt="珊瑚礁の周りを黄色い魚が泳いでいる様子" />
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
+      <!--コンテンツ-->
 
       <!--コンタクト-->
-      <section id="contact" class="contact contact-about-top">
+      <section id="contact" class="contact contact-campaign-top">
         <div class="contact__inner inner">
           <div class="contact__container">
             <div class="contact__box contact-box">
@@ -326,7 +243,7 @@
               </div>
               <div class="contact__top-button js-top-button">
                 <a href="">
-                  <img src="./assets/images/contact-top-button.svg" alt="トップボタン">
+                  <img src="./assets/images/contact-top-button.svg" alt="トップボタン" />
                 </a>
               </div>
             </div>
@@ -388,7 +305,7 @@
           <div class="footer-menu__right">
             <ul class="footer-menu__items-a">
               <li class="footer-menu__item">
-                <a href="voice-page.html" class="footer-menu__link-a">
+                <a href="#" class="footer-menu__link-a">
                   <p class="footer-menu__logo-text">お客様の声</p>
                 </a>
               </li>
