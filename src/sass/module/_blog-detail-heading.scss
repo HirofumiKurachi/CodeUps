@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.blog-detail-heading__inner {
+  padding-left: rem(25);
+  padding-right: rem(25);
+
+  @include mq("md") {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

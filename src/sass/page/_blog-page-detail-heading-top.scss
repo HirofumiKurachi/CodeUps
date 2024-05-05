@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.blog-page-detail-heading-top {
+  position: relative;
+  margin-top: rem(80);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}
+

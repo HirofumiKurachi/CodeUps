@@ -1,0 +1,97 @@
+@use "global" as *;
+
+.pagination-detail__inner {
+  position: relative;
+  width: 100%;
+}
+
+.pagination-detail__inner.inner {
+  @include mq("md") {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.pagination-detail__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq("md") {
+    margin-left: rem(-30);
+  }
+}
+
+.pagination-detail__nav a {
+  width: rem(38);
+  height: rem(38);
+  border: rem(1) solid $green;
+  color: $green;
+  padding: rem(7) rem(14);
+  font-size: rem(16);
+  margin: 0 rem(6);
+  font-family: "Lato",  sans-serif;
+  position: relative;
+
+  @include mq("md") {
+    margin: 0 rem(0);
+  }
+}
+
+.pagination-detail__nav span {
+  width: rem(38);
+  height: rem(38);
+  border: rem(1) solid $green;
+  color: $white;
+  padding: rem(7) rem(14);
+  font-size: rem(16);
+  font-family: "Lato",  sans-serif;
+  margin: 0 rem(5);
+  position: relative;
+}
+
+.pagination-detail__nav a:first-child {
+  margin-right: rem(40);
+  padding: rem(18);
+
+  @include mq("md") {
+    margin-left: rem(0);
+  }
+}
+
+.pagination-detail__nav a:last-child {
+  margin-left: rem(40);
+  padding: rem(18);
+
+  @include mq("md") {
+    margin-left: rem(41);
+  }
+}
+
+.pagination-detail__prev::before {
+  border-right: rem(1) solid $green;
+  border-top: rem(1) solid $green;
+  content: '';
+  display: inline-block;
+  width: rem(11);
+  height: rem(11);
+  position: absolute;
+  transform: rotate(-135deg);
+  left: 40.5%;
+  top: 35%;
+
+}
+
+.pagination-detail__next::before {
+  border-right: rem(1) solid $green;
+  border-top: rem(1) solid $green;
+  content: '';
+  display: inline-block;
+  width: rem(11);
+  height: rem(11);
+  position: absolute;
+  transform: rotate(45deg);
+  right: 44.5%;
+  top: 35%;
+}
