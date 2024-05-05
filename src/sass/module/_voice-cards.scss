@@ -3,6 +3,8 @@
 .voice-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  margin-top: rem(45);
+  grid-row-gap: rem(41);
 
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
@@ -15,7 +17,7 @@
   padding-right: rem(16);
   padding-bottom: rem(24);
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
-  margin-top: rem(45);
+
 
   @include mq("md") {
     max-width: rem(520);
@@ -23,14 +25,6 @@
     padding-right: rem(24);
     padding-top: rem(24);
     padding-bottom: rem(24);
-    margin-top: rem(0);
   }
 }
 
-.voice-cards__item-box:not(:first-child) {
-  margin-top: rem(41);
-
-  @include mq("md") {
-    margin-top: rem(0);
-  }
-}

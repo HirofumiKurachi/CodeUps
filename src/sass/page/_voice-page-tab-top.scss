@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+.voice-page-tab-top {
+  margin-top: rem(48);
+
+  @include mq("md") {
+    margin-top: rem(146);
+  }
+}

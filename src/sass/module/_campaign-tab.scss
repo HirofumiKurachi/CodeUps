@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.campaign-tab__item {
+  justify-items: center;
+  position: relative;
+  border: solid rem(1) $green;
+  display: flex;
+  justify-content: center;
+  padding: rem(6) 0;
+  font-size: rem(14);
+  font-weight: $normal;
+  font-family: "Noto Sans JP", serif;
+  cursor: pointer;
+  color: $green;
+
+  @include mq("md") {
+    width: rem(162);
+  }
+}
+
+.campaign-tab__item:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: $white;
+  background-color: $green;
+}
+
+.campaign-tab__item.is-color {
+  color: $white;
+  background-color: $green;
+}
+
+.campaign-tab__item.is-color:hover {
+  color: $green;
+  background-color: $white;
+}
+
