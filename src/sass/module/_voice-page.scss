@@ -5,6 +5,7 @@
   grid-template-columns: repeat(1, 1fr);
   margin-top: rem(40);
   grid-row-gap: rem(42);
+  place-items: center;
 
 
   @include mq("md") {

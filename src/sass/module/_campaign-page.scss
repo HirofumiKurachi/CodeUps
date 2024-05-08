@@ -1,5 +1,17 @@
 @use "global" as *;
 
+.campaign-page-tab__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: rem(21);
+  row-gap: rem(16);
+
+  @include mq("md") {
+    column-gap: rem(32);
+    display: flex;
+  }
+}
+
 .campaign-page-card__item {
   display: flex;
   flex-direction: column;

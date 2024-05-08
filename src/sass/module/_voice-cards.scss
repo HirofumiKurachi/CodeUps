@@ -17,6 +17,8 @@
   padding-right: rem(16);
   padding-bottom: rem(24);
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  max-width: rem(600);
+  align-self: stretch;
 
 
   @include mq("md") {
