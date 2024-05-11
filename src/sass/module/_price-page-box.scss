@@ -1,0 +1,218 @@
+@use "global" as *;
+
+.price-page__inner {
+  position: relative;
+  max-width: rem(600);
+}
+
+.price-page-box__head-sp {
+  text-align: center;
+  background-color: $green;
+  color: $white;
+  padding-top: rem(11);
+  padding-bottom: rem(5);
+  padding-left: rem(40);
+  padding-right: rem(8);
+  position: relative;
+  border: rem(1) solid $green;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.price-page-box__head-sp::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/price-page-logo.svg) center center / contain no-repeat;
+  width: rem(24);
+  height: rem(24);
+  left: calc(50% - min(45vw, rem(73)));
+  filter: brightness(0) invert(1);
+  top: 20%;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.price-page-box__head-pc {
+  display: none;
+
+  @include mq("md") {
+    display: table-cell;
+    text-align: center;
+    background-color: $green;
+    color: $white;
+    position: relative;
+    border: rem(1) solid $green;
+    padding-top: rem(10);
+    padding-right: rem(10);
+    padding-bottom: rem(74);
+    padding-left: rem(10);
+    width: 28%;
+  }
+}
+
+.price-page-box__head-pc::before {
+  display: none;
+
+  @include mq("md") {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(./../images/price-page-logo.svg) center center / contain no-repeat;
+    width: rem(64);
+    height: rem(64);
+    left: calc(50% - min(45vw, rem(30)));
+    filter: brightness(0) invert(1);
+    top: 41%;
+  }
+}
+
+.price-page-box__head-pc-long {
+  display: none;
+
+  @include mq("md") {
+    display: table-cell;
+    text-align: center;
+    background-color: $green;
+    color: $white;
+    position: relative;
+    border: rem(1) solid $green;
+    padding-top: rem(10);
+    padding-right: rem(10);
+    padding-bottom: rem(74);
+    padding-left: rem(10);
+    width: 28%;
+  }
+}
+
+.price-page-box__head-pc-long::before {
+  display: none;
+
+  @include mq("md") {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(./../images/price-page-logo.svg) center center / contain no-repeat;
+    width: rem(64);
+    height: rem(64);
+    left: calc(50% - min(45vw, rem(30)));
+    filter: brightness(0) invert(1);
+    top: 44%;
+  }
+}
+
+
+.price-page-box__head-sp-middle {
+  text-align: center;
+  background-color: $green;
+  color: $white;
+  padding-top: rem(11);
+  padding-bottom: rem(5);
+  padding-left: rem(40);
+  padding-right: rem(8);
+  position: relative;
+  border: rem(1) solid $green;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.price-page-box__head-sp-middle::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/price-page-logo.svg) center center / contain no-repeat;
+  width: rem(24);
+  height: rem(24);
+  left: calc(50% - min(45vw, rem(80)));
+  filter: brightness(0) invert(1);
+  top: 20%;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.price-page-box__head-sp-last {
+  text-align: center;
+  background-color: $green;
+  color: $white;
+  padding-top: rem(11);
+  padding-bottom: rem(5);
+  padding-left: rem(40);
+  padding-right: rem(8);
+  position: relative;
+  border: rem(1) solid $green;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.price-page-box__head-sp-last::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/price-page-logo.svg) center center / contain no-repeat;
+  width: rem(24);
+  height: rem(24);
+  left: calc(50% - min(45vw, rem(95)));
+  filter: brightness(0) invert(1);
+  top: 20%;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+
+.price-page-box__title {
+  font-size: rem(16);
+  font-weight: $bold;
+  margin-left: rem(8);
+  color: $white;
+}
+
+.price-page-box__name {
+  padding-top: rem(8);
+  padding-right: rem(7);
+  padding-bottom: rem(4);
+  padding-left: rem(7);
+  text-align: center;
+  width: 50%;
+  border: rem(1) solid $green;
+  height: rem(59);
+  font-family: "Noto Sans JP", serif;
+
+
+  @include mq("md") {
+    width: 48%;
+    padding-top: rem(5);
+    padding-left: rem(16);
+    padding-right: rem(16);
+    text-align: left;
+    line-height: 1.5;
+  }
+
+}
+
+.price-page-box__price {
+  width: 20%;
+  text-align: right;
+  font-family: "Noto Sans JP", serif;
+  padding-top: rem(6);
+  padding-right: rem(13);
+  padding-bottom: rem(9);
+  padding-left: rem(8);
+  border: rem(1) solid $green;
+
+  @include mq("md") {
+    width: 23%;
+    padding-top: rem(9);
+    padding-right: rem(14);
+  }
+}
+
+

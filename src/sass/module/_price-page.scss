@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.price-page__inner {
+  position: relative;
+  max-width: rem(600);
+}
+
+.price-page__inner::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/same-logo.svg) center center / contain no-repeat;
+  width: rem(120);
+  height: rem(55);
+  bottom: 97.1%;
+  left: calc(50% - min(46vw, rem(620)));
+  z-index: 1;
+
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    bottom: 93.6%;
+    z-index: -1;
+  }
+}
+
+.price-page__items-item:nth-child(2) {
+  margin-top: rem(38);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.price-page__items-item:nth-child(3) {
+  margin-top: rem(34);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.price-page__items-item:nth-child(4) {
+  margin-top: rem(34);
+
+  @include mq("md") {
+    margin-top: rem(81);
+  }
+}
