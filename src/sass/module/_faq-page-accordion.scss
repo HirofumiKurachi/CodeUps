@@ -106,7 +106,7 @@
   margin-top: rem(44);
 
   @include mq("md") {
-    margin-top: rem(37);
+    margin-top: rem(39);
   }
 }
 
@@ -114,7 +114,7 @@
   margin-top: rem(37);
 
   @include mq("md") {
-    margin-top: rem(37);
+    margin-top: rem(40);
   }
 }
 
@@ -122,7 +122,7 @@
   margin-top: rem(41);
 
   @include mq("md") {
-    margin-top: rem(37);
+    margin-top: rem(41);
   }
 }
 
@@ -130,7 +130,7 @@
   margin-top: rem(41);
 
   @include mq("md") {
-    margin-top: rem(37);
+    margin-top: rem(40);
   }
 }
 
@@ -138,7 +138,7 @@
   margin-top: rem(40);
 
   @include mq("md") {
-    margin-top: rem(37);
+    margin-top: rem(40);
   }
 }
 
@@ -148,7 +148,7 @@
   margin-top: rem(41);
 
   @include mq("md") {
-    margin-top: rem(37);
+    margin-top: rem(40);
   }
 }
 
@@ -167,6 +167,10 @@
     margin-top: rem(16);
     border-top: rem(1) solid $green;
     padding: rem(40);
+    padding-top: rem(40);
+    padding-right: rem(40);
+    padding-bottom: rem(37);
+    padding-left: rem(40);
   }
 }
 
