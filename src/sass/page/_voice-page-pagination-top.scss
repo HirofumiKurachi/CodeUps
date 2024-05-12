@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.pagination-voice-top {
+.voice-page-pagination-top {
   margin-top: rem(78);
 
   @include mq("md") {

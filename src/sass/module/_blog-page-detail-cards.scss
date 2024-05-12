@@ -14,7 +14,20 @@
   }
 }
 
-.blog-page-detail-cards__list {
+.blog-page-detail-cards__item-container p {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: 1.5;
+  font-family: "Noto Sans JP", serif;
+  margin-top: rem(24);
+
+  @include mq("md") {
+    letter-spacing: 0.005em;
+    margin-top: rem(40);
+  }
+}
+
+.blog-page-detail-cards ul {
   margin-top: rem(24);
   padding-left: rem(26);
 
@@ -23,7 +36,7 @@
   }
 }
 
-.blog-page-detail-cards__list-item::before {
+.blog-page-detail-cards li::before {
   background-image: url(./../images/detail-logo.svg);
   content: "";
   width: rem(18); /*画像の幅*/
@@ -39,13 +52,13 @@
   }
 }
 
-.blog-page-detail-cards__list-item {
+.blog-page-detail-cards li {
   font-size: rem(16);
   line-height: calc(24/16);
   font-family: "Noto Sans JP", serif;
 }
 
-.blog-page-detail-cards__list-item:not(:first-child) {
+.blog-page-detail-cards li:not(:first-child) {
   margin-top: rem(4);
 }
 

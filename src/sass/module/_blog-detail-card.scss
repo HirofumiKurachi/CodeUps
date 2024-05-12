@@ -15,13 +15,13 @@
 }
 
 
-.blog-detail-card__body {
-  margin-top: rem(24);
+// .blog-detail-card__body {
+//   margin-top: rem(24);
 
-  @include mq("md") {
-    margin-top: rem(20);
-  }
-}
+//   @include mq("md") {
+//     margin-top: rem(20);
+//   }
+// }
 
 .blog-detail-card__text {
   font-size: rem(24);
@@ -40,11 +40,12 @@
   }
 }
 
-.blog-detail-card__text-sub {
+.blog-detail-card p {
   font-size: rem(16);
   font-weight: $normal;
   line-height: 1.5;
   font-family: "Noto Sans JP", serif;
+  margin-top: rem(24);
 
   @include mq("md") {
     letter-spacing: 0.005em;
