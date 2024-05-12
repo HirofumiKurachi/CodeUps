@@ -85,14 +85,14 @@ $(function () {
 });
 
 $(function () {
-  $(".js-accordion__item:first-child .js-accordion__content").css(
+  $(".js-faq-page-accordion__item .js-faq-page-accordion__content").css(
     "display",
     "block"
   );
-  $(".js-accordion__item:first-child .js-accordion__title").addClass(
+  $(".js-faq-page-accordion__item .js-faq-page-accordion__title").addClass(
     "is-open"
   );
-  $(".js-accordion__title").on("click", function () {
+  $(".js-faq-page-accordion__title").on("click", function () {
     $(this).toggleClass("is-open");
     $(this).next().slideToggle(300);
   });
