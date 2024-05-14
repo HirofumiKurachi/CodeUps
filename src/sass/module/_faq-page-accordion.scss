@@ -37,7 +37,7 @@
   padding-top: rem(16);
   padding-bottom: rem(16);
   padding-left: rem(17);
-  padding-right: rem(17);
+  padding-right: rem(49);
   cursor: pointer;
   color: $white;
   background-color: $green;
@@ -48,7 +48,7 @@
     padding-top: rem(25);
     padding-bottom: rem(25);
     padding-left: rem(40);
-    padding-right: rem(40);
+    padding-right: rem(80);
   }
 }
 
@@ -98,43 +98,7 @@
   opacity: 0;
 }
 
-.faq-page-accordion__item:nth-child(1) {
-  margin-top: 0;
-}
-
-.faq-page-accordion__item:nth-child(2) {
-  margin-top: rem(44);
-
-  @include mq("md") {
-    margin-top: rem(39);
-  }
-}
-
-.faq-page-accordion__item:nth-child(3) {
-  margin-top: rem(37);
-
-  @include mq("md") {
-    margin-top: rem(40);
-  }
-}
-
-.faq-page-accordion__item:nth-child(4) {
-  margin-top: rem(41);
-
-  @include mq("md") {
-    margin-top: rem(41);
-  }
-}
-
-.faq-page-accordion__item:nth-child(5) {
-  margin-top: rem(41);
-
-  @include mq("md") {
-    margin-top: rem(40);
-  }
-}
-
-.faq-page-accordion__item:nth-child(6) {
+.faq-page-accordion__item:not(:first-child) {
   margin-top: rem(40);
 
   @include mq("md") {
@@ -142,14 +106,8 @@
   }
 }
 
-
-
-.faq-page-accordion__item:nth-child(7) {
-  margin-top: rem(41);
-
-  @include mq("md") {
-    margin-top: rem(40);
-  }
+.faq-page-accordion__item:nth-child(1) {
+  margin-top: 0;
 }
 
 .faq-page-accordion__content {
