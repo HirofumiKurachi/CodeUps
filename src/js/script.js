@@ -73,26 +73,26 @@ $(function () {
 
 //アコーディオン
 $(function () {
-  $(".js-blog-heading-accordion__item:first-child .js-blog-heading-accordion__content").css(
+  $(".js-blog-heading-accordion-item:first-child .js-blog-heading-accordion-content").css(
     "display",
     "block"
   );
-  $(".js-blog-heading-accordion__item:first-child .js-blog-heading-accordion__title").addClass("is-open");
-  $(".js-blog-heading-accordion__title").on("click", function () {
+  $(".js-blog-heading-accordion-item:first-child .js-blog-heading-accordion-title").addClass("is-open");
+  $(".js-blog-heading-accordion-title").on("click", function () {
     $(this).toggleClass("is-open");
     $(this).next().slideToggle(300);
   });
 });
 
 $(function () {
-  $(".js-faq-page-accordion__item .js-faq-page-accordion__content").css(
+  $(".js-faq-page-accordion-item .js-faq-page-accordion-content").css(
     "display",
     "block"
   );
-  $(".js-faq-page-accordion__item .js-faq-page-accordion__title").addClass(
+  $(".js-faq-page-accordion-item .js-faq-page-accordion-title").addClass(
     "is-open"
   );
-  $(".js-faq-page-accordion__title").on("click", function () {
+  $(".js-faq-page-accordion-title").on("click", function () {
     $(this).toggleClass("is-open");
     $(this).next().slideToggle(300);
   });
