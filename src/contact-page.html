@@ -176,68 +176,61 @@
           <span>お問い合わせ</span>
         </div>
       </div>
-      <!--アコーディオン-->
-
-
-      <!--コンタクト-->
-      <section id="contact" class="contact contact-faq-top">
-        <div class="contact__inner inner">
-          <div class="contact__container">
-            <div class="contact__box contact-box">
-              <a href="index.html" class="contact-box__logo-layout">
-                <h3 class="contact-box__logo">
-                  <img src="./assets/images/contact-logo.svg" alt="CodeUps" />
-                </h3>
-              </a>
-              <div class="contact-box__information">
-                <ul class="contact-box__items">
-                  <li class="contact-box__items-item contact-item">
-                    <address class="contact-item__private">
-                      <p class="contact-item__text">沖縄県那覇市1-1</p>
-                    </address>
-                  </li>
-                  <li class="contact-box__items-item contact-item">
-                    <a href="TEL:0120-000-0000">
-                      <p class="contact-item__text">TEL:0120-000-0000</p>
-                    </a>
-                  </li>
-                  <li class="contact-box__items-item contact-item">
-                    <p class="contact-item__text">営業時間:8:30-19:00</p>
-                  </li>
-                  <li class="contact-box__items-item contact-item">
-                    <p class="contact-item__text">定休日:毎週火曜日</p>
-                  </li>
-                </ul>
-                <div class="contact-box__map">
-                  <iframe
-                    class="contact-box__img"
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2467.513625872067!2d127.69482336933658!3d26.222972059058005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6YKj6KaH5biCMS0x!5e0!3m2!1sja!2sjp!4v1708751870509!5m2!1sja!2sjp"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </div>
+      <!--お問い合わせ-->
+      <section id="contact-page" class="contact-page contact-page-top">
+        <div class="contact-page__inner inner">
+          <form action="" class="contact-page__form contact-form contact-form">
+            <div class="contact-form__labels">
+              <dl class="contact-form__label">
+                <dt>お名前<span>必須</span></dt>
+                <dd>
+                  <input class="contact-form__inputs-text" type="text" id="name" name="name" placeholder="沖縄&nbsp;&nbsp;&nbsp;太朗" required />
+                </dd>
+              </dl>
+              <dl class="contact-form__label">
+                <dt>メールアドレス<span>必須</span></dt>
+                <dd>
+                  <input class="contact-form__inputs-text" type="email" id="email" name="email" placeholder="aaa000@ggmail.com" required />
+                </dd>
+              </dl>
+              <dl class="contact-form__label">
+                <dt>電話番号<span>必須</span></dt>
+                <dd>
+                  <input class="contact-form__inputs-text" type="tel" id="tel" name="tel" placeholder="000-0000-0000" required />
+                </dd>
+              </dl>
+              <dl class="contact-form__label">
+                <dt>お問合せ項目<span>必須</span></dt>
+                <dd class="contact-form__container">
+                  <div class="contact-form__check-box">
+                    <input type="checkbox" id="check1" name="check1" />
+                    <label for="check1" class="contact-form__check-label">ダイビング講習について</label>
+                  </div>
+                  <div class="contact-form__check-box">
+                    <input type="checkbox" id="check2" name="check2" />
+                    <label for="check2" class="contact-form__check-label">ファンデイビングについて</label>
+                  </div>
+                  <div class="contact-form__check-box">
+                    <input type="checkbox" id="check3" name="check3" />
+                    <label for="check3" class="contact-form__check-label">体験ダイビングについて</label>
+                  </div>
+                </dd>
+              </dl>
+              <!-- <dl class="contact-form__label">
+                <dt>キャンペーン</dt>
+                <dd>
+                  <div class="select">
+                    <select name="sample-select">
+                      <option value="選択肢1">キャンペーン内容を選択</option>
+                      <option value="選択肢2">選択肢2</option>
+                      <option value="選択肢3">選択肢3</option>
+                      <option value="選択肢4">選択肢4</option>
+                    </select>
+                  </div>
+                </dd>
+              </dl> -->
             </div>
-            <div class="contact__title-layout">
-              <div class="contact__title section-title">
-                <p class="section-title__sub--large">Contact</p>
-                <h2 class="section-title__main">お問い合わせ</h2>
-                <p class="contact__title-text">ご予約・お問い合わせはコチラ</p>
-                <div class="contact__button-layout">
-                  <a href="contact-page.html" class="button">Contact&nbsp;us<span class="button-arrow2"></span><span class="button-arrow"></span> </a>
-                </div>
-              </div>
-              <div class="contact__top-button js-top-button">
-                <a href="">
-                  <img src="./assets/images/contact-top-button.svg" alt="トップボタン" />
-                </a>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
       </section>
     </main>

@@ -1,0 +1,189 @@
+@use "global" as *;
+
+.contact-page-top {
+  margin-top: rem(51);
+}
+
+.contact-page__inner {
+  position: relative;
+  max-width: rem(600);
+}
+
+.contact-page__inner::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/same-logo.svg) center center / contain no-repeat;
+  width: rem(120);
+  height: rem(55);
+  bottom: 99.4%;
+  left: calc(50% - min(46vw, rem(620)));
+  z-index: 1;
+
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    bottom: 97.5%;
+    z-index: -1;
+  }
+}
+
+.contact-form__label {
+  padding-bottom: rem(24);
+  border-bottom: rem(1) dashed $green;
+}
+
+.contact-form__label:not(:first-child) {
+  margin-top: rem(27);
+}
+
+.contact-form__label dt {
+  font-size: rem(16);
+  font-weight: $bold;
+  font-family: "Noto Sans JP", serif;
+  line-height: 1;
+}
+
+.contact-form__label span {
+  font-size: rem(12);
+  font-weight: $normal;
+  background-color: $red;
+  color: $white;
+  // line-height: 1;
+  padding-top: rem(3);
+  padding-right: rem(11);
+  padding-bottom: rem(1);
+  padding-left: rem(16);
+  margin-left: rem(7);
+  letter-spacing: 0.4em;
+}
+
+.contact-form__inputs-text {
+  margin-top: rem(20);
+  border: rem(1) solid $green;
+  width: 100%;
+  padding-top: rem(9);
+  padding-bottom: rem(5);
+  padding-left: rem(16);
+}
+
+.contact-form__inputs-text::placeholder {
+  color: $green2;
+
+}
+
+.contact-form__check-box:not(:first-child) {
+  margin-top: rem(4);
+}
+
+.contact-form__container {
+  padding-left: rem(22);
+  margin-top: rem(16);
+  letter-spacing: 0.02em;
+}
+
+.contact-form__check-label {
+  position: relative;
+}
+
+.contact-form__check-label::before {
+  position: absolute;
+  content: "";
+  width: rem(14);
+  height: rem(14);
+  border: rem(1) solid $green;
+  left: rem(-22);
+  top: rem(4);
+  display: block;
+}
+
+.contact-form__check-label::after {
+  position: absolute;
+  content: "";
+  border-bottom: rem(2) solid $red;
+  border-left: rem(2) solid $red;
+  height: rem(5);
+  left: rem(-20);
+  margin-top: rem(7);
+  opacity: 0;
+  top: rem(0);
+  transform: rotate(-45deg);
+  width: rem(9);
+  display: block;
+}
+
+input[type="checkbox"]:checked + .contact-form__check-label::after {
+  opacity: 1;
+}
+
+.select {
+  display: inline-block;
+  position: relative;
+  border: rem(1) solid $green;
+  vertical-align: middle;
+}
+ 
+.select {
+  appearance: none;
+  width: 100%;
+  padding: 11px 8px;
+  // padding-right: 1em;
+  font-size: rem(12);
+  font-weight: $normal;
+  // border: none;
+  outline: 0;
+  // background: #fff;
+  background-image: none;
+  box-shadow: none;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+ 
+.select::before {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  width: 0;
+  height: 0;
+  border-width: 10px 5px 0 5px;
+  border-style: solid;
+  border-color: #eee transparent transparent transparent;
+  content: "";
+  pointer-events: none;
+}
+ 
+.select::-ms-expand {
+  display: none;
+}
+ 
+// .contact-form__inputs-text:first-child {
+//   margin-top: rem(16);
+// }
+
+// .contact-form__inputs-text:not(:first-child) {
+//   margin-top: rem(14);
+// }
+// form {
+//   width: 70%;
+//   margin: 0 auto;
+// }
+
+// .form-row:last-child {
+//   border-bottom: none;
+// }
+// .form-label {
+//   display: flex;
+//   align-items: center;
+//   width: 250px;
+// }
+// .form-label label {
+//   font-weight: bold;
+// }
+// .form-label span {
+//   margin-left: 10px;
+//   padding: 2px 6px;
+//   font-size: 12px;
+//   font-weight: $normal;
+//   color: $white;
+//   background-color: $red;
+// }
