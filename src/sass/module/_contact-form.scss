@@ -58,8 +58,8 @@
 }
 
 .contact-form__label-contact {
-  margin-top: rem(22);
-  padding-bottom: rem(24);
+  margin-top: rem(26);
+  padding-bottom: rem(20);
   border-bottom: rem(1) dashed $green;
 }
 
@@ -104,7 +104,7 @@
 
 .contact-form__container {
   padding-left: rem(22);
-  margin-top: rem(16);
+  margin-top: rem(21);
   letter-spacing: 0.02em;
 }
 
@@ -143,47 +143,53 @@ input[type="checkbox"]:checked + .contact-form__check-label::after {
   opacity: 1;
 }
 
-.select {
+// .select {
+//   display: inline-block;
+//   position: relative;
+//   border: rem(1) solid $green;
+//   vertical-align: middle;
+// }
+
+.contact-form__select {
+  margin-top: rem(20);
   display: inline-block;
   position: relative;
   border: rem(1) solid $green;
-  vertical-align: middle;
-}
- 
-.select {
-  appearance: none;
   width: 100%;
-  padding: 11px 8px;
-  // padding-right: 1em;
+  padding: rem(10) rem(8);
   font-size: rem(12);
   font-weight: $normal;
-  // border: none;
-  outline: 0;
-  // background: #fff;
-  background-image: none;
-  box-shadow: none;
-  text-indent: 0.01px;
-  text-overflow: ellipsis;
   cursor: pointer;
 }
- 
-.select::before {
+
+.contact-form__select select {
+  width: 100%;
+  cursor: pointer;
+}
+
+.contact-form__select::before {
   position: absolute;
-  top: 18px;
-  right: 16px;
+  top: rem(10);
+  right: rem(8);
   width: 0;
   height: 0;
-  border-width: 10px 5px 0 5px;
+  border-width: rem(10) rem(5) 0 rem(5);
   border-style: solid;
-  border-color: #eee transparent transparent transparent;
+  border-color: $green transparent transparent transparent;
   content: "";
-  pointer-events: none;
 }
- 
-.select::-ms-expand {
-  display: none;
+
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  border: 1px solid $green;
 }
- 
+
+// .select::-ms-expand {
+//   display: none;
+// }
+
 // .contact-form__inputs-text:first-child {
 //   margin-top: rem(16);
 // }
