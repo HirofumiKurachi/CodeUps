@@ -88,7 +88,7 @@
 
 .contact-form__label-campaign {
   margin-top: rem(26);
-  padding-bottom: rem(20);
+  padding-bottom: rem(24);
   border-bottom: rem(1) dashed $green;
 
   @include mq("md") {
@@ -202,7 +202,10 @@ input[type="checkbox"]:checked + .contact-form__check-label::after {
   position: relative;
   border: rem(1) solid $green;
   width: 100%;
-  padding: rem(10) rem(8);
+  padding-top: rem(12);
+  padding-right: rem(8);
+  padding-bottom: rem(8);
+  padding-left: rem(8);
   font-size: rem(12);
   font-weight: $normal;
   cursor: pointer;

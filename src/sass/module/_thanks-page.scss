@@ -2,32 +2,35 @@
 
 
 
-.contact-page__inner {
+.thanks-page__inner {
   position: relative;
   max-width: rem(600);
 }
 
-.contact-page__inner.inner {
 
-  @include mq("md") {
-    max-width: rem(750);
-  }
-}
-
-.contact-page__inner::before {
+.thanks-page__inner::before {
   position: absolute;
   content: "";
   background: url(./../images/same-logo.svg) center center / contain no-repeat;
   width: rem(120);
   height: rem(55);
-  bottom: 97.4%;
+  bottom: 85.4%;
   left: calc(50% - min(46vw, rem(620)));
-  z-index: -1;
+  z-index: 1;
 
   @include mq("md") {
     width: rem(301);
     height: rem(138);
-    bottom: 93.7%;
+    bottom: 47.7%;
     z-index: -1;
   }
+}
+
+.thanks-page__box {
+  text-align: center;
+}
+
+.thanks-page__text {
+  margin-top: rem(35);
+  line-height: 1.45;
 }
