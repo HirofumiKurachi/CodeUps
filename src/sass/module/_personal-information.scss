@@ -3,11 +3,11 @@
 .contact-form__personal-information {
   padding-left: rem(60);
   margin-top: rem(42);
+  display: flex;
+  justify-content: center;
 
   @include mq("md") {
     margin-top: rem(80);
-    display: flex;
-    justify-content: center;
   }
 }
 
