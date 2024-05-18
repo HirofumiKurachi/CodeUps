@@ -216,7 +216,7 @@
                   </div>
                 </dd>
               </dl>
-              <dl class="contact-form__label">
+              <dl class="contact-form__label-campaign">
                 <dt>キャンペーン</dt>
                 <dd>
                   <div class="contact-form__select">
@@ -229,19 +229,26 @@
                   </div>
                 </dd>
               </dl>
-              <dl class="contact-form__label">
+              <dl class="contact-form__label-text">
                 <dt>お問合せ内容<span>必須</span></dt>
-                <dd>
-                  <textarea name="問い合わせ" class="form-textarea"></textarea>
+                <dd class="contact-form__text">
+                  <textarea name="問い合わせ" class="contact-form__textarea"></textarea>
                 </dd>
               </dl>
+              <div class="contact-form__personal-information personal-information">
+                <input type="checkbox" id="check4" name="check4" />
+                <label for="check4" class="personal-information__check-label">個人情報の取り扱いについて同意のうえ<br class="md-show" />送信します。</label>
+              </div>
+              <div class="contact-form__button-layout">
+                <a href="#" class="contact-form__button"><input type="submit" value="Send" /><span class="contact-form__button-arrow2"></span><span class="contact-form__button-arrow"></span> </a>
+              </div>
             </div>
           </form>
         </div>
       </section>
     </main>
     <!--フッター-->
-    <footer class="footer footer-top js-footer">
+    <footer class="footer contact-page__footer-top js-footer">
       <div class="footer__inner inner">
         <div class="footer__title footer-title">
           <a href="#" class="footer-title__name-layout">

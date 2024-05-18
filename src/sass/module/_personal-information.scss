@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.contact-form__personal-information {
+  padding-left: rem(60);
+  margin-top: rem(42);
+
+  @include mq("md") {
+    margin-top: rem(80);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.personal-information__check-label {
+  font-size: rem(14);
+  position: relative;
+  display: block;
+  line-height: calc(22/14);
+}
+
+.personal-information__check-label::before {
+  position: absolute;
+  content: "";
+  width: rem(22);
+  height: rem(22);
+  border: rem(1) solid $green;
+  left: rem(-30);
+  top: rem(-2);
+  display: block;
+}
+
+.personal-information__check-label::after {
+  position: absolute;
+  content: "";
+  border-bottom: rem(2) solid $red;
+  border-left: rem(2) solid $red;
+  height: rem(9);
+  width: rem(13);
+  top: rem(-5);
+  left: rem(-25);
+  margin-top: rem(7);
+  opacity: 0;
+  transform: rotate(-45deg);
+  display: block;
+}
+
+input[type="checkbox"]:checked + .personal-information__check-label::after {
+  opacity: 1;
+}

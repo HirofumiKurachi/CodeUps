@@ -1,39 +1,21 @@
 @use "global" as *;
 
-.contact-page-top {
-  margin-top: rem(51);
-}
-
-.contact-page__inner {
-  position: relative;
-  max-width: rem(600);
-}
-
-.contact-page__inner::before {
-  position: absolute;
-  content: "";
-  background: url(./../images/same-logo.svg) center center / contain no-repeat;
-  width: rem(120);
-  height: rem(55);
-  bottom: 99.4%;
-  left: calc(50% - min(46vw, rem(620)));
-  z-index: 1;
-
-  @include mq("md") {
-    width: rem(301);
-    height: rem(138);
-    bottom: 97.5%;
-    z-index: -1;
-  }
-}
-
 .contact-form__label {
   padding-bottom: rem(24);
   border-bottom: rem(1) dashed $green;
+
+  @include mq("md") {
+    display: flex;
+    padding-bottom: rem(38);
+  }
 }
 
 .contact-form__label:not(:first-child) {
   margin-top: rem(27);
+
+  @include mq("md") {
+    margin-top: rem(41);
+  }
 }
 
 .contact-form__label dt {
@@ -41,6 +23,10 @@
   font-weight: $bold;
   font-family: "Noto Sans JP", serif;
   line-height: 1;
+
+  @include mq("md") {
+    width: 40%;
+  }
 }
 
 .contact-form__label span {
@@ -55,12 +41,23 @@
   padding-left: rem(16);
   margin-left: rem(7);
   letter-spacing: 0.4em;
+
+  @include mq("md") {
+    padding-top: rem(2);
+    padding-bottom: rem(4);
+  }
 }
 
 .contact-form__label-contact {
   margin-top: rem(26);
   padding-bottom: rem(20);
   border-bottom: rem(1) dashed $green;
+
+  @include mq("md") {
+    margin-top: rem(42);
+    padding-bottom: rem(35);
+    display: flex;
+  }
 }
 
 .contact-form__label-contact dt {
@@ -82,6 +79,53 @@
   padding-left: rem(16);
   margin-left: rem(7);
   letter-spacing: 0.4em;
+
+  @include mq("md") {
+    padding-top: rem(2);
+    padding-bottom: rem(4);
+  }
+}
+
+.contact-form__label-campaign {
+  margin-top: rem(26);
+  padding-bottom: rem(20);
+  border-bottom: rem(1) dashed $green;
+
+  @include mq("md") {
+    margin-top: rem(42);
+    padding-bottom: rem(35);
+    display: flex;
+  }
+}
+
+.contact-form__label-campaign dt {
+  font-size: rem(16);
+  font-weight: $bold;
+  font-family: "Noto Sans JP", serif;
+  line-height: 1;
+
+  @include mq("md") {
+    width: 40%;
+  }
+}
+
+.contact-form__label-campaign span {
+  font-size: rem(12);
+  font-weight: $normal;
+  background-color: $red;
+  color: $white;
+  // line-height: 1;
+  padding-top: rem(3);
+  padding-right: rem(11);
+  padding-bottom: rem(1);
+  padding-left: rem(16);
+  margin-left: rem(7);
+  letter-spacing: 0.4em;
+
+  @include mq("md") {
+    padding-top: rem(2);
+    padding-bottom: rem(4);
+  }
 }
 
 .contact-form__inputs-text {
@@ -91,11 +135,15 @@
   padding-top: rem(9);
   padding-bottom: rem(5);
   padding-left: rem(16);
+
+  @include mq("md") {
+    margin-top: 0;
+    min-width: rem(480);
+  }
 }
 
 .contact-form__inputs-text::placeholder {
   color: $green2;
-
 }
 
 .contact-form__check-box:not(:first-child) {
@@ -106,6 +154,11 @@
   padding-left: rem(22);
   margin-top: rem(21);
   letter-spacing: 0.02em;
+
+  @include mq("md") {
+    margin-top: rem(2);
+    padding-left: rem(78);
+  }
 }
 
 .contact-form__check-label {
@@ -143,13 +196,6 @@ input[type="checkbox"]:checked + .contact-form__check-label::after {
   opacity: 1;
 }
 
-// .select {
-//   display: inline-block;
-//   position: relative;
-//   border: rem(1) solid $green;
-//   vertical-align: middle;
-// }
-
 .contact-form__select {
   margin-top: rem(20);
   display: inline-block;
@@ -160,6 +206,12 @@ input[type="checkbox"]:checked + .contact-form__check-label::after {
   font-size: rem(12);
   font-weight: $normal;
   cursor: pointer;
+
+  @include mq("md") {
+    min-width: rem(480);
+    padding: rem(5) rem(8);
+    margin-top: 0;
+  }
 }
 
 .contact-form__select select {
@@ -179,45 +231,57 @@ input[type="checkbox"]:checked + .contact-form__check-label::after {
   content: "";
 }
 
-.form-textarea {
-  width: 100%;
-  padding: 10px;
-  height: 200px;
-  border: 1px solid $green;
+.contact-form__text {
+  margin-top: rem(19);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
 }
 
-// .select::-ms-expand {
-//   display: none;
-// }
+.contact-form__textarea {
+  width: 100%;
+  padding: rem(10);
+  height: rem(200);
+  border: 1px solid $green;
+  resize: none;
 
-// .contact-form__inputs-text:first-child {
-//   margin-top: rem(16);
-// }
+  @include mq("md") {
+    min-width: rem(480);
+  }
+}
 
-// .contact-form__inputs-text:not(:first-child) {
-//   margin-top: rem(14);
-// }
-// form {
-//   width: 70%;
-//   margin: 0 auto;
-// }
+.contact-form__label-text {
+  margin-top: rem(26);
+  padding-bottom: rem(15);
+  border-bottom: rem(1) dashed $green;
 
-// .form-row:last-child {
-//   border-bottom: none;
-// }
-// .form-label {
-//   display: flex;
-//   align-items: center;
-//   width: 250px;
-// }
-// .form-label label {
-//   font-weight: bold;
-// }
-// .form-label span {
-//   margin-left: 10px;
-//   padding: 2px 6px;
-//   font-size: 12px;
-//   font-weight: $normal;
-//   color: $white;
-//   background-color: $red;
-// }
+  @include mq("md") {
+    margin-top: rem(40);
+    display: flex;padding-bottom: rem(30);
+  }
+}
+
+.contact-form__label-text dt {
+  font-size: rem(16);
+  font-weight: $bold;
+  font-family: "Noto Sans JP", serif;
+  line-height: 1;
+
+  @include mq("md") {
+    width: 40%;
+  }
+}
+
+.contact-form__label-text span {
+  font-size: rem(12);
+  font-weight: $normal;
+  background-color: $red;
+  color: $white;
+  padding-top: rem(3);
+  padding-right: rem(11);
+  padding-bottom: rem(1);
+  padding-left: rem(16);
+  margin-left: rem(7);
+  letter-spacing: 0.4em;
+}
