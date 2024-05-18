@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.site-map-page__inner {
+  max-width: rem(600);
+  position: relative;
+}
+
+
+.site-map-page__inner::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/same-logo.svg) center center / contain no-repeat;
+  width: rem(120);
+  height: rem(55);
+  bottom: 91.4%;
+  left: calc(50% - min(46vw, rem(620)));
+  z-index: 1;
+
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    bottom: 47.7%;
+    z-index: -1;
+  }
+}
+
+.site-map-page__container {
+
+  @include mq("md") {
+    margin-top: rem(12);
+    white-space: nowrap;
+  }
+}
