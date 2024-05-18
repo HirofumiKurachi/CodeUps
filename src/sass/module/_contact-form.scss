@@ -57,6 +57,33 @@
   letter-spacing: 0.4em;
 }
 
+.contact-form__label-contact {
+  margin-top: rem(22);
+  padding-bottom: rem(24);
+  border-bottom: rem(1) dashed $green;
+}
+
+.contact-form__label-contact dt {
+  font-size: rem(16);
+  font-weight: $bold;
+  font-family: "Noto Sans JP", serif;
+  line-height: 1;
+}
+
+.contact-form__label-contact span {
+  font-size: rem(12);
+  font-weight: $normal;
+  background-color: $red;
+  color: $white;
+  // line-height: 1;
+  padding-top: rem(3);
+  padding-right: rem(11);
+  padding-bottom: rem(1);
+  padding-left: rem(16);
+  margin-left: rem(7);
+  letter-spacing: 0.4em;
+}
+
 .contact-form__inputs-text {
   margin-top: rem(20);
   border: rem(1) solid $green;
