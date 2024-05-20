@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.privacy-page__inner {
+  position: relative;
+  max-width: rem(600);
+}
+
+.privacy-page__inner.inner {
+  max-width: rem(850);
+}
+
+.privacy-page__inner::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/same-logo.svg) center center / contain no-repeat;
+  width: rem(120);
+  height: rem(55);
+  bottom: 97.1%;
+  left: calc(50% - min(46vw, rem(620)));
+  z-index: 1;
+
+  @include mq("md") {
+    width: rem(301);
+    height: rem(138);
+    bottom: 93.4%;
+    z-index: -1;
+  }
+}
+
+.privacy-page__title {
+  font-size: rem(24);
+  font-weight: $medium;
+  font-family: "Noto Sans JP", serif;
+
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+.privacy-page__items {
+  margin-top: rem(44);
+  line-height: 2;
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.privacy-page__item {
+  margin-top: rem(29);
+}
+
+.privacy-page__item-text {
+  margin-top: rem(33);
+}
+
+.privacy-page__item-numbers {
+  counter-reset: number 0;
+  font-family: "Noto Sans JP", serif;
+}
+
+.privacy-page__item-numbers-text {
+  counter-reset: number 0;
+  font-family: "Noto Sans JP", serif;
+}
+
+
+.privacy-page__item-number {
+  text-indent: rem(-15);
+  padding-left: rem(23);
+}
+
+.privacy-page__item-number::before {
+  content: counter(number) ". ";
+    counter-increment: number 1;
+}
+
+.privacy-page__end {
+  margin-top: rem(30);
+
+  @include mq("md") {
+    margin-top: rem(33);
+  }
+}
