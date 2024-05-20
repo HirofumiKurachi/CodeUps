@@ -118,7 +118,7 @@ $(function () {
 
   //MV過ぎたらヘッダー背景色変化
   $(window).on("scroll", function () {
-    var mvBottom = $(".mv, .sub-page-mv").offset().top + $(".mv, .sub-page-mv").outerHeight();
+    var mvBottom = $(".mv, .sub-page-mv, .breadcrumb-404").offset().top + $(".mv, .sub-page-mv, .breadcrumb-404").outerHeight();
     if ($(window).scrollTop() > mvBottom) {
       $(".js-header").addClass("is-scroll");
     } else {

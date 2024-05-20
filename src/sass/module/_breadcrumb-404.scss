@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.breadcrumb-404 {
+  font-size: rem(14);
+  font-family: "Noto Sans JP", serif;
+}
+
+.breadcrumb-404-top {
+  padding-top: rem(88);
+  color: $white;
+
+  @include mq("md") {
+    padding-top: rem(98);
+  }
+}
+
+.breadcrumb-404 a span::after {
+  border-right: rem(1) solid $white;
+  border-top: rem(1) solid $white;
+  content: "";
+  display: inline-block;
+  width: rem(7);
+  height: rem(7);
+  transform: rotate(45deg);
+  margin-bottom: rem(2);
+  margin-left: rem(5);
+  margin-right: rem(5);
+}

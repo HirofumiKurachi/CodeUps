@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.page-404__footer-top {
+  background-color: $green;
+  margin-top: rem(43);
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+
+  @include mq("md") {
+    margin-top: rem(152);
+    padding-top: rem(79);
+    padding-bottom: rem(82);
+  }
+}

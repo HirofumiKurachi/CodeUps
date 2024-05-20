@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.page-404__body {
+  background-color: $green;
+}
+
+.page-404__inner {
+  position: relative;
+  max-width: rem(600);
+}
+
+.page-404__inner::before {
+  position: absolute;
+  content: "";
+  background: url(./../images/page-404-logo.svg) center center / contain no-repeat;
+  width: rem(328.84);
+  height: rem(293.59);
+  top: -47%;
+  left: 6%;
+  z-index: 1;
+
+  @include mq("md") {
+    width: rem(665.31);
+    height: rem(594);
+    top: -45%;
+    z-index: -1;
+    left: 3.7%;
+  }
+}
+
+.page-404__box {
+  text-align: center;
+}
+
+.page-404__title {
+  font-size: rem(80);
+  font-weight: $normal;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.5em;
+  color: $white;
+  text-indent: rem(40);
+  line-height: 1;
+
+  @include mq("md") {
+    font-size: rem(160);
+    text-indent: rem(77);
+  }
+}
+
+.page-404__text {
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  color: $white;
+  margin-top: rem(6);
+
+  @include mq("md") {
+    margin-top: rem(42);
+  }
+}

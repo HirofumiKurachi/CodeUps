@@ -1,0 +1,10 @@
+@use "global" as *;
+
+  .page-404__button-layout {
+    margin-top: rem(38);
+    text-align: center;
+
+    @include mq("md") {
+      margin-top: rem(78);
+    }
+  }
