@@ -2,14 +2,20 @@
 
 .footer-menu {
   display: flex;
+
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .footer-menu__left {
   width: 50%;
 
   @include mq("md") {
-    display: flex;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(120);
   }
 }
 
@@ -37,7 +43,7 @@
 
   @include mq("md") {
     margin-top: rem(0);
-    margin-left: rem(120);
+    margin-left: rem(0);
   }
 }
 
@@ -48,7 +54,7 @@
 
   @include mq("md") {
     margin-top: rem(0);
-    margin-left: rem(120);
+    margin-left: rem(0);
   }
 }
 
@@ -148,8 +154,9 @@
   width: 50%;
 
   @include mq("md") {
-    display: flex;
-    margin-left: rem(120);
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(120);
+    margin-left: rem(16);
   }
 }

@@ -240,7 +240,10 @@
                 <label for="check4" class="personal-information__check-label">個人情報の取り扱いについて同意のうえ<br class="md-show" />送信します。</label>
               </div>
               <div class="contact-form__button-layout">
-                <a href="thanks-page.html" class="contact-form__button"><input type="submit" value="Send" /><span class="contact-form__button-arrow2"></span><span class="contact-form__button-arrow"></span> </a>
+                <div class="contact-form__button">
+                  <input type="submit" value="Send" onclick="location.href='thanks-page.html'" />
+                  <span class="contact-form__button-arrow2"></span><span class="contact-form__button-arrow"></span>
+                </div>
               </div>
             </div>
           </form>
@@ -252,9 +255,9 @@
       <div class="footer__inner inner">
         <div class="footer__title footer-title">
           <a href="#" class="footer-title__name-layout">
-            <h3 class="footer-title__name">
+            <div class="footer-title__name">
               <img class="footer-title__name-logo" src="./assets/images/logo.svg" alt="CodeUps" />
-            </h3>
+            </div>
           </a>
           <div class="footer-title__logo-box">
             <a href="#" target="_blank" class="footer-title__facebook-logo">

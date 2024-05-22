@@ -135,6 +135,8 @@
   padding-top: rem(9);
   padding-bottom: rem(5);
   padding-left: rem(16);
+  padding-right: rem(16);
+
 
   @include mq("md") {
     margin-top: 0;

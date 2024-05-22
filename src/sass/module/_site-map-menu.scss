@@ -2,14 +2,20 @@
 
 .site-map-menu {
   display: flex;
+
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .site-map-menu__left {
   width: 50%;
 
   @include mq("md") {
-    display: flex;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(142);
   }
 }
 
@@ -39,7 +45,7 @@
 
   @include mq("md") {
     margin-top: rem(0);
-    margin-left: rem(144);
+    margin-left: rem(0);
   }
 }
 
@@ -50,7 +56,7 @@
 
   @include mq("md") {
     margin-top: rem(0);
-    margin-left: rem(147);
+    margin-left: rem(0);
   }
 }
 
@@ -144,8 +150,101 @@
   width: 50%;
 
   @include mq("md") {
-    display: flex;
-    margin-left: rem(142);
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(147);
+    margin-left: rem(62);
   }
 }
+
+//以下はゴミ
+
+
+// .site-map-menu {
+//   display: flex;
+//   flex-wrap: wrap; /* アイテムが自動的に次の行に移動 */
+//   justify-content: space-between; /* スペースを均等に配分 */
+// }
+
+// .site-map-menu__left,
+// .site-map-menu__right {
+//   flex: 1 1 50%; /* 幅が狭くなったときに各セクションが自動的に折り返される */
+//   min-width: 300px; /* 各セクションの最小幅を指定 */
+//   display: flex;
+// }
+
+
+// .site-map-menu__item {
+//   text-align: center;
+//   position: relative;
+//   align-items: center;
+//   display: block;
+//   white-space: nowrap;
+// }
+
+// .site-map-menu__items-a,
+// .site-map-menu__items-b,
+// .site-map-menu__items-c {
+//   width: 100%;
+//   padding-left: rem(22);
+//   margin-top: rem(12);
+//   box-sizing: border-box; /* パディングを含めた幅を計算 */
+// }
+
+// .site-map-menu__items-b {
+//   margin-left: 80px;
+// }
+
+// .site-map-menu__link-a,
+// .site-map-menu__link-b {
+//   width: 100%;
+//   font-size: rem(16);
+//   text-align: center;
+//   color: $black;
+//   display: flex;
+//   padding-top: rem(12);
+//   padding-bottom: rem(12);
+// }
+
+// .site-map-menu__link-a::before,
+// .site-map-menu__link-b::before {
+//   content: "";
+//   width: rem(18);
+//   height: rem(18);
+//   background-image: url(../images/site-map-logo.svg);
+//   background-size: contain;
+//   position: absolute;
+//   top: rem(12);
+//   left: rem(-23);
+// }
+
+// .site-map-menu__logo-text {
+//   font-size: rem(16);
+//   color: $black;
+//   font-weight: $bold;
+//   text-align: left;
+//   line-height: 1.125;
+//   font-family: "Noto Sans JP", serif;
+// }
+
+// .site-map-menu__logo-text:hover {
+//   opacity: 0.7;
+//   transition: 0.3s;
+// }
+
+// .site-map-menu__item-text,
+// .site-map-menu__item-text-b {
+//   padding-top: rem(11);
+//   padding-bottom: rem(7);
+//   color: $black;
+//   vertical-align: middle;
+//   list-style-type: none;
+//   white-space: nowrap;
+//   font-family: "Noto Sans JP", serif;
+// }
+
+// .site-map-menu__item-text:hover,
+// .site-map-menu__item-text-b:hover {
+//   opacity: 0.7;
+//   transition: 0.3s;
+// }

@@ -6,7 +6,10 @@
 }
 
 .privacy-page__inner.inner {
-  max-width: rem(850);
+
+  @include mq("md") {
+    max-width: rem(850);
+  }
 }
 
 .privacy-page__inner::before {

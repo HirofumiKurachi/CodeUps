@@ -6,7 +6,10 @@
 }
 
 .terms-page__inner.inner {
-  max-width: rem(850);
+
+  @include mq("md") {
+    max-width: rem(850);
+  }
 }
 
 .terms-page__inner::before {
