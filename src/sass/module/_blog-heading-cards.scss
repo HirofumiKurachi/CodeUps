@@ -9,10 +9,8 @@
   align-items: center;
 
   @include mq("md") {
-    // gap: rem(40);
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: rem(40);
     grid-row-gap: rem(25);
-    // margin-top: rem(78);
   }
 }

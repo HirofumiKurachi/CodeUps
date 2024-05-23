@@ -8,7 +8,6 @@
   }
 }
 
-
 .information__img {
   margin-top: rem(26);
   max-width: rem(570);
@@ -50,8 +49,6 @@
   border-bottom: rem(1) solid $green;
   padding-bottom: rem(0);
 
-
-
   @include mq("md") {
     font-size: rem(24);
     line-height: 1;
@@ -66,7 +63,6 @@
   font-family: Noto Sans JP;
   line-height: 1.5;
 }
-
 
 .information__button-layout {
   margin-top: rem(40);
