@@ -73,7 +73,7 @@
 }
 
 
-.drawer-menu__link-a {
+.drawer-menu__link-main {
   width: 100%;
   font-size: rem(16);
   text-align: center;
@@ -83,7 +83,7 @@
   padding-bottom: rem(10);
 }
 
-.drawer-menu__link-b {
+.drawer-menu__link-sub {
   width: 100%;
   font-size: rem(16);
   text-align: center;
@@ -94,7 +94,7 @@
   margin-top: rem(17.3);
 }
 
-.drawer-menu__link-a::before {
+.drawer-menu__link-main::before {
   content: '';
   width: rem(18);/*画像の幅*/
   height: rem(18);/*画像の高さ*/
@@ -104,7 +104,7 @@
   left: rem(-23);
   position: absolute;
 }
-.drawer-menu__link-b::before {
+.drawer-menu__link-sub::before {
   content: '';
   width: rem(18);/*画像の幅*/
   height: rem(18);/*画像の高さ*/
