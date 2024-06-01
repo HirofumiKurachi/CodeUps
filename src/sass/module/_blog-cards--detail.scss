@@ -1,19 +1,5 @@
 @use "global" as *;
 
-.blog-page-detail-cards {
-  grid-column-gap: rem(40);
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-
-  @include mq("md") {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: rem(0);
-    grid-column-gap: rem(40);
-  }
-}
-
 
 .blog-cards--detail p {
   font-size: rem(16);
@@ -28,7 +14,7 @@
   }
 }
 
-.blog-page-detail-cards__item-container ul {
+.blog-cards--detail ul {
   margin-top: rem(24);
   padding-left: rem(26);
 
@@ -38,7 +24,7 @@
 }
 
 
-.blog-page-detail-cards__item-container li::before {
+.blog-cards--detail li::before {
   background-image: url(./../images/detail-logo.svg);
   content: "";
   width: rem(18); /*画像の幅*/
@@ -54,13 +40,13 @@
   }
 }
 
-.blog-page-detail-cards__item-container li {
+.blog-cards--detail li {
   font-size: rem(16);
   line-height: calc(24/16);
   font-family: "Noto Sans JP", serif;
 }
 
-.blog-page-detail-cards__item-container li:not(:first-child) {
+.blog-cards--detail li:not(:first-child) {
   margin-top: rem(4);
 }
 
@@ -71,12 +57,12 @@
 }
 
 
-.blog-page-detail-cards__item-container:hover {
+.blog-cards--detail:hover {
   cursor: pointer;
 }
 
 
-.blog-page-detail-cards__item-container__text {
+.blog-cards--detail__text {
   font-size: rem(24);
   font-weight: $medium;
   line-height: 1.5;
@@ -93,7 +79,7 @@
   }
 }
 
-.blog-page-detail-cards__item-container p {
+.blog-cards--detail p {
   font-size: rem(16);
   font-weight: $normal;
   line-height: 1.5;
@@ -107,14 +93,14 @@
 }
 
 
-.blog-page-detail-cards__item-container figure {
+.blog-cards--detail figure {
   overflow: hidden;
   width: 100%;
   object-fit: cover;
   aspect-ratio: 301/201;
 }
 
-.blog-page-detail-cards__item-container figure:not(:first-child) {
+.blog-cards--detail figure:not(:first-child) {
   margin-top: rem(24);
 
   @include mq("md") {
@@ -122,7 +108,7 @@
   }
 }
 
-.blog-page-detail-cards__item-container figure img {
+.blog-cards--detail figure img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 301/201;
