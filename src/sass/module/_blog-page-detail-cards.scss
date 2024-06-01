@@ -14,6 +14,7 @@
   }
 }
 
+
 .blog-page-detail-cards__item-container p {
   font-size: rem(16);
   font-weight: $normal;
@@ -27,7 +28,7 @@
   }
 }
 
-.blog-page-detail-cards ul {
+.blog-page-detail-cards__item-container ul {
   margin-top: rem(24);
   padding-left: rem(26);
 
@@ -36,7 +37,8 @@
   }
 }
 
-.blog-page-detail-cards li::before {
+
+.blog-page-detail-cards__item-container li::before {
   background-image: url(./../images/detail-logo.svg);
   content: "";
   width: rem(18); /*画像の幅*/
@@ -52,13 +54,13 @@
   }
 }
 
-.blog-page-detail-cards li {
+.blog-page-detail-cards__item-container li {
   font-size: rem(16);
   line-height: calc(24/16);
   font-family: "Noto Sans JP", serif;
 }
 
-.blog-page-detail-cards li:not(:first-child) {
+.blog-page-detail-cards__item-container li:not(:first-child) {
   margin-top: rem(4);
 }
 
@@ -66,4 +68,75 @@
   @include mq("md") {
     margin-top: rem(-4);
   }
+}
+
+
+.blog-page-detail-cards__item-container:hover {
+  cursor: pointer;
+}
+
+.blog-page-detail-cards__item-container:hover .blog-page-detail-cards__item-container figure img {
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+
+
+
+.blog-page-detail-cards__item-container__text {
+  font-size: rem(24);
+  font-weight: $medium;
+  line-height: 1.5;
+  font-family: Noto Sans JP;
+  margin-top: rem(4);
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(3);
+
+  @include mq("md") {
+    font-size: rem(32);
+    margin-top: rem(4);
+    padding-bottom: rem(0);
+    line-height: 1.45;
+  }
+}
+
+.blog-page-detail-cards__item-container p {
+  font-size: rem(16);
+  font-weight: $normal;
+  line-height: 1.5;
+  font-family: "Noto Sans JP", serif;
+  margin-top: rem(24);
+
+  @include mq("md") {
+    letter-spacing: 0.005em;
+    margin-top: rem(40);
+  }
+}
+
+
+.blog-page-detail-cards__item-container figure {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 301/201;
+}
+
+.blog-page-detail-cards__item-container figure:not(:first-child) {
+  margin-top: rem(24);
+
+  @include mq("md") {
+    margin-top: rem(39);
+  }
+}
+
+.blog-page-detail-cards__item-container figure:hover img {
+  transform: scale(1.1);
+  transition:1s all;
+}
+
+.blog-page-detail-cards__item-container figure img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 301/201;
 }
