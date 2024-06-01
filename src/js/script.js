@@ -37,24 +37,28 @@ jQuery(function ($) {
     });
   });
 
-  // モーダル
-  $(function () {
-    const open = $(".js-modal-open"),
-      close = $(".js-modal-close");
+// モーダル
+$(function () {
+  const open = $(".js-modal-open"),
+        close = $(".js-modal-close");
 
-    // 各画像のクリックイベントを個別に処理
-    open.on("click", function () {
+  // 各画像のクリックイベントを個別に処理
+  open.on("click", function () {
       // クリックされた画像のdata-target属性値を取得
       const target = $(this).data("target");
       // 対応するモーダルを開く
       $(`#gallery-modal-${target}`).addClass("is-open");
-    });
-
-    // 閉じるボタンをクリックしたらモーダルを閉じる
-    close.on("click", function () {
-      $(this).closest(".gallery-modal__item").removeClass("is-open");
-    });
+      // htmlとbodyにoverflow: hidden;を直接適用してスクロールを無効にする
+      $('html, body').css('overflow', 'hidden');
   });
+
+  // 閉じるボタンをクリックしたらモーダルを閉じる
+  close.on("click", function () {
+      $(this).closest(".gallery-modal__item").removeClass("is-open");
+      // htmlとbodyからoverflow: hidden;を削除してスクロールを有効にする
+      $('html, body').css('overflow', '');
+  });
+});
 
   //タブ
 $(function () {

@@ -43,6 +43,10 @@
   }
 }
 
+.gallery-list__item:hover {
+  cursor: pointer;
+}
+
 .gallery-list__item:nth-of-type(6n + 1),
 .gallery-list__item:nth-of-type(6n + 6) {
   @include mq("md") {
