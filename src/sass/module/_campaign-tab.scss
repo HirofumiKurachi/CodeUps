@@ -12,6 +12,7 @@
   font-family: "Noto Sans JP", serif;
   cursor: pointer;
   color: $green;
+  background: $white;
 
   @include mq("md") {
     width: rem(162);

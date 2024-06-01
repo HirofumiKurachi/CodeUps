@@ -19,8 +19,16 @@
   padding: rem(7) rem(14);
   font-size: rem(16);
   margin: 0 rem(6);
-  font-family: "Lato",  sans-serif;
+  font-family: "Lato", sans-serif;
   position: relative;
+  cursor: pointer;
+}
+
+.pagination__larger:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: $white;
+  background-color: $green;
 }
 
 .pagination__nav span {
@@ -30,9 +38,10 @@
   color: $white;
   padding: rem(7) rem(14);
   font-size: rem(16);
-  font-family: "Lato",  sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0 rem(5);
   position: relative;
+  cursor: pointer;
 }
 
 .pagination__nav a:first-child {
@@ -48,7 +57,7 @@
 .pagination__prev::before {
   border-right: rem(1) solid $green;
   border-top: rem(1) solid $green;
-  content: '';
+  content: "";
   display: inline-block;
   width: rem(11);
   height: rem(11);
@@ -56,7 +65,18 @@
   transform: rotate(-135deg);
   left: 40.5%;
   top: 35%;
+}
 
+.pagination__prev:hover {
+  transition: 0.3s;
+  background-color: $green;
+}
+
+.pagination__prev:hover::before {
+  transition: 0.3s;
+  cursor: pointer;
+  border-right: rem(1) solid $white;
+  border-top: rem(1) solid $white;
 }
 
 .pagination__current {
@@ -72,7 +92,7 @@
 .pagination__next::before {
   border-right: rem(1) solid $green;
   border-top: rem(1) solid $green;
-  content: '';
+  content: "";
   display: inline-block;
   width: rem(11);
   height: rem(11);
@@ -80,4 +100,16 @@
   transform: rotate(45deg);
   right: 44.5%;
   top: 35%;
+}
+
+.pagination__next:hover {
+  transition: 0.3s;
+  background-color: $green;
+}
+
+.pagination__next:hover::before {
+  transition: 0.3s;
+  cursor: pointer;
+  border-right: rem(1) solid $white;
+  border-top: rem(1) solid $white;
 }
