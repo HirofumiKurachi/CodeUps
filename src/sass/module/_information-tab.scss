@@ -71,6 +71,23 @@
   display: none;
 }
 
-.information-tab__content.is-active {
-  display: block;
+// .information-tab__content.is-active {
+//   display: block;
+// }
+
+.information-tab__content.is-active{
+  display:block;
+  animation: panel-show .9s ease-in-out forwards;
 }
+/* パネル切り替えのアニメーション */
+@keyframes panel-show {
+  from {
+  opacity: 0;
+  }
+  to {
+  opacity: 1;
+  }
+}
+// .information-tab__content{
+//   display:none;
+// }

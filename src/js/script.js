@@ -61,18 +61,131 @@ $(function () {
 });
 
   //タブ
-$(function () {
-  const tabButton = $(".js-tab-button"),
-    tabContent = $(".js-tab-content");
-  tabButton.on("click", function () {
-    let index = tabButton.index(this);
+// $(function () {
+//   const tabButton = $(".js-tab-button"),
+//     tabContent = $(".js-tab-content");
+//   tabButton.on("click", function () {
+//     let index = tabButton.index(this);
 
-    tabButton.removeClass("is-active");
-    $(this).addClass("is-active");
-    tabContent.removeClass("is-active");
-    tabContent.eq(index).addClass("is-active");
+//     tabButton.removeClass("is-active");
+//     $(this).addClass("is-active");
+//     tabContent.removeClass("is-active");
+//     tabContent.eq(index).addClass("is-active");
+//   });
+// });
+
+// $(function () {
+//   //タブの実装
+// $(".js-tab-button").click(function () {
+//    var index = $(".js-tab-button").index(this);
+//    $(".js-tab-button, .js-tab-content").removeClass("is-active");
+//    $(this).addClass("is-active");
+//    $(".js-tab-content").eq(index).addClass("is-active");
+// });
+// });
+
+// $(function () {
+//   //タブへダイレクトリンクの実装
+//   //リンクからハッシュを取得
+//   var hash = location.hash;
+//   hash = (hash.match(/^#tab__panel-\d+$/) || [])[0];
+
+//   //リンクにハッシュが入っていればtabnameに格納
+//   if ($(hash).length) {
+//       var tabname = hash.slice(1);
+//   } else {
+//       var tabname = "tab__panel-1";
+//   }
+
+//   //コンテンツ非表示・タブを非アクティブ
+//   $(".js-tab-button").removeClass("is-active");
+//   $(".js-tab-content").removeClass("is-active");
+
+//   //何番目のタブかを格納
+//   var tabno = $(".js-tab-content#" + tabname).index();
+
+//   //コンテンツ表示
+//   $(".js-tab-content").eq(tabno).addClass("is-active");
+
+//   //タブのアクティブ化
+//   $(".js-tab-button").eq(tabno).addClass("is-active");
+// });
+
+// //任意のタブにURLからリンクするための設定
+// function GethashID (hashIDName){
+//   if(hashIDName){
+//     //タブ設定
+//     $('.information-tab li').find('a').each(function() { //タブ内のaタグ全てを取得
+//       var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得 
+//       if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
+//         var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
+//         $('.information-tab li').removeClass("is-active"); //タブ内のliについているactiveクラスを取り除き
+//         $(parentElm).addClass("is-active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
+//         //表示させるエリア設定
+//         $(".information-card").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+//         $(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加 
+//       }
+//     });
+//   }
+// }
+
+// //タブをクリックしたら
+// $('.information-tab a').on('click', function() {
+//   var idName = $(this).attr('href'); //タブ内のリンク名を取得  
+//   GethashID (idName);//設定したタブの読み込みと
+//   return false;//aタグを無効にする
+// });
+
+
+// // 上記の動きをページが読み込まれたらすぐに動かす
+// $(window).on('load', function () {
+//     $('.information-tab li:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
+//     $('.information-tab__content:first-of-type').addClass("is-active"); //最初の.areaにis-activeクラスを追加
+//   var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
+//   GethashID (hashName);//設定したタブの読み込み
+// });
+
+//別ページからアクティブなタブへのリンク
+$(document).ready(function() {
+  // URLからクエリパラメータを取得
+  const urlParams = new URLSearchParams(window.location.search);
+  const tabParam = urlParams.get('id');
+
+  // 初期タブを決める変数を宣言
+  let initialTab = "tab1"; // デフォルトのタブ
+  if (tabParam && $('#' + tabParam).length) {
+    initialTab = tabParam;
+  }
+
+  // リロードしたときにスクロールを止める
+  $(window).on('load', function () {
+    if (tabParam) {
+      $('body,html').stop().scrollTop(0);
+    }
+  });
+
+  // コンテンツ非表示 & タブを非アクティブ
+  $('.information-tab__content').removeClass("is-active");
+  $('.information-tab__button').removeClass('is-active');
+  // 何番目のタブかを格納
+  const tabno = $('.information-tab__button#' + initialTab).index();
+
+  // コンテンツ表示
+  $('.information-tab__content').eq(tabno).addClass('is-active');
+
+  // タブのアクティブ化
+  $('.information-tab__button').eq(tabno).addClass('is-active');
+
+  // タブクリック時の処理
+  $('.js-tab-button').on('click', function() {
+    $('.js-tab-button,.js-tab-content').removeClass('is-active');
+    $(this).addClass('is-active');
+    const index = $('.js-tab-button').index(this);
+    $('.js-tab-content').eq(index).addClass('is-active');
   });
 });
+
+
 
 
 //アコーディオン
