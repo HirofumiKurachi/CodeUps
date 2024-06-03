@@ -15,6 +15,8 @@
   padding-right: rem(8);
   position: relative;
   border: rem(1) solid $green;
+  font-size: rem(16);
+  font-weight: $bold;
 
   @include mq("md") {
     display: none;
@@ -51,6 +53,8 @@
     padding-bottom: rem(74);
     padding-left: rem(10);
     width: 28%;
+    font-size: rem(16);
+    font-weight: $bold;
   }
 }
 
@@ -85,6 +89,8 @@
     padding-bottom: rem(74);
     padding-left: rem(10);
     width: 28%;
+    font-size: rem(16);
+    font-weight: $bold;
   }
 }
 
@@ -115,6 +121,9 @@
   padding-right: rem(8);
   position: relative;
   border: rem(1) solid $green;
+  font-size: rem(16);
+  font-weight: $bold;
+
 
   @include mq("md") {
     display: none;
@@ -146,6 +155,8 @@
   padding-right: rem(8);
   position: relative;
   border: rem(1) solid $green;
+  font-size: rem(16);
+  font-weight: $bold;
 
   @include mq("md") {
     display: none;

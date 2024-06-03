@@ -5,6 +5,10 @@
   max-width: rem(600);
 }
 
+.price-page__inner.inner {
+  max-width: 750px;
+}
+
 .price-page__inner::before {
   position: absolute;
   content: "";
@@ -23,10 +27,9 @@
   }
 }
 
-.price-page__items-item {
-  margin-top: rem(34);
-
-  @include mq("md") {
-    margin-top: rem(80);
-  }
+.price-page__items {
+  display: grid;
+  gap: rem(40);
+  grid-template-columns: repeat(1, 1fr);
 }
+

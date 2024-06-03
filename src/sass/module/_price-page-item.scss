@@ -3,10 +3,11 @@
 .price-page-item__box {
   width: 100%;
   border-collapse: collapse;
-  max-width: rem(700);
-  margin-left: auto;
-  margin-right: auto;
 }
 
-
+.price-page-item {
+  @include mq("md") {
+    display: flex;
+  }
+}
 
