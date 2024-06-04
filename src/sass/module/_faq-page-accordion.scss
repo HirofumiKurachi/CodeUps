@@ -1,9 +1,9 @@
 @use "global" as *;
 
 
-.faq-page-accordion__inner {
+.faq-page-accordion__inner.inner {
   position: relative;
-  max-width: rem(600);
+  max-width: rem(750);
 }
 
 .faq-page-accordion__inner::before {
