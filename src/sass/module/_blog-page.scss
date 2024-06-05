@@ -39,13 +39,13 @@
   }
 }
 
-.blog-page__container-left {
+.blog-page-container__left {
   @include mq("md") {
     width: 65.5%;
   }
 }
 
-.blog-page__container-right {
+.blog-page-container__right {
   @include mq("md") {
     width: 27%;
     margin-left: rem(80);
