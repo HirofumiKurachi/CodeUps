@@ -144,3 +144,11 @@
   object-fit: cover;
   aspect-ratio: 301/201;
 }
+
+.blog-cards-detail__item-box {
+  margin-top: rem(24);
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
