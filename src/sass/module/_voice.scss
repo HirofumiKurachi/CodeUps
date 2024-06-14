@@ -31,17 +31,13 @@
   }
 
   .voice__cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
+    margin-top: rem(45);
 
     @include mq("md") {
       margin-top: rem(28);
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: rem(40);
-      row-gap: rem(40);
     }
   }
+
 
   .voice__button-layout {
     margin-top: rem(40);
